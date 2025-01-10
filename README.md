@@ -71,3 +71,4 @@
 
 [Github Repo](https://shorturl.at/ISLHW)
 [Figma](https://shorturl.at/378rP)
+[Telegram](https://shorturl.at/9ph0V)
