@@ -2,20 +2,19 @@
 
 ## Dating
 
-       ✅ About my self (Arslonbek Alimbaev, 2001y TATU)
-       ✅ About your self
+       ✅ About my self (Arslonbek Alimbaev, 2001y TATU) 👍
+       ✅ About your self 👍
               🔷 Full name
               🔷 Address
-              🔷 Work or Study
+              🔷 Work + Study
 
-## Explain Course
+## Explain Course 👍
 
-       ✅ HTML & CSS (2 month)
-       ✅ JavaScript (4 month)
-       ✅ React & Typescript (3 month)
-       ✅ React & Redux & Others... (1 month)
+       ✅ HTML & CSS (3 month)
+       ✅ JavaScript & Typescript (4 month)
+       ✅ React & Redux & Others... (3 month)
 
-## HTML & CSS
+## HTML & CSS 👍
 
        ✅ BASICS
               🔷 Web fundamentals
@@ -26,27 +25,35 @@
               🔷 HTML advanced
               🔷 CSS advanced
 
-## Installing Apps
+       ✅ ADVANCED+
+              🔷 SASS
+              🔷 bootstrap
+              🔷 tailwindcss
 
-       ✅ Visual Studio Code (VS Code) - https://code.visualstudio.com/download
+## Installing Apps 👍
+
+       ✅ Visual Studio Code (VS Code) - https://code.visualstudio.com/download 👍
               🔷 Live Server (Extension)
               🔷 Prettier (Extension)
               🔷 Material icon theme (Extension)
+              🔷 Auto close tag (Extension)
+              🔷 Auto complete tag (Extension)
+              🔷 Auto rename tag (Extension)
 
-       ✅ Node Js - https://nodejs.org/en/
-       ✅ Google Chrome - https://bit.ly/3zRyvQS
+       ✅ Node Js - https://nodejs.org/en/ (Optional)
+       ✅ Google Chrome
        ✅ Github registration - https://github.com
 
 ## Web fundamentals
 
-       ✅ what is front-end
-       ✅ keynote basics.key
-       ✅ keynote web-fun.key
-       ✅ How the Web Works
-       ✅ Inspecting HTTP Requests and Responses
-       ✅ Write HTML codes
-       ✅ Write CSS codes
-       ✅ Formatting Code
+       ✅ what is front-end 👍
+       ✅ keynote basics.key 👍
+       ✅ keynote web-fun.key 👍
+       ✅ How the Web Works 👍
+       ✅ Inspecting HTTP Requests and Responses 👍
+       ✅ Write HTML codes 👍
+       ✅ Write CSS codes 👍
+       ✅ Formatting Code 👍
        ✅ Inspecting Pages Using Chrome DevTools
        ✅ We Validate Our Codes (HTML || CSS)
               🔷 HTML -> https://validator.w3.org/
