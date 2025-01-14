@@ -1,48 +1,4 @@
-# ---------- 11.01.25 ----------(1)
-
-## Dating
-
-       ✅ About my self (Arslonbek Alimbaev, 2001y TATU) 👍
-       ✅ About your self 👍
-              🔷 Full name
-              🔷 Address
-              🔷 Work + Study
-
-## Explain Course 👍
-
-       ✅ HTML & CSS (3 month)
-       ✅ JavaScript & Typescript (4 month)
-       ✅ React & Redux & Others... (3 month)
-
-## HTML & CSS 👍
-
-       ✅ BASICS
-              🔷 Web fundamentals
-              🔷 HTML basics
-              🔷 CSS basics
-
-       ✅ ADVANCED
-              🔷 HTML advanced
-              🔷 CSS advanced
-
-       ✅ ADVANCED+
-              🔷 SASS
-              🔷 bootstrap
-              🔷 tailwindcss
-
-## Installing Apps 👍
-
-       ✅ Visual Studio Code (VS Code) - https://code.visualstudio.com/download 👍
-              🔷 Live Server (Extension)
-              🔷 Prettier (Extension)
-              🔷 Material icon theme (Extension)
-              🔷 Auto close tag (Extension)
-              🔷 Auto complete tag (Extension)
-              🔷 Auto rename tag (Extension)
-
-       ✅ Node Js - https://nodejs.org/en/ (Optional)
-       ✅ Google Chrome
-       ✅ Github registration - https://github.com
+# ---------- 14.01.25 ----------(2)
 
 ## Web fundamentals
 
