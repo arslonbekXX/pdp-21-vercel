@@ -10,23 +10,28 @@
        ✅ Write HTML codes 👍
        ✅ Write CSS codes 👍
        ✅ Formatting Code 👍
-       ✅ Inspecting Pages Using Chrome DevTools
+       ✅ Inspecting Pages Using Chrome DevTools 👍
        ✅ We Validate Our Codes (HTML || CSS)
-              🔷 HTML -> https://validator.w3.org/
+              🔷 HTML -> https://validator.w3.org/ 👍
               🔷 CSS -> https://jigsaw.w3.org/css-validator/
 
 ## HTML Basics
 
-       ✅ Introduction
-       ✅ The Head Section
+       ✅ Introduction 👍
+       ✅ The Head Section 👍
               🔷 ASCII    -   https://www.asciitable.com/
               🔷 UNICODE  -   https://unicode-table.com/
-       ✅ Text
-       ✅ Entities
+       ✅ Text 👍
+              🔷 Block element (heading[h1-h6], p)
+              🔷 Inline element (span)
+              🔷
+       ✅ Entities 👍
        ✅ File & folder paths
+              🔷 Absolute path 👍
+              🔷 Relative path 👍
        ✅ Hyperlinks
-              🔷 Redirect new HTML file
-              🔷 Download
+              🔷 Redirect new HTML file 👍
+              🔷 Download 👍
               🔷 Go to section
        ✅ Video and Audio
        ✅ Lists
