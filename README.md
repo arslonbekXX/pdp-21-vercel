@@ -17,22 +17,22 @@
        ✅ Hyperlinks
               🔷 Redirect new HTML file 👍
               🔷 Download 👍
-              🔷 Go to section
+              🔷 Go to section 👍
 
-       ✅ Video and Audio
+       ✅ Video and Audio 👍
             🎁 can i use
-       ✅ Lists
-            🎁 ul
-            🎁 ol
-            🎁 li
+       ✅ Lists 👍
+            🎁 ul - unordered
+            🎁 ol - ordered
+            🎁 li - list item
        ✅ Tables
-            🎁 DRY -> Don't repeat yourself
-            🎁 tr - table row
-            🎁 th - table header
-            🎁 td - table detail
-            🎁 thead - table header
-            🎁 tbody - table body
-            🎁 tfoot - table footer
+            🎁 DRY -> Don't repeat yourself 👍
+            🎁 tr - table row 👍
+            🎁 th - table header 👍
+            🎁 td - table detail 👍
+            🎁 thead - table head 👍
+            🎁 tbody - table body  👍
+            🎁 tfoot - table footer 👍
 
 ## Explain CSS Basics
 

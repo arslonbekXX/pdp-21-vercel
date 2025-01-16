@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table</title>
+
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			th,
+			td {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Cart Products</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Amount</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Olma</td>
+					<td>4</td>
+					<td rowspan="2">$20</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Banan</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Uzum</td>
+					<td>2</td>
+					<td>$100</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"><b>Total</b></td>
+					<td colspan="2"><b>$145</b></td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
