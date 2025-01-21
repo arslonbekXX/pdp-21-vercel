@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+/* .list-item:nth-child(3n) {
+	background-color: red;
+} */
+
+a:visited {
+	color: black;
+}
+
+.list-item:hover {
+	background-color: black;
+}
