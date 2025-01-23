@@ -1,92 +1,47 @@
-# ---------- 21.01.25 ----------(5)
+# ---------- 23.01.25 ----------(6)
+
+## Checking homeworks 👍
+
+## Challenge(Sudoku) 👍
 
 ## Explain CSS Basics
 
        ✅ Providing CSS 👍
        ✅ Normalizing CSS 👍
-       ✅ Selectors
+       ✅ Selectors 👍
+       ✅ Selector Specificity 👍
+       ✅ Inheritance
        ✅ Colors
        ✅ Gradients
        ✅ Borders
        ✅ Shadows
 
-## Providing CSS && Providing priority 👍
-
-       ✅ Inline 👍
-       ✅ Internal 👍
-       ✅ External  👍
-
-## Normalizing CSS 👍
-
-       ✅ https://necolas.github.io/normalize.css/
-
-## Inline vs Inline-block vs Block 👍
-
-## Basic Selectors
-
-       ✅ What is selector 👍
-       ✅ TYPE 👍
-       ✅ ID 👍
-       ✅ CLASS 👍
-       ✅ ATTRIBUTE 👍
-       ✅ ALL ELEMENTS 👍
-
-## Relational Selectors
-
-       ✅ [ ] -> descendant selector 👍
-       ✅ [>] -> child selector 👍
-       ✅ [+] -> adjacent sibling selector 👍
-       ✅ [~] -> adjacent sibling selector 👍
-
-## Pseudo Class Selectors
-
-       ✅ :root 🛑
-       ✅ :empty 👍
-       ✅ :first-child 👍
-       ✅ :first-of-type 👍
-       ✅ :last-child 👍
-       ✅ :last-of-type 👍
-       ✅ :nth-child(n) 👍
-              🎁 odd(toq)
-              🎁 even(juft)
-       ✅ :nth-last-child(n) 👍
-       ✅ :nth-of-type(n) 👍
-       ✅ :nth-last-of-type(n) 👍
-       ✅ :visited 👍
-       ✅ :hover 👍
-       ✅ :active 👍
-       ✅ :focus 👍
-       ✅ :not 👍
-
-## Pseudo-element Selectors
-
-       ✅ ::first-latter 👍
-       ✅ ::first-line 👍
-       ✅ ::selection 👍
-       ✅ ::before 👍
-       ✅ ::after 👍
-
-## Selectors Specificity 👍
-
-       ✅ [important][inline style][id][class, attributes, pseudo-classes][elements]
-       ✅ Explain site -> https://css-tricks.com/specifics-on-css-specificity/
-       ✅ SITE -> https://specifishity.com/
-
-## :not pseudo-class selector 👍
-
-       ✅ :not(simple selector) 👍
-       ✅ Negations may not be nested (ichma-ich negativlardan foydalanish mumkin emas) -> :not(:not) ! 👍
-       ✅ no specificity 👍
-       ✅ not use pseudo-element selectors 👍
-
-## FlexBox
-
-       ✅ justify-content
-
-## Inheritance
+## Inheritance 👍
 
 ## Colors
 
-       ✅ Named colors
-       ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
-       ✅ HEX
+       ✅ Named colors 👍
+       ✅ RGB(Red, Green, Blue) 👍 | RGBA(Red, Green, Blue,Alfa) 👍
+       ✅ HEX 👍
+
+## Gradients
+
+       ✅ Linear-gradient
+       ✅ Radial-gradient
+
+## Borders
+
+       ✅ border-width
+       ✅ border-style
+       ✅ border-color
+       ✅ border
+
+## Shadows
+
+       ✅ box-shadow
+              🎁 outset shadow
+              🎁 inset shadow
+       ✅ text-shadow
+       ✅ drop-shadow
+
+## Explain new part (advanced)

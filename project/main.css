@@ -46,3 +46,6 @@ body {
 .btn-red {
 	background-color: #f64e60;
 }
+
+.boxes .box:not(:not(:first-child)) {
+}
