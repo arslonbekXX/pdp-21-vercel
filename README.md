@@ -1,8 +1,13 @@
-# ---------- 23.01.25 ----------(6)
+# ---------- 25.01.25 ----------(7)
 
-## Checking homeworks 👍
+## Checking homeworks
 
 ## Challenge(Sudoku) 👍
+
+## Homeworks
+
+       ✅ download and install figma app
+       ✅ Create shadows from tailwind ([text](https://tailwindcss.com/docs/box-shadow))
 
 ## Explain CSS Basics
 
@@ -10,38 +15,114 @@
        ✅ Normalizing CSS 👍
        ✅ Selectors 👍
        ✅ Selector Specificity 👍
-       ✅ Inheritance
-       ✅ Colors
-       ✅ Gradients
-       ✅ Borders
+       ✅ Inheritance 👍
+       ✅ Colors 👍
+       ✅ Gradients 👍
+       ✅ Borders 👍
        ✅ Shadows
 
-## Inheritance 👍
+## Gradients 👍
 
-## Colors
+       ✅ Linear-gradient 👍
+       ✅ Radial-gradient ➖
 
-       ✅ Named colors 👍
-       ✅ RGB(Red, Green, Blue) 👍 | RGBA(Red, Green, Blue,Alfa) 👍
-       ✅ HEX 👍
-
-## Gradients
-
-       ✅ Linear-gradient
-       ✅ Radial-gradient
-
-## Borders
+## Borders 👍
 
        ✅ border-width
        ✅ border-style
        ✅ border-color
        ✅ border
 
-## Shadows
+## Shadows 👍
 
-       ✅ box-shadow
+       ✅ box-shadow 👍
               🎁 outset shadow
               🎁 inset shadow
-       ✅ text-shadow
-       ✅ drop-shadow
+       ✅ text-shadow 👍
 
 ## Explain new part (advanced)
+
+## Layout
+
+       ✅ Box Model 👍
+       ✅ Sizing Elements 👍
+       ✅ Overflowing
+
+## Measurement Units
+
+       ✅ absolute
+              🎁 px
+       ✅ relative
+              🎁 % -> relative to size of the container
+              🎁 [em, rem] -> relative to the font-size
+              🎁 [vw, vh] -> relative to the viewport
+
+## Positioning
+
+       ✅ static
+              🎁 all element default position value
+              🎁 not working [top,right,bottom,left]
+              🎁 element asosiy sathda qoladi
+       ✅ relative
+              🎁 top & right & bottom & left
+              🎁 z-index
+              🎁 element asosiy sathda orni qoladi lekin z-index boyicha harakatlanishi mumkin
+       ✅ absolute
+              🎁 element asosiy sathda qolmaydi, otasi(relative element)ga nisbatan harakatlanadi
+       ✅ fixed
+              🎁 element asosiy sathda qolmaydi, har doim documentga nisbatan boladi, scroll tasir qilmaydi
+       ✅ sticky
+              🎁 example : https://codepen.io/geoffgraham/pen/ybVzeX
+
+## FlexBox
+
+       🏆 Properties for the Parent
+          ✅ flex-direction
+              🎁 row | row-reverse
+              🎁 column | column-reverse
+          ✅ flex-wrap
+              🎁 nowrap
+              🎁 wrap
+              🎁 wrap-reverse
+
+          ✅ flex-flow
+
+          ✅ Axes
+                    x-axes
+                    y-axes
+
+          ✅ align-items(y-axes)
+              🎁 flex-start
+              🎁 flex-end
+              🎁 center
+              🎁 stretch
+              🎁 baseline
+
+          ✅ justify-content(x-axes)
+              🎁 flex-start
+              🎁 flex-end
+              🎁 center
+              🎁 space-between
+              🎁 space-evenly
+              🎁 space-around
+
+          ✅ align-content (x-axes control with y-axes)
+              🎁 flex-start
+              🎁 flex-end
+              🎁 center
+              🎁 stretch
+              🎁 space-between
+              🎁 space-evenly
+              🎁 space-around
+
+       🏆 Properties for the Children
+          ✅ order
+          ✅ flex-grow
+          ✅ flex-shrink
+          ✅ flex-basis
+          ✅ align-self
+              🎁 flex-start
+              🎁 flex-end
+              🎁 center
+              🎁 stretch
+              🎁 baseline

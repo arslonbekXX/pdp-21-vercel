@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e2e2e2;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.shaxmatka {
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	height: 800px;
+	background-color: black;
+}
+
+.row {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(
+		to right,
+		var(--first) 100px,
+		var(--second) 100px,
+		var(--second) 200px,
+		var(--first) 200px,
+		var(--first) 300px,
+		var(--second) 300px,
+		var(--second) 400px,
+		var(--first) 400px,
+		var(--first) 500px,
+		var(--second) 500px,
+		var(--second) 600px,
+		var(--first) 600px,
+		var(--first) 700px,
+		var(--second) 700px,
+		var(--second) 800px,
+		var(--first) 800px,
+		var(--second) 800px
+	);
+}
