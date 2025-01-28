@@ -1,44 +1,14 @@
-# ---------- 25.01.25 ----------(7)
+# ---------- 28.01.25 ----------(8)
 
 ## Checking homeworks
 
-## Challenge(Sudoku) 👍
+## Challenge 👍
+
+       ✅ Dot with positions
 
 ## Homeworks
 
-       ✅ download and install figma app
-       ✅ Create shadows from tailwind ([text](https://tailwindcss.com/docs/box-shadow))
-
-## Explain CSS Basics
-
-       ✅ Providing CSS 👍
-       ✅ Normalizing CSS 👍
-       ✅ Selectors 👍
-       ✅ Selector Specificity 👍
-       ✅ Inheritance 👍
-       ✅ Colors 👍
-       ✅ Gradients 👍
-       ✅ Borders 👍
-       ✅ Shadows
-
-## Gradients 👍
-
-       ✅ Linear-gradient 👍
-       ✅ Radial-gradient ➖
-
-## Borders 👍
-
-       ✅ border-width
-       ✅ border-style
-       ✅ border-color
-       ✅ border
-
-## Shadows 👍
-
-       ✅ box-shadow 👍
-              🎁 outset shadow
-              🎁 inset shadow
-       ✅ text-shadow 👍
+       ✅
 
 ## Explain new part (advanced)
 
@@ -46,16 +16,16 @@
 
        ✅ Box Model 👍
        ✅ Sizing Elements 👍
-       ✅ Overflowing
+       ✅ Overflowing 👍
 
-## Measurement Units
+## Measurement Units 👍
 
-       ✅ absolute
+       ✅ absolute 👍
               🎁 px
+
        ✅ relative
-              🎁 % -> relative to size of the container
-              🎁 [em, rem] -> relative to the font-size
-              🎁 [vw, vh] -> relative to the viewport
+              🎁 % -> relative to size of the container 👍
+              🎁 [em, rem] -> relative to the font-size 👍
 
 ## Positioning
 

@@ -1,0 +1,57 @@
+:root {
+	font-size: 20px;
+}
+
+body {
+	background-color: #e2e2e2;
+	height: 100%;
+}
+
+.box {
+	font-size: 10px;
+	height: 10rem; //
+}
+
+/* .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+.box-1,
+.box-2 {
+	width: 50%;
+:root {
+	font-size: 20px;
+}
+
+body {
+	background-color: #e2e2e2;
+	height: 100%;
+}
+
+.box {
+	font-size: 10px;
+	height: 10rem; //
+}
+
+/* .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+.box-1,
+.box-2 {
+	width: 50%;
+	height: 200px;
+	background-color: red;
+} */

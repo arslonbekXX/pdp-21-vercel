@@ -4,6 +4,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
 }
 
 .shaxmatka {
@@ -14,4 +15,10 @@ body {
 	background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
+	overflow: scroll;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
