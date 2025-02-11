@@ -14,17 +14,19 @@ body {
 	width: 500px;
 	height: 500px;
 	display: grid;
-	grid-template: repeat(5, 80px) / repeat(3, 100px);
+	grid-template-columns: minmax(100px, 1fr) auto;
 	border: 3px solid red;
 	place-content: center;
 	place-items: center center;
+	padding: 10px;
 }
 
 .box {
 	background-color: dodgerblue;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 1rem;
 	width: 50px;
-	height: 50px;
+}
+
+.box-1 {
+	width: 200px;
 }
