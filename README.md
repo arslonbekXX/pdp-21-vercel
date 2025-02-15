@@ -1,4 +1,4 @@
-# ---------- 11.02.25 ----------(14)
+# ---------- 15.02.25 ----------(15)
 
 ## Checking homeworks
 
@@ -57,6 +57,24 @@
             ✅ align-self 👍
             ✅ place-self        : align-self / [justify-self] 👍
 
+## Block vs Inline
+
+            ✅ inline 👍
+                  🎁 width va height olmaydi(default max-content)
+                  🎁 qatorni toliq egallamaydi
+            ✅ block  👍
+                  🎁 width va height oladi
+                  🎁 qatorni toliq egallaydi
+            ✅ inline-block 👍
+                  🎁 width va height oladi
+                  🎁 qatorni toliq egallaymaydi
+
+## Additional Properties
+
+            ✅ line-height
+            ✅ text-align
+            ✅ line-height centred vs flex centred
+
 ## Sizing Functions
 
             ✅ minmax 👍
@@ -66,8 +84,8 @@
 
 ## Auto Flow
 
-            ✅ grid-auto-rows
-            ✅ grid-auto-columns
+            ✅ grid-auto-rows 👍
+            ✅ grid-auto-columns 👍
 
 ## Links
 
