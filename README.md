@@ -1,95 +1,33 @@
-# ---------- 15.02.25 ----------(15)
+# ---------- 15.02.25 ----------(16)
 
 ## Checking homeworks
 
-## Homeworks
+## Media Queries
 
-        ✅ https://www.youtube.com/watch?v=T-slCsOrLcc&list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG
-        ✅ https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR
+       ✅ At Rules
+            🔷 @media
+            🔷 @import
+            🔷 @font-face
+            🔷 @keyframe
+       ✅ Write Media Query code
+       ✅ Breakpoints(https://getbootstrap.com/docs/5.0/layout/breakpoints/)
 
-## Grid
+## Typography
 
-## Important Terminology (Muhim terminlar)
+       ✅ What is "Web Safe Fonts"
+           🔷 Windows - 11 fonts : https://docs.microsoft.com/en-us/typography/fonts/windows_11_font_list
+           🔷 MacOS Monterey  - 11 fonts : https://apple.stackexchange.com/questions/429548/request-for-list-of-fonts-folder-contents-on-monterey
 
-        ✅ Grid Container 👍
-        ✅ Grid Line 👍
-        ✅ Grid Track 👍
-        ✅ Grid Area 👍
-        ✅ Grid Item 👍
-        ✅ Grid Cell 👍
-        ✅ Grid Gap 👍
+       ✅ Using local fonts
+           🔷 Font Services and Sites
+               🎁 https://www.fontsquirrel.com/ [with compress service]
+               🎁 https://www.fonts.com/
+               🎁 https://www.myfonts.com/
+               🎁 https://fonts.google.com/  [most popular]
 
-## Parent Properties
-
-        ✅ display 👍
-            🎁 grid
-
-        ✅ sizes units
-            🎁 px 👍
-            🎁 auto
-            🎁 % 👍
-            🎁 fr 👍
-
-        ✅ grid-template-columns :  200px 100px 👍
-        ✅ grid-template-rows: 100px 100px 👍
-        ✅ grid-template: rows / columns -> 100px 100px / 200px 200px; 👍
-        ✅ justify-items 👍
-            🎁 stretch
-            🎁 start
-            🎁 end
-            🎁 center
-        ✅ align-items 👍
-            🎁 stretch
-            🎁 start
-            🎁 end
-            🎁 center
-        ✅ place-items : align-items / justify-items 👍
-        ✅ justify-content 👍
-        ✅ align-content 👍
-        ✅ place-content: align-content / justify-content 👍
-
-## Child Properties
-
-            ✅ grid-column        : <start-value> / <end-value> 👍
-            ✅ grid-row          : <start-value> / <end-value> 👍
-            ✅ grid-area         : <name> | row-start /  column-start / row-end / column-end 👍
-            ✅ justify-self 👍
-            ✅ align-self 👍
-            ✅ place-self        : align-self / [justify-self] 👍
-
-## Block vs Inline
-
-            ✅ inline 👍
-                  🎁 width va height olmaydi(default max-content)
-                  🎁 qatorni toliq egallamaydi
-            ✅ block  👍
-                  🎁 width va height oladi
-                  🎁 qatorni toliq egallaydi
-            ✅ inline-block 👍
-                  🎁 width va height oladi
-                  🎁 qatorni toliq egallaymaydi
-
-## Additional Properties
-
-            ✅ line-height
-            ✅ text-align
-            ✅ line-height centred vs flex centred
-
-## Sizing Functions
-
-            ✅ minmax 👍
-            ✅ repeat 👍
-                 🎁 auto-fill
-                 🎁 auto-fit
-
-## Auto Flow
-
-            ✅ grid-auto-rows 👍
-            ✅ grid-auto-columns 👍
-
-## Links
-
-    ✅ https://css-tricks.com/snippets/css/complete-guide-grid/#aa-justify-items
-    ✅ https://learncssgrid.com/
-    ✅ https://cssreference.io/property/grid-auto-rows/
-    ✅ https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR
+           🔷 Font Formats
+               🎁 TTF       -> "True Type Font"
+               🎁 OTF       -> "Open Type Font"
+               🎁 EOT       -> "Embedded Open Type"
+               🎁 WOFF      -> "Web Open Font Format"  [more compressed]
+               🎁 WOFF 2.0  -> "Web Open Font Format"  [more compressed]
