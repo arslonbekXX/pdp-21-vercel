@@ -1,5 +1,8 @@
 :root {
 	--primary: #1c1814;
-	--link-active: #c99e71;
+	--secondary: #c99e71;
 	--white: #ffffff;
+	--white-80: rgba(255, 255, 255, 0.8);
+	--body: #13110e;
+	--card: #121315;
 }

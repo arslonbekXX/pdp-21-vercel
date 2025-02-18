@@ -3,31 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./styles/normalize.css" />
-		<link rel="stylesheet" href="./styles/variables.css" />
-		<link rel="stylesheet" href="./styles/common.css" />
-		<link rel="stylesheet" href="./styles/header.css" />
-		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
 		<title>Coffee App</title>
 	</head>
 	<body>
 		<!-- HEADER -->
 		<header>
-			<nav class="navbar container">
-				<ul class="menu">
-					<li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-					<li class="menu-item"><a href="#about" class="menu-link">About</a></li>
-					<li class="menu-item"><a href="#menu" class="menu-link">Menu</a></li>
-					<li class="menu-item"><a href="#reservation" class="menu-link">Reservation</a></li>
-				</ul>
+			<nav class="navbar">
+				<div class="container">
+					<ul class="menu">
+						<li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+						<li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+						<li class="menu-item"><a href="#menu" class="menu-link">Menu</a></li>
+						<li class="menu-item"><a href="#reservation" class="menu-link">Reservation</a></li>
+					</ul>
 
-				<div class="logo">
 					<svg
 						width="72"
 						height="60"
@@ -96,95 +86,387 @@
 							fill="#C99E71"
 						/>
 					</svg>
-				</div>
 
-				<div class="right">
-					<ul class="menu">
-						<li class="menu-item"><a href="#pages" class="menu-link">Pages</a></li>
-						<li class="menu-item"><a href="#shop" class="menu-link">Shop</a></li>
-						<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
-					</ul>
+					<div class="right">
+						<ul class="menu">
+							<li class="menu-item"><a href="#pages" class="menu-link">Pages</a></li>
+							<li class="menu-item"><a href="#shop" class="menu-link">Shop</a></li>
+							<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+						</ul>
 
-					<div class="icons">
-						<div class="icon">
-							<svg
-								width="30"
-								height="30"
-								viewBox="0 0 30 30"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M26.25 26.2499L20.8125 20.8124"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-						</div>
-						<div class="icon">
-							<svg
-								width="30"
-								height="30"
-								viewBox="0 0 30 30"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M7.5 2.49996L3.75 7.49996V25C3.75 25.663 4.01339 26.2989 4.48223 26.7677C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7677C25.9866 26.2989 26.25 25.663 26.25 25V7.49996L22.5 2.49996H7.5Z"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M3.75 7.5H26.25"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0356C17.5979 16.9733 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9733 11.4645 16.0356C10.5268 15.0979 10 13.8261 10 12.5"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+						<div class="icons">
+							<div class="icon">
+								<svg
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M26.25 26.2499L20.8125 20.8124"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<div class="icon">
+								<svg
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M7.5 2.49996L3.75 7.49996V25C3.75 25.663 4.01339 26.2989 4.48223 26.7677C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7677C25.9866 26.2989 26.25 25.663 26.25 25V7.49996L22.5 2.49996H7.5Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M3.75 7.5H26.25"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0356C17.5979 16.9733 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9733 11.4645 16.0356C10.5268 15.0979 10 13.8261 10 12.5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
 			</nav>
 
 			<div class="hero container">
-				<h1 class="title">Enjoy Your <br> Morning Coffee.</h1>
+				<h1 class="title">
+					Enjoy Your <br />
+					Morning Coffee.
+				</h1>
 				<p class="description">
-					The coffee is brewed by fist roasting the green coffee beans over hot coals in brazier.
-					given to Opportunity
+					The coffee is brewed by fist roasting the green coffee <br />
+					beans over hot coals in brazier. given to Opportunity
 				</p>
 				<button class="btn">Test Coffee</button>
 			</div>
+
+			<div class="play">
+				<svg
+					width="70"
+					height="70"
+					viewBox="0 0 70 70"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<circle cx="35" cy="35" r="34.25" stroke="currentColor" stroke-width="1.5" />
+					<path d="M28 26L42 35L28 44V26Z" fill="white" />
+				</svg>
+				<span class="text">Play video</span>
+			</div>
 		</header>
 
+		<!-- COFFEES -->
+		<section class="coffees container">
+			<div class="card">
+				<div class="top">
+					<p class="number">01</p>
+					<p class="name">Best Coffee Flavour</p>
+				</div>
+				<img src="./images/flavour.png" alt="1" class="image" />
+			</div>
+			<div class="card">
+				<div class="top">
+					<p class="number">02</p>
+					<p class="name">Place to get lost</p>
+				</div>
+				<img src="./images/lost.png" alt="2" class="image" />
+			</div>
+			<div class="card">
+				<div class="top">
+					<p class="number">03</p>
+					<p class="name">Proper roasting</p>
+				</div>
+				<img src="./images/roasting.png" alt="3" class="image" />
+			</div>
+		</section>
+
+		<!-- OUR HISTORIES -->
+		<section class="our-histories container">
+			<img src="./images/lost.png" alt="" class="image image-1" />
+			<img src="./images/flavour.png" alt="" class="image image-2" />
+			<img src="./images/double.png" alt="" class="image image-3" />
+			<div class="card">
+				<p class="sub-title">Our history</p>
+				<h3 class="title">
+					Create a <br />
+					new story with us
+				</h3>
+				<p class="description">
+					mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a
+					feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce.
+					preasent ut quam quis quam venen atis fringilla. morbi vastibulum id tells mmodo mattis.
+					aliauam erat volutpal.
+				</p>
+			</div>
+		</section>
+
+		<!-- POPULAR PRODUCTS -->
+		<section class="popular-products container">
+			<div class="top">
+				<h4 class="sub-title">Popular Product</h4>
+				<h2 class="title">Coffee popular Product</h2>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<img src="./images/bag.png" alt="bag" class="image" />
+					<div class="info">
+						<div class="rate">
+							<span class="prefix">Coffee</span>
+							<div class="rates">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z"
+										stroke="#C99E71"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+						<p class="name">brazil coffee gred</p>
+						<p class="price">Price - <span class="current">$320.00/</span> $358</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/bag.png" alt="bag" class="image" />
+					<div class="info">
+						<div class="rate">
+							<span class="prefix">Coffee</span>
+							<div class="rates">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z"
+										stroke="#C99E71"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+						<p class="name">brazil coffee gred</p>
+						<p class="price">Price - <span class="current">$320.00/</span> $358</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/bag.png" alt="bag" class="image" />
+					<div class="info">
+						<div class="rate">
+							<span class="prefix">Coffee</span>
+							<div class="rates">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10 1.66675L12.575 6.88341L18.3334 7.72508L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85002 17.5167L5.83335 11.7834L1.66669 7.72508L7.42502 6.88341L10 1.66675Z"
+										fill="#C99E71"
+									/>
+								</svg>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z"
+										stroke="#C99E71"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+						<p class="name">brazil coffee gred</p>
+						<p class="price">Price - <span class="current">$320.00/</span> $358</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="view-all-products">
+				<button class="btn btn-view-all-products">View all product</button>
+			</div>
+		</section>
+
 		<div style="display: none">
-			<!-- COFFEES -->
-			<section class="coffees"></section>
-
-			<!-- OUR HISTORIES -->
-			<section class="our-histories"></section>
-
-			<!-- POPULAR PRODUCT -->
-			<section class="popular-product"></section>
-
 			<!-- MACHINE -->
 			<section class="machine"></section>
 

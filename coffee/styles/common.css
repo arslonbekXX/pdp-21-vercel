@@ -2,3 +2,21 @@
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
+.btn {
+	background-color: var(--secondary);
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 12px 24px;
+	text-transform: uppercase;
+}
+
+.btn-view-all-products {
+	padding: 20px 36px;
+}
