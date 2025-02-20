@@ -1,0 +1,5 @@
+footer {
+	display: flex;
+	margin-top: 140px !important;
+	gap: 48px;
+}

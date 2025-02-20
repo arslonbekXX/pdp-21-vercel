@@ -1,0 +1,123 @@
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 140px;
+	gap: 56px;
+
+	.cards {
+		width: 100%;
+		display: flex;
+		gap: 40px;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+			background-color: var(--primary);
+			padding: 40px;
+
+			.top {
+				display: flex;
+				gap: 24px;
+
+				.person-image {
+					width: 129px;
+					height: 149px;
+				}
+
+				.description {
+					flex-grow: 1;
+					color: var(--white-80);
+					font-family: Urbanist;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 180%; /* 28.8px */
+					text-transform: capitalize;
+				}
+			}
+
+			.bottom {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+
+				.info {
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+					align-items: flex-start;
+
+					.name {
+						color: var(--white);
+						text-align: center;
+						font-family: Urbanist;
+						font-size: 18px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 120%; /* 21.6px */
+					}
+
+					.role {
+						color: var(--white-50);
+						font-family: Urbanist;
+						font-size: 14px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 180%; /* 25.2px */
+						text-transform: capitalize;
+					}
+				}
+			}
+		}
+	}
+
+	.slider-and-arrows {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		.slider {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			align-items: flex-start;
+
+			.amount {
+				color: var(--secondary);
+				font-family: Urbanist;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 135%; /* 27px */
+			}
+		}
+		.arrows {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+
+			.arrow {
+				background-color: var(--card);
+				width: 56px;
+				height: 56px;
+				border-radius: 50%;
+				display: grid;
+				place-items: center;
+				color: var(--white);
+				transition: 0.03s linear all;
+			}
+
+			.arrow:hover {
+				background-color: var(--secondary);
+				color: var(--black);
+				cursor: pointer;
+			}
+
+			.arrow:active {
+				transform: scale(0.9);
+			}
+		}
+	}
+}
