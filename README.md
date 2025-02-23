@@ -1,16 +1,16 @@
-# ---------- 20.02.25 ----------(18)
+# ---------- 22.02.25 ----------(19)
 
 ## Checking homeworks
 
 ## Media Queries
 
        ✅ At Rules
-            🔷 @media
-            🔷 @import
+            🔷 @media 👍
+            🔷 @import 👍
             🔷 @font-face
             🔷 @keyframe
-       ✅ Write Media Query code
-       ✅ Breakpoints(https://getbootstrap.com/docs/5.0/layout/breakpoints/)
+       ✅ Write Media Query code 👍
+       ✅ Breakpoints(https://getbootstrap.com/docs/5.0/layout/breakpoints/) 👍
 
 ## Typography
 

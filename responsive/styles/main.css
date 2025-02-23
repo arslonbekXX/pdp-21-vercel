@@ -1,0 +1,56 @@
+.container {
+	padding: 20px;
+	background-color: dodgerblue;
+
+	.btn {
+		border: none;
+		background-color: darkorchid;
+		color: white;
+		padding: 10px 20px;
+		cursor: pointer;
+		transition: 0.03s linear all;
+	}
+
+	.btn:active {
+		transform: scale(0.9);
+	}
+
+	/* BREAKPOINT-SM */
+	@media (min-width: 576px) {
+		background-color: yellow;
+	}
+}
+
+/* BREAKPOINT-MD */
+@media (min-width: 768px) {
+	.container {
+		background-color: tomato;
+	}
+}
+
+/* BREAKPOINT-LG */
+@media (min-width: 992px) {
+	.container {
+		background-color: black;
+
+		.btn {
+			color: darkorchid;
+			background-color: white;
+		}
+	}
+}
+/* BREAKPOINT-XL */
+@media (min-width: 1200px) {
+	body {
+		background-color: black;
+	}
+	.container {
+		background-color: white;
+
+		.btn {
+			color: yellow;
+			background-color: black;
+			font-size: 60px;
+		}
+	}
+}
