@@ -1,11 +1,6 @@
 :root {
-	--primary: #1c1814;
-	--secondary: #c99e71;
+	--primary: #74c69d;
 	--white: #ffffff;
-	--white-80: rgba(255, 255, 255, 0.8);
-	--white-50: rgba(255, 255, 255, 0.5);
-	--body: #13110e;
-	--card: #121315;
-	--menu-card-border: #32323d;
-	--input-bg: #14110e;
+	--white-75: rgba(255, 255, 255, 0.75);
+	--black: #000000;
 }
