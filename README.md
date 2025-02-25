@@ -2,6 +2,8 @@
 
 ## Checking homeworks 👍
 
+## Explain folder structure for "works with team"
+
 ## Media Queries
 
        ✅ At Rules
