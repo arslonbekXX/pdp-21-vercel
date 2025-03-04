@@ -1,0 +1,68 @@
+@import url('./normalize.css');
+@import url('./variables.css');
+@import url('./globals.css');
+@import url('./components/index.css');
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.divider {
+	font-size: 60px;
+	border-bottom: 2px solid black;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 1rem;
+	border-bottom: 2px solid lightgreen;
+}
+
+.letter-spacing p {
+	letter-spacing: 20px;
+}
+
+.word-spacing p {
+	word-spacing: 20px;
+}
+
+.white-spacing p {
+	white-space: pre-line;
+}
+
+.word-break p {
+	word-wrap: break-word;
+	width: 400px;
+	background-color: red;
+}
+
+.text-align p {
+	text-align: right;
+}
+
+.text-indent p {
+	text-indent: 200px;
+}
+
+.text-overflow p {
+	/* Both of the following are required for text-overflow */
+	white-space: nowrap;
+	overflow: hidden;
+
+	text-overflow: ellipsis;
+}
+
+.column-count p {
+	column-count: 4;
+	text-align: justify;
+	column-gap: 70px;
+	column-rule: 2px solid lightgreen;
+}
+
+.direction p {
+	/* text-align: right; */
+	direction: rtl;
+}
