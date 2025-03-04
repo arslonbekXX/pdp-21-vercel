@@ -1,22 +1,10 @@
-# ---------- 25.02.25 ----------(20)
+# ---------- 0.03.25 ----------(22)
 
 ## Checking homeworks 👍
 
-## Explain folder structure for "works with team"
-
-## Media Queries
-
-       ✅ At Rules
-            🔷 @media 👍
-            🔷 @import 👍
-            🔷 @font-face
-            🔷 @keyframe
-       ✅ Write Media Query code 👍
-       ✅ Breakpoints(https://getbootstrap.com/docs/5.0/layout/breakpoints/) 👍
-
 ## Typography
 
-       ✅ What is "Web Safe Fonts"
+       ✅ What is "Web Safe Fonts" 👍
            🔷 Windows - 11 fonts : https://docs.microsoft.com/en-us/typography/fonts/windows_11_font_list
            🔷 MacOS Monterey  - 11 fonts : https://apple.stackexchange.com/questions/429548/request-for-list-of-fonts-folder-contents-on-monterey
 
