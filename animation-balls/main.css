@@ -1,0 +1,56 @@
+:root {
+	--boxes-size: 600px;
+	--box-size: calc(var(--boxes-size) / 4);
+}
+
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+.boxes {
+	width: var(--boxes-size);
+	height: var(--boxes-size);
+	border: 1px solid #000;
+	position: relative;
+}
+
+.box {
+	width: var(--box-size);
+	height: var(--box-size);
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	animation: move 2s infinite;
+}
+
+.box-1 {
+	background-color: #efed40;
+	animation-iteration-count: 1;
+}
+.box-2 {
+	background-color: red;
+	animation-delay: 1s;
+}
+.box-3 {
+	background-color: blue;
+	animation-delay: 2s;
+}
+
+@keyframes move {
+	0% {
+		transform: translate(0);
+	}
+	50% {
+		transform: translate(calc(var(--boxes-size) - var(--box-size)));
+	}
+	100% {
+		transform: translate(0);
+	}
+}

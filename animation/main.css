@@ -33,6 +33,11 @@ body {
 	animation-duration: 4s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.boxes:hover .box {
+	animation-play-state: paused;
 }
 
 @keyframes spin {
