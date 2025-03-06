@@ -1,0 +1,60 @@
+:root {
+	--boxes-size: 600px;
+	--box-size: calc(var(--boxes-size) / 4);
+}
+
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+.boxes {
+	width: var(--boxes-size);
+	height: var(--boxes-size);
+	border: 1px solid #000;
+	position: relative;
+}
+
+.box {
+	width: var(--box-size);
+	height: var(--box-size);
+	background-color: #efed40;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+
+	animation-name: spin;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	0%,
+	100% {
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+	25% {
+		top: 0;
+		left: calc(var(--boxes-size) - var(--box-size));
+		background-color: yellow;
+	}
+	50% {
+		top: calc(var(--boxes-size) - var(--box-size));
+		left: calc(var(--boxes-size) - var(--box-size));
+		background-color: blue;
+	}
+	75% {
+		top: calc(var(--boxes-size) - var(--box-size));
+		left: 0;
+		background-color: black;
+	}
+}

@@ -11,16 +11,17 @@
 
 ## Transitions
 
-         ✅ transition-delay
-         ✅ transition-duration
-         ✅ transition-timing-function
-         ✅ transition-property
-         ✅ Universal property (Transition)
+         ✅ transition-delay 👍
+         ✅ transition-duration 👍
+         ✅ transition-timing-function 👍
+         ✅ transition-property 👍
+         ✅ Universal property (Transition) 👍
          🔗  https://css-tricks.com/almanac/properties/t/transition/
          🔗  https://cubic-bezier.com/
 
 ## Animations
 
+         ✅ @keyframe
          ✅ animation-name
          ✅ animation-duration
          ✅ animation-timing-function
