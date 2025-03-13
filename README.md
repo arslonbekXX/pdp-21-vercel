@@ -1,30 +1,25 @@
-# ---------- 06.03.25 ----------(23)
+# ---------- 13.03.25 ----------(25)
 
-## Checking homeworks 👍
+## Checking homeworks
 
-## Transformations 👍
+## Setup
 
-         ✅ rotate 👍
-         ✅ scale 👍
-         ✅ translate 👍
-         ✅ skew 👍
+      ✅ Install VS-Code
+      ✅ Install Node JS  (node --version)
+      ✅ Install sass with npm  (npm install -g sass) -> (sass --version)
+      ✅ Install vs code extensions
+           🎁 "SCSS IntelliSense"
 
-## Transitions
+## What is "NodeJS" and "npm"(Node package manager)
 
-         ✅ transition-delay 👍
-         ✅ transition-duration 👍
-         ✅ transition-timing-function 👍
-         ✅ transition-property 👍
-         ✅ Universal property (Transition) 👍
-         🔗  https://css-tricks.com/almanac/properties/t/transition/
-         🔗  https://cubic-bezier.com/
+## Create first Web app with SASS
 
-## Animations
+## What is map files
 
-         ✅ @keyframe
-         ✅ animation-name
-         ✅ animation-duration
-         ✅ animation-timing-function
-         ✅ animation-delay
-         ✅ animation-direction
-         ✅ animation-iteration-count
+## SASS variables
+
+## Nesting
+
+## Parent Selector
+
+## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
