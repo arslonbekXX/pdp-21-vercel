@@ -1,35 +1,47 @@
-# ---------- 13.03.25 ----------(25)
+# ---------- 15.03.25 ----------(26)
 
 ## Checking homeworks
 
-      ✅ animation
-      ✅ figma()
+# @use
 
-## Setup 👍
+     ✅ Modules
+     ✅ Loading Members
+     ✅ Private Members
+     ✅ Aliases
+     ✅ @use vs @import
 
-      ✅ Install VS-Code 👍
-      ✅ Install Git and bash terminal
-           🆘 https://gitforwindows.org/
+# @forward
 
-      ✅ Install Node JS 👍
-           🆘 node --version
-           🆘 npm --version
-      ✅ Install sass with npm 👍
-           🆘 npm install -g sass
-           🆘 sass --version
-      ✅ Install vs code extensions 👍
-           🎁 "SCSS IntelliSense"
+## Operations
 
-## What is "NodeJS" and "npm"(Node package manager) 👍
+     ✅ math.div()
+     ✅ *
+     ✅ +
+     ✅ -
 
-## Create first Web app with SASS 👍
+## Variables
 
-## What is map files 👍
+     ✅ !default
+     ✅ !global
 
-## Nesting 👍
+## At-Rules
 
-## Parent Selector 👍
+     ✅ @use
+     ✅ @forward
+     ✅ @import
+     ✅ @mixin && @include
+     ✅ @function
+     ✅ @extend
+     ✅ @at-root
+     ✅ @error
+     ✅ @warn
+     ✅ @debug
 
-## SASS variables
+## Flow Control
+
+     ✅ @if and @else
+     ✅ @each
+     ✅ @for
+     ✅ @while
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
