@@ -1,39 +1,4 @@
-$bg-box: black;
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	height: 100vh;
-	display: grid;
-	gap: 10px;
-	place-items: center;
-	background-color: dodgerblue;
-
-	.box-1 {
-		$bg-box: red;
-	}
-
-	.box-2 {
-		$bg-box: yellow;
-	}
-
-	.box {
-		width: 150px;
-		height: 150px;
-		display: flex;
-		background-color: $bg-box;
-		align-items: center;
-		justify-content: center;
-		color: white;
-		font-size: 30px;
-		font-weight: bold;
-
-		&:hover {
-			background-color: white;
-			color: black;
-		}
-	}
-}
+@forward './normalize';
+@forward './variables';
+@forward './typography';
+@forward './components';

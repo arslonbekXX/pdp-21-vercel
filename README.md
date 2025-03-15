@@ -2,6 +2,12 @@
 
 ## Checking homeworks
 
+# Partial files 👍
+
+# @import 👍
+
+# @forward 👍
+
 # @use
 
      ✅ Modules
@@ -9,8 +15,6 @@
      ✅ Private Members
      ✅ Aliases
      ✅ @use vs @import
-
-# @forward
 
 ## Operations
 
@@ -27,8 +31,8 @@
 ## At-Rules
 
      ✅ @use
-     ✅ @forward
-     ✅ @import
+     ✅ @forward 👍
+     ✅ @import 👍
      ✅ @mixin && @include
      ✅ @function
      ✅ @extend
@@ -45,3 +49,6 @@
      ✅ @while
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
+
+1. Home (Navbar, Container, Footer, Button, Tabs)
+2. Services (Navbar, Container, Footer, Button, Carousel)

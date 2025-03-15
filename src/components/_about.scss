@@ -1,0 +1,86 @@
+.about {
+	display: flex;
+	gap: 100px;
+	margin-top: 140px;
+
+	.left {
+		position: relative;
+		width: 100%;
+
+		.room-img {
+			position: relative;
+			width: 596px;
+			height: 577px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 631px;
+			height: 586px;
+			background-color: var(--gray);
+			top: 35px;
+		}
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		.title {
+			color: var(--primary);
+			font-family: Montserrat;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 40px;
+		}
+
+		.description {
+			color: var(--description-primary);
+			font-family: 'DM Sans';
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 25px; /* 125% */
+			margin-top: 20px;
+		}
+
+		.cards {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			margin-top: 40px;
+
+			.card {
+				display: flex;
+				gap: 28px;
+
+				.detail {
+					display: flex;
+					flex-direction: column;
+					gap: 14px;
+
+					&-title {
+						color: var(--primary);
+						font-family: Montserrat;
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 26px; /* 130% */
+					}
+
+					&-description {
+						color: var(--description-primary);
+						font-family: 'DM Sans';
+						font-size: 18px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 26px; /* 144.444% */
+					}
+				}
+			}
+		}
+	}
+}
