@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .companies {
 	display: flex;
 	flex-direction: column;
@@ -7,10 +9,6 @@
 
 	.title {
 		color: var(--primary);
-		font-family: 'DM Sans';
-		font-size: 32px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
+		@include mixins.typography('DM Sans', 32px, normal, 700, normal);
 	}
 }

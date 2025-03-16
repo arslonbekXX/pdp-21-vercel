@@ -1,3 +1,50 @@
+@use '../utils/mixins';
+
 .popular {
 	margin-top: 140px;
+	margin-bottom: 140px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	.title {
+		color: #242424;
+		text-align: center;
+		align-self: flex-start;
+		@include mixins.typography(Montserrat, 32px, normal, 700, 52px);
+	}
+
+	.middle {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+
+		.description {
+			color: #383738;
+			@include mixins.typography('DM Sans', 20px, normal, 400, 27px);
+		}
+
+		.prev-next-btns {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			.prev-btn,
+			.next-btn {
+				background-color: var(--prev-next-btn-bg);
+				color: var(--prev-next-btn-color);
+				border: none;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				@include mixins.rounded;
+				@include mixins.center;
+
+				&:hover {
+					color: var(--prev-next-btn-active-color);
+				}
+			}
+		}
+	}
 }

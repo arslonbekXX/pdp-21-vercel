@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -6,11 +8,8 @@
 
 	.brand-name {
 		color: var(--primary);
-		font-family: Montserrat;
-		font-size: 24px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
+
+		@include mixins.typography(Montserrat, 24px, normal, 700, normal);
 	}
 
 	.menu {
@@ -21,13 +20,9 @@
 
 		&-link {
 			color: var(--link-color);
-			font-family: 'DM Sans';
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
 			text-decoration: none;
 			width: 100%;
+			@include mixins.typography('DM Sans', 16px, normal, 400, normal);
 		}
 	}
 

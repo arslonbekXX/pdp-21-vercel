@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .about {
 	display: flex;
 	gap: 100px;
@@ -30,21 +32,13 @@
 
 		.title {
 			color: var(--primary);
-			font-family: Montserrat;
-			font-size: 32px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 40px;
+			@include mixins.typography(Montserrat, 32px, normal, 700, 40px);
 		}
 
 		.description {
 			color: var(--description-primary);
-			font-family: 'DM Sans';
-			font-size: 20px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 25px; /* 125% */
 			margin-top: 20px;
+			@include mixins.typography('DM Sans', 20px, normal, 400, 25px);
 		}
 
 		.cards {
@@ -64,20 +58,12 @@
 
 					&-title {
 						color: var(--primary);
-						font-family: Montserrat;
-						font-size: 20px;
-						font-style: normal;
-						font-weight: 700;
-						line-height: 26px; /* 130% */
+						@include mixins.typography(Montserrat, 20px, normal, 700, 26px);
 					}
 
 					&-description {
 						color: var(--description-primary);
-						font-family: 'DM Sans';
-						font-size: 18px;
-						font-style: normal;
-						font-weight: 400;
-						line-height: 26px; /* 144.444% */
+						@include mixins.typography('DM Sans', 18px, normal, 400, 26px);
 					}
 				}
 			}
