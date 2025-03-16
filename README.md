@@ -21,11 +21,14 @@
 
 # @use
 
-     ✅ Modules
-     ✅ Loading Members
-     ✅ Private Members
-     ✅ Aliases
-     ✅ @use vs @import
+     ✅ Modules 👍
+     ✅ Loading Members (mixin, variable, function) 👍
+     ✅ Aliases 👍
+     ✅ Aliases with all(*) 👍
+     ✅ Private Members 👍
+     ✅ @use vs @forward 👍
+
+# !default flag
 
 ## Operations
 

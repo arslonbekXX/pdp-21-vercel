@@ -1,0 +1,8 @@
+$direction: row !default;
+$alignItems: center !default;
+
+.section {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $alignItems;
+}

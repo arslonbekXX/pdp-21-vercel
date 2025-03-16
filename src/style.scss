@@ -1,4 +1,5 @@
-@forward './normalize';
-@forward './variables';
-@forward './typography';
-@forward './components';
+// @use 'section';
+@use 'section' with (
+	$direction: column,
+	$alignItems: flex-end
+);
