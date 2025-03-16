@@ -2,16 +2,17 @@
 
 ## Checking homeworks
 
+## Install bun 👍
+
      ✅ npm install -g bun
      ✅ bun --version
 
-## Init package
+## Install bun and create package 👍
 
      ✅ bun init -y
      ✅ .gitignore
      ✅ package.json
-
-## Install Bun js
+     ✅ Run script : "bun dev"
 
 # Partial files 👍
 
