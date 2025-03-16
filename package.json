@@ -1,5 +1,5 @@
 {
 	"scripts": {
-		"dev": "bunx sass --watch ./src/style.scss:./dist/style.css"
+		"dev": "bun run sass --watch ./src/style.scss:./dist/style.css"
 	}
 }

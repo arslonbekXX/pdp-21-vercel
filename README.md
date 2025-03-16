@@ -2,7 +2,7 @@
 
 ## Checking homeworks
 
-     ✅ sudo npm install -g bun
+     ✅ npm install -g bun
      ✅ bun --version
 
 ## Init package
