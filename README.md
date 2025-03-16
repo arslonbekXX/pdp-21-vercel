@@ -1,6 +1,17 @@
-# ---------- 15.03.25 ----------(26)
+# ---------- 16.03.25 ----------(27)
 
 ## Checking homeworks
+
+     ✅ sudo npm install -g bun
+     ✅ bun --version
+
+## Init package
+
+     ✅ bun init -y
+     ✅ .gitignore
+     ✅ package.json
+
+## Install Bun js
 
 # Partial files 👍
 
