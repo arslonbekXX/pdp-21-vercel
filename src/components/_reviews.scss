@@ -1,0 +1,59 @@
+@use '../utils/mixins';
+
+.reviews {
+	display: flex;
+	flex-direction: column;
+	margin-top: 140px;
+	margin-bottom: 140px;
+
+	.review {
+		display: flex;
+		justify-content: center;
+		gap: 100px;
+
+		.comment {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			&-header {
+				color: #242424;
+				@include mixins.typography(Montserrat, 32px, normal, 700, 48px);
+			}
+
+			&-content {
+				color: #383738;
+				margin-top: 20px;
+				@include mixins.typography(DM Sans, 20px, normal, 400, 27px);
+			}
+
+			&-footer {
+				display: flex;
+				margin-top: 40px;
+				gap: 10px;
+				align-items: center;
+
+				.info {
+					display: flex;
+					flex-direction: column;
+					gap: 6px;
+
+					.name {
+						color: #000;
+						@include mixins.typography(DM Sans, 16px, normal, 500, 19px);
+					}
+
+					.rate {
+						display: flex;
+						align-items: center;
+						gap: 6px;
+						.count {
+							color: #000;
+							@include mixins.typography(DM Sans, 14px, normal, 500, 15px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

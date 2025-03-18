@@ -336,6 +336,8 @@ li {
   --prev-next-btn-bg: #f4f6f6;
   --prev-next-btn-color: #d1cece;
   --prev-next-btn-active-color: #666666;
+  --action-btn-bg: #ecf4ff;
+  --buy-btn-bg: #244d4d;
 }
 
 /* latin-ext */
@@ -492,6 +494,16 @@ li {
 .btn-secondary {
   background-color: var(--primary);
   color: var(--white);
+}
+.btn-buy {
+  background-color: var(--buy-btn-bg);
+  color: var(--white);
+  padding: 6px 15px;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
 }
 .btn:active {
   transform: scale(0.98);
@@ -663,7 +675,6 @@ li {
 
 .popular {
   margin-top: 140px;
-  margin-bottom: 140px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -713,6 +724,240 @@ li {
 .popular .middle .prev-next-btns .prev-btn:hover,
 .popular .middle .prev-next-btns .next-btn:hover {
   color: var(--prev-next-btn-active-color);
+}
+.popular .cards {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+.popular .cards .card {
+  box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.07);
+}
+.popular .cards .card-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.popular .cards .card-footer .title-and-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.popular .cards .card-footer .title-and-actions .title {
+  color: var(--primary);
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+}
+.popular .cards .card-footer .title-and-actions .actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.popular .cards .card-footer .title-and-actions .actions .action {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--action-btn-bg);
+  border-radius: 50%;
+}
+.popular .cards .card-footer .title-and-actions .actions .action:hover {
+  background-color: #ef5423;
+  color: white;
+  cursor: pointer;
+}
+.popular .cards .card-footer .price-and-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .cards .card-footer .price-and-buy .price {
+  color: var(--primary);
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+}
+
+.furniture {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.furniture .title {
+  color: #242424;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+.furniture .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.furniture .tabs .tab {
+  color: #919090;
+  position: relative;
+  cursor: pointer;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.furniture .tabs .tab::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s linear all;
+}
+.furniture .tabs .tab:hover::before, .furniture .tabs .tab.active::before {
+  opacity: 1;
+}
+.furniture .showroom-and-types {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.furniture .showroom-and-types .showroom {
+  width: 577.478px;
+  height: 410.066px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.furniture .showroom-and-types .showroom .showroom-img {
+  width: 552.838px;
+  height: 389.32px;
+}
+.furniture .showroom-and-types .showroom::before, .furniture .showroom-and-types .showroom::after {
+  content: "";
+  width: 190.102px;
+  height: 85.867px;
+  position: absolute;
+  background-color: var(--primary);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.furniture .showroom-and-types .showroom::after {
+  left: unset;
+  top: unset;
+  bottom: 0;
+  right: 0;
+}
+.furniture .showroom-and-types .types {
+  display: grid;
+  grid-template-columns: repeat(2, 222px);
+  grid-template-rows: repeat(3, 90px);
+  place-content: center;
+  gap: 32px;
+}
+.furniture .showroom-and-types .types .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #d9dce5;
+  color: #666666;
+  cursor: pointer;
+}
+.furniture .showroom-and-types .types .card .name {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+}
+.furniture .showroom-and-types .types .card:hover {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.reviews .review {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.reviews .review .comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reviews .review .comment-header {
+  color: #242424;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+.reviews .review .comment-content {
+  color: #383738;
+  margin-top: 20px;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.reviews .review .comment-footer {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.reviews .review .comment-footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.reviews .review .comment-footer .info .name {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+}
+.reviews .review .comment-footer .info .rate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.reviews .review .comment-footer .info .rate .count {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
