@@ -1,4 +1,4 @@
-# ---------- 16.03.25 ----------(27)
+# ---------- 20.03.25 ----------(29)
 
 ## Checking homeworks
 
@@ -11,10 +11,10 @@
 # @use
 
      ✅ Modules
-     ✅ Loading Members
-     ✅ Private Members
-     ✅ Aliases
-     ✅ @use vs @import
+     ✅ Loading Members 👍
+     ✅ Private Members 👍
+     ✅ Aliases 👍
+     ✅ @use vs @import 👍
 
 ## Operations
 
@@ -33,7 +33,7 @@
      ✅ @use
      ✅ @forward 👍
      ✅ @import 👍
-     ✅ @mixin && @include
+     ✅ @mixin && @include 👍
      ✅ @function
      ✅ @extend
      ✅ @at-root
@@ -49,6 +49,3 @@
      ✅ @while
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
-
-1. Home (Navbar, Container, Footer, Button, Tabs)
-2. Services (Navbar, Container, Footer, Button, Carousel)
