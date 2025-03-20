@@ -1,0 +1,106 @@
+@use '../utils/mixins';
+footer {
+	background-color: var(--footer-bg);
+
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 100px 0;
+
+		.brand-and-socials {
+			display: flex;
+			flex-direction: column;
+
+			.name {
+				color: #fff;
+				@include mixins.typography('Montserrat', 24px, normal, 700, normal);
+			}
+
+			.description {
+				margin-top: 24px;
+				color: #fff;
+				width: 308px;
+				@include mixins.typography('DM Sans', 18px, normal, 400, 26px);
+			}
+
+			.socials {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				margin-top: 20px;
+				color: #fff;
+				@include mixins.typography(Montserrat, 20px, normal, 700, 26px);
+
+				.links {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+				}
+			}
+		}
+
+		.menu {
+			display: flex;
+			flex-direction: column;
+			list-style-type: none;
+			gap: 16px;
+
+			li {
+				color: #fff;
+				@include mixins.typography('DM Sans', 18px, normal, 400, normal);
+
+				&:first-child {
+					color: #fff;
+					@include mixins.typography(Montserrat, 20px, normal, 700, 26px);
+				}
+			}
+		}
+
+		.subscribe-email-input {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+
+			.title {
+				color: white;
+				@include mixins.typography(Montserrat, 20px, normal, 700, 26px);
+			}
+
+			.description {
+				color: #fff;
+				@include mixins.typography('DM Sans', 18px, normal, 400, 23px);
+				color: #fff;
+			}
+
+			.email-input {
+				display: flex;
+				align-items: center;
+				width: 253px;
+				background-color: white;
+				padding: 14px 22px;
+
+				.placeholder {
+					width: 100%;
+					color: #859395;
+					@include mixins.typography('DM Sans', 16px, normal, 400, normal);
+				}
+
+				button {
+					width: 28px;
+					height: 28px;
+					@include mixins.center;
+					background-color: #ffb624;
+					border-radius: 50%;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.banner {
+		text-align: center;
+		color: #fff;
+		@include mixins.typography('DM Sans', 18px, normal, 400, normal);
+		padding: 20px 0;
+	}
+}
