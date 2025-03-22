@@ -29,15 +29,15 @@
      ✅ @forward 👍
      ✅ @import 👍
      ✅ @mixin && @include 👍
-     ✅ @function
-     ✅ @extend
+     ✅ @function 👍
+     ✅ @extend 👍
      ✅ @error
      ✅ @warn
      ✅ @debug
 
 ## Flow Control
 
-     ✅ @if and @else
+     ✅ @if and @else 👍
      ✅ @each
      ✅ @for
      ✅ @while

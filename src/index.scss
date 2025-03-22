@@ -1,9 +1,17 @@
-@use './utils/functions';
+@forward './utils/placeholders';
 
-.button {
-	padding: functions.media('2xl'); // 1400px
-	padding: functions.media('xl'); // 1200px
-	padding: functions.media('lg'); // 992px
-	padding: functions.media('md'); // 768px
-	padding: functions.media('sm'); // 576px
+.box-1 {
+	@extend %center;
+	background-color: red;
+}
+
+.box-2 {
+	@extend %center;
+	background-color: green;
+}
+
+// ...
+.box-20 {
+	@extend %center;
+	background-color: yellow;
 }

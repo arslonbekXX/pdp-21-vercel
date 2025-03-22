@@ -20,6 +20,26 @@
 	@return $result;
 }
 
-@function media($breakpoint) {
-	@return $breakpoint;
+@function media($breakpoint: null) {
+	@if ($breakpoint == 'sm') {
+		@return '576px';
+	}
+
+	@if ($breakpoint == 'md') {
+		@return '768px';
+	}
+
+	@if ($breakpoint == 'lg') {
+		@return '992px';
+	}
+
+	@if ($breakpoint == 'xl') {
+		@return '1200px';
+	}
+
+	@if ($breakpoint == '2xl') {
+		@return '1400px';
+	}
+
+	@return '<576px';
 }
