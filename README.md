@@ -36,7 +36,6 @@
      ✅ @mixin && @include 👍
      ✅ @function
      ✅ @extend
-     ✅ @at-root
      ✅ @error
      ✅ @warn
      ✅ @debug
