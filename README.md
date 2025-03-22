@@ -10,27 +10,22 @@
 
 # @use
 
-     ✅ Modules
-     ✅ Loading Members 👍
+     ✅ Modules 👍
+     ✅ Loading Members(variable, mixin, function) 👍
      ✅ Private Members 👍
      ✅ Aliases 👍
      ✅ @use vs @import 👍
 
-## Operations
+## Operations 👍
 
-     ✅ math.div()
-     ✅ *
-     ✅ +
-     ✅ -
-
-## Variables
-
-     ✅ !default
-     ✅ !global
+     ✅ math.div() 👍
+     ✅ * 👍
+     ✅ + 👍
+     ✅ - 👍
 
 ## At-Rules
 
-     ✅ @use
+     ✅ @use 👍
      ✅ @forward 👍
      ✅ @import 👍
      ✅ @mixin && @include 👍

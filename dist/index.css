@@ -1,5 +1,9 @@
-body {
-  background-color: red;
+.button {
+  padding: "2xl";
+  padding: "xl";
+  padding: "lg";
+  padding: "md";
+  padding: "sm";
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,25 @@
+@function summa($a, $b) {
+	@if ($a > 10px) {
+		@return $a;
+	} @else {
+		@return math.div($a, $b);
+	}
+}
+
+@function fizzBuzz($value) {
+	$result: ''; // "Fizz"
+
+	@if ($value % 3 == 0px) {
+		$result: 'Fizz';
+	}
+
+	@if ($value % 5 == 0px) {
+		$result: $result + 'Buzz';
+	}
+
+	@return $result;
+}
+
+@function media($breakpoint) {
+	@return $breakpoint;
+}

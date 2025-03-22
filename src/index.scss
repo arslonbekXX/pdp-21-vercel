@@ -1,5 +1,9 @@
-$bg: red;
+@use './utils/functions';
 
-body {
-	background-color: $bg;
+.button {
+	padding: functions.media('2xl'); // 1400px
+	padding: functions.media('xl'); // 1200px
+	padding: functions.media('lg'); // 992px
+	padding: functions.media('md'); // 768px
+	padding: functions.media('sm'); // 576px
 }
