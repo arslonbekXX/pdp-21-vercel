@@ -1,17 +1,5 @@
-@forward './utils/placeholders';
+@use './utils/functions';
 
 .box-1 {
-	@extend %center;
-	background-color: red;
-}
-
-.box-2 {
-	@extend %center;
-	background-color: green;
-}
-
-// ...
-.box-20 {
-	@extend %center;
-	background-color: yellow;
+	padding: functions.responsive('sm', 1200px);
 }

@@ -43,3 +43,21 @@
 
 	@return '<576px';
 }
+
+@function responsive() {
+}
+
+@function bittaFunksiya($a, $b) {
+	$summa: $a + $b;
+
+	@if ($summa <= 10px) {
+		@if ($summa >= 5px) {
+			@warn "Summa = " + $summa + " ga teng, lekin 10px dan katta bolgani yaxshiroq";
+			@return $summa;
+		} @else {
+			@error "Summa 5 dan kichik bo'lishi kerak emas";
+		}
+	} @else {
+		@return $a + $b;
+	}
+}

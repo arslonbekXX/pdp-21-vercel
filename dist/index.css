@@ -1,19 +1,22 @@
-.box-1, .box-2, .box-20 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Error: Only 0 arguments allowed, but 2 were passed.
+ *    ,--> src/index.scss
+ * 4  |     padding: functions.responsive('sm', 1200px);
+ *    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *    '
+ *    ,--> src/utils/_functions.scss
+ * 47 | @function responsive() {
+ *    |           ============ declaration
+ *    '
+ *   src/index.scss 4:11  responsive()
+ *   src/index.scss 4:11  root stylesheet */
 
-.box-1 {
-  background-color: red;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 0 arguments allowed, but 2 were passed.\a    \250c \2500 \2500 > src/index.scss\a 4  \2502      padding: functions.responsive('sm', 1200px);\a    \2502               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > src/utils/_functions.scss\a 47 \2502  @function responsive() {\a    \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   src/index.scss 4:11  responsive()\a   src/index.scss 4:11  root stylesheet";
 }
-
-.box-2 {
-  background-color: green;
-}
-
-.box-20 {
-  background-color: yellow;
-}
-
-/*# sourceMappingURL=index.css.map */
