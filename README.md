@@ -1,27 +1,6 @@
-# ---------- 20.03.25 ----------(29)
+# ---------- 23.03.25 ----------(31)
 
-## Checking homeworks
-
-# Partial files 👍
-
-# @import 👍
-
-# @forward 👍
-
-# @use
-
-     ✅ Modules 👍
-     ✅ Loading Members(variable, mixin, function) 👍
-     ✅ Private Members 👍
-     ✅ Aliases 👍
-     ✅ @use vs @import 👍
-
-## Operations 👍
-
-     ✅ math.div() 👍
-     ✅ * 👍
-     ✅ + 👍
-     ✅ - 👍
+## Checking homeworks 👍
 
 ## At-Rules
 
@@ -43,3 +22,9 @@
      ✅ @while
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
+
+## BEM (https://en.bem.info/methodology/quick-start/)
+
+     ✅ Block
+     ✅ Element
+     ✅ Modifier
