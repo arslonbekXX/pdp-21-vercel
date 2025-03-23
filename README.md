@@ -10,14 +10,24 @@
      ✅ @mixin && @include 👍
      ✅ @function 👍
      ✅ @extend 👍
-     ✅ @error
-     ✅ @warn
-     ✅ @debug
+     ✅ @error 👍
+     ✅ @warn 👍
+     ✅ @debug 👍
+
+## Interpolation 👍
+
+     ✅ #{} 👍
+
+## List 👍
+
+     ✅ @each 👍
+     ✅ append 👍
+     ✅ index 👍
 
 ## Flow Control
 
      ✅ @if and @else 👍
-     ✅ @each
+     ✅ @each 👍
      ✅ @for
      ✅ @while
 

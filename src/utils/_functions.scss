@@ -44,7 +44,28 @@
 	@return '<576px';
 }
 
-@function responsive() {
+@function responsive($breakpoint, $width) {
+	@if ($breakpoint == 'sm' and $width == 576px) {
+		@return $width;
+	}
+
+	@if ($breakpoint == 'md' and $width == 768px) {
+		@return $width;
+	}
+
+	@if ($breakpoint == 'lg' and $width == 992px) {
+		@return $width;
+	}
+
+	@if ($breakpoint == 'xl' and $width == 1200px) {
+		@return $width;
+	}
+
+	@if ($breakpoint == '2xl' and $width == 1400px) {
+		@return $width;
+	}
+
+	@error "Bunday breakpoint va width yo'q";
 }
 
 @function bittaFunksiya($a, $b) {
