@@ -1,6 +1,13 @@
+@use 'sass:list';
 $sizes: xs, sm, md, lg, xl;
 $widths: 0.25rem, 0.5rem, 1rem, 2rem, 4rem;
 
 @function spacing($size) {
-	@return 10px;
+	$idx: list.index($sizes, $size); // 1
+
+	@if $idx == null {
+		@error bunday #{$size} size mavjud emas;
+	}
+
+	@return list.nth($widths, $idx);
 }

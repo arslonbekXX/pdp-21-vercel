@@ -1,1 +1,17 @@
-@use './spacing' as s;
+@use './problem';
+
+.btn-primary {
+	color: problem.get-color('primary');
+}
+
+// .btn-primary {
+// 	background-color: #007bff;
+// 	border-color: #007bff;
+// }
+
+// .btn-success {
+// 	background-color: #28a745;
+// 	border-color: #28a745;
+// }
+
+// /* ... Shu tarzda danger va warning uchun ham */
