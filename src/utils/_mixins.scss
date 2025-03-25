@@ -1,0 +1,22 @@
+@use 'sass:list';
+@use 'sass:map';
+
+@mixin media($breakpoint) {
+	$map: (
+		sm: 576px,
+		md: 768px,
+		lg: 992px,
+		xl: 1200px,
+		xxl: 1400px,
+	);
+
+	$min-width: map.get($map, $breakpoint);
+
+	@if $min-width == null {
+		@error "Invalid breakpoint: #{$breakpoint}";
+	}
+
+	@media (min-width: $min-width) {
+		@content;
+	}
+}

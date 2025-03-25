@@ -1,17 +1,21 @@
-@use './problem';
+@use 'sass:map';
+$icons: (
+	'eye': '\f112',
+	'start': '\f12e',
+	'stop': '\f12f',
+);
 
-.btn-primary {
-	color: problem.get-color('primary');
+$icons2: (
+	'pause': '\f130',
+	'play': '\f120',
+);
+
+$icons: map.merge($icons, $icons2);
+
+@each $name, $glyph in $icons {
+	.icon-#{$name}:before {
+		display: inline-block;
+		font-family: 'Icon Font';
+		content: $glyph;
+	}
 }
-
-// .btn-primary {
-// 	background-color: #007bff;
-// 	border-color: #007bff;
-// }
-
-// .btn-success {
-// 	background-color: #28a745;
-// 	border-color: #28a745;
-// }
-
-// /* ... Shu tarzda danger va warning uchun ham */

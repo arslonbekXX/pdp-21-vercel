@@ -11,13 +11,22 @@
      ✅ @each 👍
      ✅ append 👍
      ✅ index 👍
+     ✅ nth 👍
+
+## Map
+
+     ✅ map.get 👍
+     ✅ map.set 👍
+     ✅ map.merge 👍
+
+## Booleans
 
 ## Flow Control
 
      ✅ @if and @else 👍
      ✅ @each 👍
-     ✅ @for
-     ✅ @while
+     ✅ @for 👍
+     ✅ @while 👍
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
 
