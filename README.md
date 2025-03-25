@@ -1,18 +1,6 @@
-# ---------- 23.03.25 ----------(31)
+# ---------- 25.03.25 ----------(32)
 
 ## Checking homeworks 👍
-
-## At-Rules
-
-     ✅ @use 👍
-     ✅ @forward 👍
-     ✅ @import 👍
-     ✅ @mixin && @include 👍
-     ✅ @function 👍
-     ✅ @extend 👍
-     ✅ @error 👍
-     ✅ @warn 👍
-     ✅ @debug 👍
 
 ## Interpolation 👍
 

@@ -12,17 +12,17 @@
 // 	padding: getPadding(10px 20px 30px 40px, 60px);
 // }
 
-@use 'sass:list';
+// @use 'sass:list';
 
-$valid-sides: top, bottom, left, right;
+// $valid-sides: top, bottom, left, right;
 
-@mixin attach($side) {
-	@if not list.index($valid-sides, $side) {
-		@error "#{$side} is not a valid side. Expected one of #{$valid-sides}.";
-	}
-}
+// @mixin attach($side) {
+// 	@if not list.index($valid-sides, $side) {
+// 		@error "#{$side} is not a valid side. Expected one of #{$valid-sides}.";
+// 	}
+// }
 
-.box-1 {
-	@include attach(top);
-	background-color: red;
-}
+// .box-1 {
+// 	@include attach(top);
+// 	background-color: red;
+// }
