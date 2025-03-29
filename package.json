@@ -1,5 +1,0 @@
-{
-	"scripts": {
-		"dev": "bun run sass --watch ./src/pages:./dist/pages"
-	}
-}

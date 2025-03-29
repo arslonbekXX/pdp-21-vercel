@@ -1,32 +1,4 @@
-# ---------- 27.03.25 ----------(33)
-
-## Checking homeworks 👍
-
-## Interpolation 👍
-
-     ✅ #{} 👍
-
-## List 👍
-
-     ✅ @each 👍
-     ✅ append 👍
-     ✅ index 👍
-     ✅ nth 👍
-
-## Map
-
-     ✅ map.get 👍
-     ✅ map.set 👍
-     ✅ map.merge 👍
-
-## Booleans
-
-## Flow Control
-
-     ✅ @if and @else 👍
-     ✅ @each 👍
-     ✅ @for 👍
-     ✅ @while 👍
+# ---------- 29.03.25 ----------(34)
 
 ## [SASS STRUCTURE](https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0)
 
