@@ -1,19 +1,12 @@
 @use 'sass:list';
 @use 'sass:map';
+@use './variables';
 
 @mixin media($breakpoint) {
-	$map: (
-		xs: 320px,
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xxl: 1400px,
-	);
-
-	$min-width: map.get($map, $breakpoint);
+	$min-width: map.get(variables.$break-points, $breakpoint);
 
 	@if $min-width == null {
-		@error "Invalid breakpoint: #{$breakpoint}";
+		@error "Invalid breakpoint: #{$breakpoint}, please use one of the following: #{map.keys(variables.$break-points)}";
 	}
 
 	@media (min-width: $min-width) {
@@ -22,7 +15,7 @@
 }
 
 @mixin font($size: 16px, $style: normal, $weight: 400, $line-height: 1.5) {
-	font-family: Poppins;
+	font-family: Roboto;
 	font-size: $size;
 	font-style: $style;
 	font-weight: $weight;
