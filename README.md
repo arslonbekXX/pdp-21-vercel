@@ -7,3 +7,11 @@
      ✅ Block
      ✅ Element
      ✅ Modifier
+
+## Organick project with BEM
+
+     ✅ Split pages
+     ✅ Create layout components
+          ☑️ navbar
+          ☑️ banner
+          ☑️ footer

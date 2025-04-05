@@ -1,2 +1,18 @@
+@use '../../../utils/mixins';
+
 .hero {
+	height: calc(100vh - 216px);
+	background-color: var(--primary);
+	background: url('../../../../public/images/home/hero.png') no-repeat;
+	background-size: cover;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 23px;
+		height: 100%;
+		align-items: flex-start;
+		justify-content: center;
+		
+	}
 }

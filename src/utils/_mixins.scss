@@ -14,8 +14,8 @@
 	}
 }
 
-@mixin font($size: 16px, $style: normal, $weight: 400, $line-height: 1.5) {
-	font-family: Roboto;
+@mixin font($size: 16px, $style: normal, $weight: 400, $line-height: 1.5, $family: 'Roboto') {
+	font-family: $family;
 	font-size: $size;
 	font-style: $style;
 	font-weight: $weight;

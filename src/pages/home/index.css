@@ -1,9 +1,12 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --navbar-brand-name-text: #274c5b;
+  --primary: #274c5b;
   --navbar-search-background: #fafafa;
   --navbar-search-button-background: #7eb693;
+  --navbar-cart-border-color: #e0e0e0;
+  --heading-sub-title-color: #68a47f;
+  --btn-warning-bg: #efd372;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -512,14 +515,30 @@ p {
   src: url(https://fonts.gstatic.com/s/roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-.navbar {
-  max-width: 1400px;
-  margin: 0 auto;
+/* latin-ext */
+@font-face {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/yellowtail/v23/OZpGg_pnoDtINPfRIlLohlXHwWL9f4nluA.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
+/* latin */
+@font-face {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/yellowtail/v23/OZpGg_pnoDtINPfRIlLohlvHwWL9f4k.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 .navbar {
   display: flex;
+  align-items: center;
   padding: 70px 0;
+  height: 216px;
+  box-sizing: border-box;
 }
 .navbar .brand {
   display: flex;
@@ -527,8 +546,8 @@ p {
   gap: 8px;
 }
 .navbar .brand__name {
-  color: var(--navbar-brand-name-text);
-  font-family: Roboto;
+  color: var(--primary);
+  font-family: "Roboto";
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
@@ -537,8 +556,8 @@ p {
 .navbar .menu {
   list-style-type: none;
   display: flex;
-  gap: 40px;
-  margin-left: 150px;
+  gap: 32px;
+  margin-left: 100px;
   align-items: center;
 }
 .navbar .menu__item {
@@ -553,7 +572,7 @@ p {
   bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--navbar-brand-name-text);
+  background-color: var(--primary);
   transition: width 0.3s ease-in-out;
 }
 .navbar .menu__item--active::before {
@@ -565,8 +584,8 @@ p {
 .navbar .menu__link {
   text-decoration: none;
   color: inherit;
-  color: var(--navbar-brand-name-text);
-  font-family: Roboto;
+  color: var(--primary);
+  font-family: "Roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -574,8 +593,8 @@ p {
 }
 .navbar .search {
   display: flex;
-  margin-left: 130px;
-  width: 376px;
+  margin-left: 100px;
+  width: 300px;
   height: 66px;
   background-color: var(--navbar-search-background);
   padding: 5px 6px;
@@ -588,8 +607,8 @@ p {
   border: none;
   outline: none;
   background-color: transparent;
-  color: var(--navbar-brand-name-text);
-  font-family: Roboto;
+  color: var(--primary);
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -616,9 +635,113 @@ p {
   transform: scale(0.96);
 }
 .navbar .cart {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 18px;
+  border-radius: 33px;
+  border: 1px solid var(--navbar-cart-border-color);
+  padding: 5px 6px;
+  width: -moz-max-content;
+  width: max-content;
 }
-.button {
-  border-radius: 15px;
-  background: #263238;
+.navbar .cart__button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  min-width: 56px;
+  min-height: 56px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .cart__button:active {
+  transform: scale(0.96);
+}
+.navbar .cart__count {
+  color: var(--primary);
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.btn {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn--outline {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid;
+}
+.btn--warning {
+  background-color: var(--btn-warning-bg);
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 530px;
+}
+.heading__sub-title {
+  color: var(--heading-sub-title-color);
+  font-family: "Yellowtail";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.heading__title {
+  color: var(--primary);
+  text-wrap: balance;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.heading--hero .heading__title {
+  font-size: 70px;
+}
+
+.hero {
+  height: calc(100vh - 216px);
+  background-color: var(--primary);
+  background: url("../../../../public/images/home/hero.png") no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */

@@ -1,11 +1,12 @@
 @use '../utils/mixins';
 @use 'sass:color';
-@forward '../utils/_helpers';
 
 .navbar {
-	@extend %container;
 	display: flex;
+	align-items: center;
 	padding: 70px 0;
+	height: 216px;
+	box-sizing: border-box;
 
 	.brand {
 		display: flex;
@@ -13,7 +14,7 @@
 		gap: 8px;
 
 		&__name {
-			color: var(--navbar-brand-name-text);
+			color: var(--primary);
 			@include mixins.font(38px, normal, 700, normal);
 		}
 	}
@@ -21,8 +22,8 @@
 	.menu {
 		list-style-type: none;
 		display: flex;
-		gap: 40px;
-		margin-left: 150px;
+		gap: 32px;
+		margin-left: 100px;
 		align-items: center;
 		&__item {
 			position: relative;
@@ -37,7 +38,7 @@
 				left: 50%;
 				transform: translateX(-50%);
 
-				background-color: var(--navbar-brand-name-text);
+				background-color: var(--primary);
 				transition: width 0.3s ease-in-out;
 			}
 
@@ -55,15 +56,15 @@
 		&__link {
 			text-decoration: none;
 			color: inherit;
-			color: var(--navbar-brand-name-text);
+			color: var(--primary);
 			@include mixins.font(20px, normal, 700, normal);
 		}
 	}
 
 	.search {
 		display: flex;
-		margin-left: 130px;
-		width: 376px;
+		margin-left: 100px;
+		width: 300px;
 		height: 66px;
 		background-color: var(--navbar-search-background);
 		padding: 5px 6px;
@@ -76,7 +77,7 @@
 			border: none;
 			outline: none;
 			background-color: transparent;
-			color: var(--navbar-brand-name-text);
+			color: var(--primary);
 			@include mixins.font(18px, normal, 400, normal);
 			flex: 1;
 
@@ -97,16 +98,42 @@
 
 			&:active {
 				transform: scale(0.96);
-				// background-color: lighten(var(--navbar-search-button-background-hover), 95%);
 			}
 		}
 	}
 
 	.cart {
-		display: none;
-		&__icon {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-left: 18px;
+		border-radius: 33px;
+		border: 1px solid var(--navbar-cart-border-color);
+		padding: 5px 6px;
+		width: max-content;
+
+		&__button {
+			background-color: var(--primary);
+			color: var(--white);
+			border: none;
+			border-radius: 50%;
+			box-sizing: border-box;
+			min-width: 56px;
+			min-height: 56px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:active {
+				transform: scale(0.96);
+			}
 		}
 		&__count {
+			color: var(--primary);
+			@include mixins.font(18px, normal, 600, normal);
 		}
 	}
 }
