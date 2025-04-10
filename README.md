@@ -2,17 +2,17 @@
 
 ## What is JavaScript ?
 
-        ✅ Javascript and front-end
-        ✅ Javascript using with script tag
-        ✅ Console.log
+        ✅ Javascript and front-end 👍
+        ✅ Javascript using with script tag 👍
+        ✅ Console.log 👍
 
-## Variables
+## Variables 👍
 
-        ✅ Var
-        ✅ Let
-        ✅ Const
+        ✅ Var ❌ 👍
+        ✅ Let 👍
+        ✅ Const 👍
 
-## Operators
+## Operators 👍
 
         ✅ +
         ✅ -
@@ -63,8 +63,8 @@
 
 ## Next Plans
 
-        ☑️ 3(HTML + CSS + SASS)
-        ☑️ 1(JS)
+        ✅ 3(HTML + CSS + SASS)
+        ☑️ 1(JS Basics + Coding JS)
         ☑️ 2(TS + DOM + Bootstrap + Tailwind)
         ☑️ 1(JS Advanced)
         ☑️ 3(React + ...)
