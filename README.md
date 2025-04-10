@@ -14,41 +14,42 @@
 
 ## Operators 👍
 
-        ✅ +
-        ✅ -
-        ✅ *
-        ✅ /
-        ✅ %
-        ✅ ==
-        ✅ ===
-        ✅ !=
-        ✅ !==
-        ✅ >
-        ✅ <
-        ✅ >=
-        ✅ <=
+        ✅ + 👍
+        ✅ - 👍
+        ✅ * 👍
+        ✅ / 👍
+        ✅ % 👍
+        ✅ == 👍
+        ✅ === 👍
+        ✅ != 👍
+        ✅ !== 👍
+        ✅ > 👍
+        ✅ < 👍
+        ✅ >= 👍
+        ✅ <= 👍
 
-## Data Types
+## Data Types 👍
 
-        ✅ Primitive
-            🎁 String
-            🎁 Number
-            🎁 Boolean
+        ✅ Primitive 👍
+            🎁 String - "arslonbek"
+            🎁 Number - 10
+            🎁 Boolean - true false
             🎁 undefined
             🎁 null
 
-        ✅ Non-Primitive(Reference)
+        ✅ Non-Primitive(Reference) 👍
             🎁 Object
             🎁 Array
             🎁 Function
 
 ## Functions
 
-        ✅ What is Function
-        ✅ Write simple function
-        ✅ Return with function
-        ✅ Parameters with function
-        ✅ Function types (void and no-void)
+        ✅ What is Function 👍
+        ✅ Write simple function 👍
+        ✅ Return with function 👍
+        ✅ Parameters with function 👍
+        ✅ Function types (void and no-void) 👍
+        ✅ Default Parameters 👍
 
 ## Challenges
 
