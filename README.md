@@ -1,4 +1,4 @@
-# ---------- 10.04.25 ----------(37)
+# ---------- 12.04.25 ----------(38)
 
 ## What is JavaScript ?
 
@@ -50,6 +50,13 @@
         ✅ Parameters with function 👍
         ✅ Function types (void and no-void) 👍
         ✅ Default Parameters 👍
+
+## and or not operators
+
+        ✅ AND - &&
+        ✅ OR - ||
+        ✅ NOT - !
+        ✅ Truthy and Falsy values
 
 ## Challenges
 
