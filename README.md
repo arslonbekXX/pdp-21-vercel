@@ -51,12 +51,13 @@
         ✅ Function types (void and no-void) 👍
         ✅ Default Parameters 👍
 
-## and or not operators
+## and or not operators 👍
 
         ✅ AND - &&
         ✅ OR - ||
         ✅ NOT - !
         ✅ Truthy and Falsy values
+        ✅ Falsy Values ("", 0, null, false, undefined, NaN)
 
 ## Challenges
 
