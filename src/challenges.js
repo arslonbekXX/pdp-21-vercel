@@ -52,25 +52,62 @@ function sliceString(str, start, end) {
 
 // 6. Replace character in string
 // Replace all occurrences of a character with another character
-function replaceChar(str, oldChar, newChar) {}
+function replaceChar(str, oldChar, newChar) {
+	let result = '';
+
+	for (let i = 0; i < str.length; i++) {
+		const character = str[i]; // h
+		const isSame = character === oldChar;
+		result += isSame ? newChar : character;
+	}
+
+	return result;
+}
 
 // 7. Search substring
 // Find the starting index of a substring in a string
-function searchSubstring(str, target) {}
+function searchSubstring(str, target) {
+	// str = "hello world", target = "wor"
+	for (let i = 0; i < str.length; i++) {
+		const sub = sliceString(str, i, i + target.length);
+
+		if (sub === target) return i;
+	}
+
+	return -1;
+}
+/**
+ *        01234567890
+ *
+ * i = 0; -> sub = "hel"
+ * i = 1; -> sub = "ell"
+ * i = 2; -> sub = "llo"
+ * i = 3; -> sub = "lo "
+ * i = 4; -> sub = "o w"
+ * i = 5; -> sub = " wo"
+ */
 
 // 8. Compare strings
 // Compare two strings for equality
-function compareStrings(str1, str2) {}
+function compareStrings(str1, str2) {
+	return str1 === str2;
+}
+// 9. Compare NaNs
+// Compare two number for nan
+function compareNaN(num1, num2) {
+	return Number.isNaN(num1) && Number.isNaN(num2);
+}
 
 // Test results
 // console.log('Exercise 1:', isEven(4)); // true
 // console.log('Exercise 2:', stringLength('boburbek')); // 5
 // console.log('Exercise 3:', reverseString('pdp-2025')); // '5202-pdp'
 // console.log('Exercise 4:', concatenateStrings('hello', ' world')); // 'helloworld'
-console.log('Exercise 5:', sliceString('hello world', 0, 3)); // 'ello world'
+// console.log('Exercise 5:', sliceString('hello world', 0, 3)); // 'ello world'
 // console.log('Exercise 6:', replaceChar('hello', 'e', 'a')); // 'hallo'
-// console.log('Exercise 7:', searchSubstring('hello world', 'wor')); // -1
+// console.log('Exercise 7:', searchSubstring('hello world', 'ld')); // -1
 // console.log('Exercise 8:', compareStrings('hello', 'hello')); // true
+console.log('Exercise 9:', compareNaN(NaN, NaN)); // false
 
 // PDP-2025 [0, 3] -> PDP
 // PDP-2025 [2, 5] -> P-2

@@ -24,6 +24,10 @@
 // const str = 'last is: ' + last;
 // console.log(str);
 
-const text = 'hotdog';
-const char = text[text.length];
-console.log(char);
+// const text = 'hotdog';
+// const char = text[text.length];
+// console.log(char);
+
+const a = -2 && 'arslonbek'; // true
+
+console.log('a = ', a);

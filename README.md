@@ -1,63 +1,4 @@
-# ---------- 12.04.25 ----------(38)
-
-## What is JavaScript ?
-
-        ✅ Javascript and front-end 👍
-        ✅ Javascript using with script tag 👍
-        ✅ Console.log 👍
-
-## Variables 👍
-
-        ✅ Var ❌ 👍
-        ✅ Let 👍
-        ✅ Const 👍
-
-## Operators 👍
-
-        ✅ + 👍
-        ✅ - 👍
-        ✅ * 👍
-        ✅ / 👍
-        ✅ % 👍
-        ✅ == 👍
-        ✅ === 👍
-        ✅ != 👍
-        ✅ !== 👍
-        ✅ > 👍
-        ✅ < 👍
-        ✅ >= 👍
-        ✅ <= 👍
-
-## Data Types 👍
-
-        ✅ Primitive 👍
-            🎁 String - "arslonbek"
-            🎁 Number - 10
-            🎁 Boolean - true false
-            🎁 undefined
-            🎁 null
-
-        ✅ Non-Primitive(Reference) 👍
-            🎁 Object
-            🎁 Array
-            🎁 Function
-
-## Functions
-
-        ✅ What is Function 👍
-        ✅ Write simple function 👍
-        ✅ Return with function 👍
-        ✅ Parameters with function 👍
-        ✅ Function types (void and no-void) 👍
-        ✅ Default Parameters 👍
-
-## and or not operators 👍
-
-        ✅ AND - &&
-        ✅ OR - ||
-        ✅ NOT - !
-        ✅ Truthy and Falsy values
-        ✅ Falsy Values ("", 0, null, false, undefined, NaN)
+# ---------- 15.04.25 ----------(39)
 
 ## Challenges
 
@@ -68,12 +9,5 @@
 
         ✅ Explain coding js
         ✅ Using vscode with js file
+
         ✅ Homeworks (warmup-1)
-
-## Next Plans
-
-        ✅ 3(HTML + CSS + SASS)
-        ☑️ 1(JS Basics + Coding JS)
-        ☑️ 2(TS + DOM + Bootstrap + Tailwind)
-        ☑️ 1(JS Advanced)
-        ☑️ 3(React + ...)
