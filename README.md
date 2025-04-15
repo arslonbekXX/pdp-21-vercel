@@ -1,9 +1,31 @@
 # ---------- 15.04.25 ----------(39)
 
-## Challenges
+## Challenges 👍
 
-        ✅ challenges.js
-        ✅ Calculate BMI
+        ✅ challenges.js 👍
+        ✅ Calculate BMI 👍
+
+## String methods
+
+        ✅ toLowerCase 👍
+        ✅ toUpperCase 👍
+        ✅ charAt 👍
+        ✅ concat 👍
+        ✅ indexOf 🏠 👍
+        ✅ lastIndexOf 🏠 👍
+        ✅ replace 👍
+        ✅ slice 🏠 👍
+        ✅ substring 👍
+        ✅ substr 🏠
+        ✅ startsWith 🏠
+        ✅ endsWith 🏠
+        ✅ trim 👍
+        ✅ trimStart 👍
+        ✅ trimEnd 👍
+        ✅ split 👍
+        ✅ repeat 👍
+
+## Template literals 👍
 
 ## Coding JS (https://bit.ly/3NbVsVX)
 

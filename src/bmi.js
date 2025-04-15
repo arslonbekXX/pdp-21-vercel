@@ -22,21 +22,28 @@ function calculateBMI(weight, height) {
  * @returns {string} The BMI status (Underweight, Normal, Overweight, or Obese)
  */
 function getBMIStatus(bmi) {
-	return 'Underweight';
+	if (bmi < 18.5) return 'Underweight';
+	if (bmi >= 18.5 && bmi < 25) return 'Normal';
+	if (bmi >= 25 && bmi < 30) return 'Overweight';
+	if (bmi >= 30 && bmi < 35) return 'Obese';
+	if (bmi >= 35) return 'Extremely Obese';
 }
 
 const name1 = 'Kent';
 const weight1 = 70;
 const height1 = 1.75;
+const bmi1 = calculateBMI(weight1, height1);
 
 const name2 = 'John';
 const weight2 = 90;
 const height2 = 1.8;
+const bmi2 = calculateBMI(weight2, height2);
 
 const name3 = 'Mark';
 const weight3 = 85;
 const height3 = 1.7;
+const bmi3 = calculateBMI(weight3, height3);
 
-console.log('Kent:  BMI is 18 and status is ', getBMIStatus(18));
-console.log('John:  BMI is 18 and status is ', getBMIStatus(18));
-console.log('Mark:  BMI is 18 and status is ', getBMIStatus(18));
+console.log('Kent:  BMI is ' + bmi1.toFixed(2) + ' and status is ', getBMIStatus(bmi1));
+console.log('John:  BMI is ' + bmi2.toFixed(2) + ' and status is ', getBMIStatus(bmi2));
+console.log('Mark:  BMI is ' + bmi3.toFixed(2) + ' and status is ', getBMIStatus(bmi3));
