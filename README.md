@@ -2,12 +2,12 @@
 
 ## Math methods
 
-        ✅ floor
-        ✅ ceil
-        ✅ round
-        ✅ abs
-        ✅ max
-        ✅ min
-        ✅ random
+        ✅ floor 👍
+        ✅ ceil 👍
+        ✅ round 👍
+        ✅ abs 👍
+        ✅ max 👍
+        ✅ min 👍
+        ✅ random 👍
 
 ## Regexp
