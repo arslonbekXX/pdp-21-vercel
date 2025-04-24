@@ -1,11 +1,13 @@
 # ---------- 24.04.25 ----------(43)
 
-## Type Conversion
+## typeof 👍
 
-        ☑️ String to Number
-        ☑️ Number to String
-        ☑️ Boolean to Number
-        ☑️ Number to Boolean
-        ☑️ any to Boolean
+## Type Conversion 👍
+
+        ☑️ String to Number 👍
+        ☑️ Number to String  👍
+        ☑️ Boolean to Number 👍
+        ☑️ Number to Boolean 👍
+        ☑️ any to Boolean 👍
 
 ## Coding JS
