@@ -1,81 +1,127 @@
-// function checkIsNumber(character) {
-// 	const regexp = /\d/;
-// 	return regexp.test(character);
+/* First class function */
+// let num1 = 10;
+// let num2 = function () {};
+
+// function sum(a, b) {
+// 	return a + b;
 // }
 
-// let str = 'abc2sd20bb100c20'; // 7 // 142
-// let sum = 0;
-// for (let i = 0; i < str.length; i++) {
-// 	const char = str[i];
-// 	const isNumber = checkIsNumber(char);
-// 	if (isNumber) sum += char;
-// 	console.log(`char[${isNumber ? 'number' : 'string'}] = `, char);
+// const total = sum(num1, num2);
+
+// console.log(total);
+
+/* Anonymous function */
+// const myFn1 = function () {
+// 	console.log('I am fn1');
+// };
+
+/* Callback function */
+// const fn1 = function (callback) {
+// 	console.log('I am fn1 ' + callback());
+// };
+
+// const fn2 = function () {
+// 	return 'I am fn2';
+// };
+
+// fn1(fn2);
+
+// /* Challenge 1 */
+// function hi1() {
+// 	return 'Hi 👋🏻';
 // }
 
-// console.log('sum = ', sum);
+// function hi2() {
+// 	return 'Hi 👋🏻 👋🏻';
+// }
 
-// /* Typeof operation */
-// console.log(typeof false);
-// console.log(typeof true);
-// console.log(typeof 0);
-// console.log(typeof NaN); // Not a Number
-// console.log(typeof '');
-// console.log(typeof null);
-// console.log(typeof undefined);
+// function kentFn(cb) {
+// 	console.log(`Kent ` + cb());
+// }
 
-/* Truthy and Falsy(0, '', null, undefined, NaN, false) */
-/* any type -> boolean */
-// const b1 = false; // boolean
-// const b2 = Boolean(0); // false
-// const b3 = Boolean(''); // false
-// const b4 = Boolean(null); // false
-// const b5 = Boolean(undefined); // false
-// const b6 = Boolean(NaN); // false
-// const b7 = Boolean(1); // true
-// const b8 = Boolean(-1); // true
+// function markFn(cb) {
+// 	console.log(`Mark ${cb()}`);
+// }
 
-// /* any type -> string  */
-// const s1 = 'Hello world'; // "Hello world"
-// const s2 = String(123); // "123"
-// const s3 = String(true); // "true"
-// const s4 = String(false); // "false"
-// const s5 = String(null); // "null"
-// const s6 = String(undefined); // "undefined"
-// const s7 = String(NaN); // "NaN"
-// const s8 = String(Infinity); // "Infinity"
+// kentFn(hi1); // Kent Hi 👋🏻,
+// markFn(hi2); // Mark Hi 👋🏻 👋🏻
+// kentFn(hi2); // Kent Hi 👋🏻 👋🏻
+// markFn(hi1); // Mark Hi 👋🏻
 
-/* any type -> number */
-// const n1 = +'123'; // 123
-// const n2 = +'123.456'; // 123.456
-// const n3 = Number('123.456abc'); // NaN
-// const n4 = Number(true); // 1
-// const n5 = Number(false); // 0
+// function display(cb, n) {
+// 	const total = cb(n);
+// 	console.log(`total[${a}] = `, total);
+// }
 
-// console.log(n2);
+// function summaN(n) {
+// 	let total = 0;
 
-// let a = 10;
-// let b = '35';
-// let c = a + Number(b);
-// let c2 = a + Number(b) - 10 + 20 + Number('30');
+// 	for (let i = 1; i <= n; i++) {
+// 		total += i;
+// 	}
+
+// 	return total;
+// }
+
+// display(summaN, 100);
+
+// let values = ['arslonbek', 'alimbaev', 24]; // SM_nums_001 = []
+
+// let firstName = 'arslonbek';
+// let lastName = 'alimbaev';
+// let age = 24;
+
+// console.log(values[2]);
+// console.log(age);
+/* Primitive iterable */
+// let value = 'Kent';
+// value[0] = 'M';
+// console.log(value);
+
+// /* Reference iterable */
+// let value2 = ['K', 'E', 'N', 'T'];
+// value2[0] = 'M';
+// console.log(value2);
+
+/* Array */
+// const a = 10;
+// a = 100;
+// console.log(a);
+// /* Stack memory */
+// let a = 10; // SM_a_001 = 10
+// let b = 10; // SM_b_002 = 10
+// let c = a + b; // SM_c_003 = 20
+// c = 200; // SM_c_003 = 200
 // console.log(c);
-// console.log(c2);
 
-// let a = 130;
-// let b = String(a)
+/* Heap memory */
+/**
+ * ---HEAP MEMORY---
+ * HM_0001 = [100, 20, 30]
+ *
+ * ---STACK MEMORY---
+ * SM_nums_001 = HM_0001
+ */
+// const nums = [10, 20, 30];
+// nums[0] = 100; // HM_0001[0] = 100
+// console.log(nums);
 
-function sameStarChar(str) {
-	const regexp = /\w\*\w/gi;
+// let a = 10; // SM_a_001 = 10
+// let b = a; // SM_b_002 = 10;
+// b = 30; // SM_b_002 = 30;
+// console.log(a); // SM_a_001 = 10
+// console.log(b); // SM_b_002 = 30
 
-	const matches = str.match(regexp) || [];
-
-	// for (let i = 0; i < matches.length; i++) {
-	// 	const match = matches[i]; // "c*d"
-	// 	if (match[0] !== match[1]) return false;
-	// }
-
-	return matches;
-}
-
-console.log(sameStarChar('abc*dfg*bac'));
-console.log(sameStarChar('abc*dfg*'));
-console.log(sameStarChar('12*2*3*')); //  false
+/**
+ * ---HEAP MEMORY---
+ * HM_0001 = [0, 20, 30]
+ *
+ * ---STACK MEMORY---
+ * SM_nums1_001 = HM_0001
+ * SM_nums2_002 = HM_0001
+ */
+let nums1 = [10, 20, 30]; // SM_nums1_001 = HM_0001
+let nums2 = nums1; //  SM_nums2_002 = HM_0001
+nums2[0] = 0; // HM_0001[0] = 0
+console.log(nums1); // HM_0001
+console.log(nums2); // HM_0001
