@@ -120,8 +120,8 @@
  * SM_nums1_001 = HM_0001
  * SM_nums2_002 = HM_0001
  */
-let nums1 = [10, 20, 30]; // SM_nums1_001 = HM_0001
-let nums2 = nums1; //  SM_nums2_002 = HM_0001
-nums2[0] = 0; // HM_0001[0] = 0
-console.log(nums1); // HM_0001
-console.log(nums2); // HM_0001
+// let nums1 = [10, 20, 30]; // SM_nums1_001 = HM_0001
+// let nums2 = nums1; //  SM_nums2_002 = HM_0001
+// nums2[0] = 0; // HM_0001[0] = 0
+// console.log(nums1); // HM_0001
+// console.log(nums2); // HM_0001

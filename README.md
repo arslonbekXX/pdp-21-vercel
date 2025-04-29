@@ -1,25 +1,4 @@
-# ---------- 26.04.25 ----------(44)
-
-## Functions
-
-        ✅ First class function 👍
-        ✅ Anonymous function 👍
-        ✅ Callback 👍
-        ✅ HOC (Higher Order Function)
-
-## Array
-
-        ✅ What is Array ? 👍
-        ✅ Iterable (string, array) 👍
-        ✅ Primitive iterable(string) vs Reference iterable(array) 👍
-        ✅ get value from Array 👍
-        ✅ set value into Array 👍
-
-## Primitive vs Reference 👍
-
-        ✅ Stack memory 👍
-        ✅ Heap memory 👍
-        ✅ Write simple example 👍
+# ---------- 29.04.25 ----------(45)
 
 ## Array methods
 
