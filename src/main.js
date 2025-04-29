@@ -125,3 +125,161 @@
 // nums2[0] = 0; // HM_0001[0] = 0
 // console.log(nums1); // HM_0001
 // console.log(nums2); // HM_0001
+// const nums = [10, 30, 100];
+
+// console.log('------- SIMPLE FOR LOOP ------');
+// for (let i = 0; i < nums.length; i++) {
+// 	const num = nums[i];
+// 	console.log('num = ', num);
+// }
+
+// console.log('------- FOR OF LOOP FOR ARRAY ------');
+// for (let num of nums) {
+// 	console.log('num = ', num);
+// }
+
+// console.log('------- FOR OF LOOP FOR STRING ------');
+// const str = 'Arslonbek';
+// for (let azizbek of str) {
+// 	console.log('azizbek = ', azizbek);
+// }
+
+/* Array push method */
+// console.log('------ ARRAY PUSH METHOD ------');
+// const nums = [10];
+// const newLength = nums.push(20, 30, 40);
+// console.log('nums = ', nums); // [10, 20, 30, 40]
+// console.log('newLength = ', newLength); // 4
+
+// /* Array pop method */
+// console.log('------ ARRAY POP METHOD ------');
+// const students = ['Jamshid', 'Boburbek', 'Sardorbek'];
+// const deletedStudent = students.pop();
+// console.log('students = ', students); // ["Jamshidbek", "Boburbek"]
+// console.log('deletedStudent = ', deletedStudent); // ["Jamshidbek", "Boburbek"]
+
+/* Array unshift method */
+// console.log('------ ARRAY UNSHIFT METHOD ------');
+// const groups = ['pdp-10', 'pdp-20', 'pdp-15'];
+// const newLengthOfGroups = groups.unshift('pdp-21');
+// console.log('groups = ', groups);
+// console.log('newLengthOfGroups = ', newLengthOfGroups);
+
+/* Array shift method */
+// console.log('------ ARRAY SHIFT METHOD ------');
+// const animals = ['dog', 'cat', 'mouse', 'bird'];
+// const deletedAnimal = animals.shift();
+// console.log('animals = ', animals);
+// console.log('deletedAnimal = ', deletedAnimal);
+
+/* Array slice method */
+// console.log('------ ARRAY SLICE METHOD ------');
+// const nums = [10, 20, 30, 40, 50];
+// // const slicedNums = nums.slice(0, 100);
+// const slicedNums = slice(nums, 0, 100);
+// console.log('slicedNums = ', slicedNums);
+
+// /**
+//  *
+//  * @param {any[]} items
+//  * @param {number} startIdx
+//  * @param {number} endIdx
+//  * @returns {any[]}
+//  */
+// function slice(items, startIdx, endIdx = items.length) {
+// 	let result = [];
+
+// 	if (endIdx > items.length) endIdx = items.length;
+
+// 	for (let i = startIdx; i < endIdx; i++) {
+// 		const item = items[i];
+// 		result.push(item);
+// 	}
+
+// 	return result;
+// }
+
+/* Array concat method */
+// console.log('------ ARRAY CONCAT METHOD ------');
+// const users1 = ['kent', 'mark', 'john'];
+// const users2 = ['sherlock', 'holmes'];
+// // const users = users1.concat(users2);
+// const users = concat(users1, users2);
+// console.log('users = ', users);
+
+// /**
+//  *
+//  * @param {any[]} items1
+//  * @param {any[]} items2
+//  * @returns {any[]}
+//  */
+// function concat(items1, items2) {
+// 	const result = [];
+
+// 	for (const item of items1) {
+// 		result[result.length] = item;
+// 	}
+
+// 	for (const item of items2) {
+// 		result[result.length] = item;
+// 	}
+
+// 	return result;
+// }
+
+/* Array map method */
+// console.log('------ ARRAY MAP METHOD ------');
+// const foods = ['osh', 'manti', 'xonim va gumma'];
+// function addWater(food, index) {
+// 	return `${index}: ${food} + water 💦`;
+// }
+// // const foodsAndWaters = foods.map(addWater);
+// const foodsAndWaters = map(foods, addWater);
+// console.log('foods = ', foods);
+// console.log('foodsAndWaters = ', foodsAndWaters);
+
+// /**
+//  *
+//  * @param {any[]} items
+//  * @param {function} cb
+//  * @returns {any[]}
+//  */
+// function map(items, cb) {
+// 	const result = [];
+
+// 	for (let i = 0; i < items.length; i++) {
+// 		result[i] = cb(items[i], i);
+// 	}
+
+// 	return result;
+// }
+
+/* Array filter method */
+// console.log('------ ARRAY FILTER METHOD ------');
+const students = ['arslonbek', 'maftunaxon', 'boburbek', 'gozal', 'azizbek'];
+function filterMan(student, idx) {
+	return student.endsWith('bek');
+}
+// const filteredStudents = students.filter(filterMan);
+const filteredStudents = filter(students, filterMan);
+console.log('filteredStudents = ', filteredStudents);
+
+/**
+ *
+ * @param {any[]} items
+ * @param {function} cb
+ * @returns {any[]}
+ */
+function filter(items, cb) {
+	const result = [];
+
+	for (let i = 0; i < items.length; i++) {
+		const item = items[i];
+		const isMatch = cb(item, i);
+		if (isMatch) {
+			result[result.length] = item;
+		}
+	}
+
+	return result;
+}
