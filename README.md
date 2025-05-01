@@ -1,11 +1,4 @@
-# ---------- 29.04.25 ----------(45)
-
-## Null and Undefined Dot notation
-
-        ✅ null.something - ❌ Cannot read properties of null
-        ✅ undefined.something - ❌ Cannot read properties of undefined
-
-## FOR OF
+# ---------- 01.05.25 ----------(47)
 
 ## Array methods
 
