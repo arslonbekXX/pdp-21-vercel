@@ -1,26 +1,40 @@
-# ---------- 01.05.25 ----------(47)
+# ---------- 01.05.25 ----------(46)
 
-## Array methods
+## Arrow function
 
-        ✅ push 👍 (back <-)
-        ✅ pop 👍 (back ->)
-        ✅ shift 👍 (front ->)
-        ✅ unshift 👍 (front <-)
+        ✅ Anonymous function 👍
+        ✅ return in one line  👍
+        ✅ using without scopes 👍
+
+## Array constructor 👍
+
+        ✅ new Array(length) 👍
+        ✅ Array.from()
+
+## Array mutable methods
+
+        ✅ push 👍
+        ✅ pop 👍
+        ✅ unshift 👍
+        ✅ shift 👍
+        ✅ splice 👍
+        ✅ sort 👍
+        ✅ fill 👍
+
+## Array immutable methods
+
         ✅ slice 👍
-        ✅ splice
         ✅ concat 👍
         ✅ join 🏠
         ✅ reverse
-        ✅ sort
         ✅ map 👍
         ✅ filter 👍
         ✅ reduce 🏠
-        ✅ forEach 🏠
+        ✅ forEach 👍
         ✅ find 🏠
         ✅ findIndex 🏠
         ✅ some 🏠
         ✅ every 🏠
         ✅ includes 🏠
         ✅ indexOf
-        ✅ fill 🏠
         ✅ flat

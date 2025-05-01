@@ -256,30 +256,99 @@
 
 /* Array filter method */
 // console.log('------ ARRAY FILTER METHOD ------');
-const students = ['arslonbek', 'maftunaxon', 'boburbek', 'gozal', 'azizbek'];
-function filterMan(student, idx) {
-	return student.endsWith('bek');
-}
-// const filteredStudents = students.filter(filterMan);
-const filteredStudents = filter(students, filterMan);
-console.log('filteredStudents = ', filteredStudents);
+// const students = ['arslonbek', 'maftunaxon', 'boburbek', 'gozal', 'azizbek'];
+// function filterMan(student, idx) {
+// 	return student.endsWith('bek');
+// }
+// // const filteredStudents = students.filter(filterMan);
+// const filteredStudents = filter(students, filterMan);
+// console.log('filteredStudents = ', filteredStudents);
 
-/**
- *
- * @param {any[]} items
- * @param {function} cb
- * @returns {any[]}
- */
-function filter(items, cb) {
-	const result = [];
+// /**
+//  *
+//  * @param {any[]} items
+//  * @param {function} cb
+//  * @returns {any[]}
+//  */
+// function filter(items, cb) {
+// 	const result = [];
 
-	for (let i = 0; i < items.length; i++) {
-		const item = items[i];
-		const isMatch = cb(item, i);
-		if (isMatch) {
-			result[result.length] = item;
-		}
-	}
+// 	for (let i = 0; i < items.length; i++) {
+// 		const item = items[i];
+// 		const isMatch = cb(item, i);
+// 		if (isMatch) {
+// 			result[result.length] = item;
+// 		}
+// 	}
+
+// 	return result;
+// }
+
+/* Array splice method */
+// const groups = ['pdp-10', 'pdp-5', 'pdp-21'];
+// const deletedGroups = groups.splice(1, 1, 'pdp-6', 'pdp-7');
+// console.log(groups);
+// console.log(deletedGroups);
+
+/* Array sort method */
+// const students = ['alimbaev', 'abdullaev', 'usmanov'];
+// students.sort();
+// console.log(students);
+
+/* Array sort for numbers */
+// const points = [40, 20.5, 10.5, 220, 21.2, 100];
+// points.sort((a, b) => a - b);
+// console.log(points);
+
+/* Array fill method */
+function getArray(value) {
+	const nums = new Array(value).fill();
+	const result = nums.map((item, idx) => idx + 1);
 
 	return result;
 }
+
+const items = getArray(100); // [5,5,5,5,...]
+// console.log('items = ', items);
+
+// let a = []; // SM_a_001 = HM_0001
+// let b = a; // SM_b_002 = HM_0001
+// console.log(a === b); // HM_0001 === HM_0001
+
+/* Stack memory with primitive types */
+// let a = 10; // SM_a_001 = 10
+// let b = a; // SM_b_002 = 11
+// b++; // increment
+// // console.log(a) // 10
+// // console.log(b) // 11
+
+/* Stack memory and Heap memory with non-primitive(reference) types */
+
+/**
+ * HEAP MEMORY
+ * HM_0001 = [11]
+ */
+// let a = [10]; // SM_a_001 = HM_0001
+// let b = a; // SM_b_002 = HM_0001
+// b[0]++; // HM_0001[0]++;
+// console.log(a); // HM_0001 -> [11]
+// console.log(b); // HM_0001 -> [11]
+
+/* Array forEach method */
+const names = ['arslonbek', 'boburbek', 'azizbek'];
+// for (const name of names) {
+// 	console.log('name = ', name);
+// }
+
+// for (let i = 0; i < names.length; i++) {
+// 	const name = names[i];
+// 	console.log('name = ', name);
+// }
+
+// names.forEach((name1, i) => {
+// 	console.log('name = ', name);
+
+// 	names.forEach((name2, j)=> {
+// 		console.log("idx")
+// 	})
+// });
