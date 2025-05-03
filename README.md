@@ -1,5 +1,10 @@
 # ---------- 03.05.25 ----------(47)
 
+## Spread operation
+
+        ✅ using with array
+        ✅ using with Math static methods
+
 ## Array constructor 👍
 
         ✅ new Array(length) 👍
@@ -19,16 +24,16 @@
 
         ✅ slice 👍
         ✅ concat 👍
-        ✅ join 🏠
-        ✅ reverse
+        ✅ join 👍
+        ✅ reverse 👍
         ✅ map 👍
         ✅ filter 👍
         ✅ reduce 🏠
         ✅ forEach 👍
         ✅ find 🏠
         ✅ findIndex 🏠
-        ✅ some 🏠
-        ✅ every 🏠
-        ✅ includes 🏠
-        ✅ indexOf
+        ✅ some 👍
+        ✅ every 👍
+        ✅ includes 👍
+        ✅ indexOf 👍
         ✅ flat
