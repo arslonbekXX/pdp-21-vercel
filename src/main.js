@@ -301,14 +301,14 @@
 // console.log(points);
 
 /* Array fill method */
-function getArray(value) {
-	const nums = new Array(value).fill();
-	const result = nums.map((item, idx) => idx + 1);
+// function getArray(value) {
+// 	const nums = new Array(value).fill();
+// 	const result = nums.map((item, idx) => idx + 1);
 
-	return result;
-}
+// 	return result;
+// }
 
-const items = getArray(100); // [5,5,5,5,...]
+// const items = getArray(100); // [5,5,5,5,...]
 // console.log('items = ', items);
 
 // let a = []; // SM_a_001 = HM_0001
@@ -335,7 +335,7 @@ const items = getArray(100); // [5,5,5,5,...]
 // console.log(b); // HM_0001 -> [11]
 
 /* Array forEach method */
-const names = ['arslonbek', 'boburbek', 'azizbek'];
+// const names = ['arslonbek', 'boburbek', 'azizbek'];
 // for (const name of names) {
 // 	console.log('name = ', name);
 // }

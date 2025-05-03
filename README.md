@@ -1,10 +1,4 @@
-# ---------- 01.05.25 ----------(46)
-
-## Arrow function
-
-        ✅ Anonymous function 👍
-        ✅ return in one line  👍
-        ✅ using without scopes 👍
+# ---------- 03.05.25 ----------(47)
 
 ## Array constructor 👍
 
