@@ -1,5 +1,18 @@
 # ---------- 04.05.25 ----------(48)
 
+## Expression vs Statement 👍
+
+        ✅ Expression
+        ✅ Statement
+
+## Function types 👍
+
+        ✅ function declaration 👍
+        ✅ function expression 👍
+        ✅ function arrow 👍
+
+## arguments
+
 ## Array mutable methods
 
         ✅ push 👍

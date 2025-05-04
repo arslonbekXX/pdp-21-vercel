@@ -366,11 +366,11 @@
 // console.log('total = ', total);
 
 /* Spread operation with Math static methods */
-const nums = [-1, 20, -10, -20, 500];
-const maxNum = Math.max(...nums);
-const minNum = Math.min(...nums);
-console.log('maxNum = ', maxNum);
-console.log('minNum = ', minNum);
+// const nums = [-1, 20, -10, -20, 500];
+// const maxNum = Math.max(...nums);
+// const minNum = Math.min(...nums);
+// console.log('maxNum = ', maxNum);
+// console.log('minNum = ', minNum);
 
 /* Array every and some method */
 // const boxes = ['box-10', 'box-8-abc', 'box-3', 'box-7'];
@@ -385,18 +385,28 @@ console.log('minNum = ', minNum);
 
 /* Array.from method */
 
-function getArray(value) {
-	const nums = new Array(value) // [value * empty]
- const filled = nums.fill() // [undefined, undefined]
-	const mapped = nums.map((_, idx) => idx + 1);
+// function getArray(value) {
+// 	const nums = new Array(value); // [value * empty]
+// 	const filled = nums.fill(); // [undefined, undefined]
+// 	const mapped = nums.map((_, idx) => idx + 1);
 
-	return mapped;
+// 	return mapped;
+// }
+
+// function getArray2(value) {
+// 	const nums = Array.from({ length: value }, (_, idx) => idx + 1);
+
+// 	return nums;
+// }
+
+// console.log(getArray2(10));
+
+/* Array reduce method */
+const nums = [20, 30, 40, 50, 60, 70];
+function summa(a, b) {
+	console.log(arguments);
+	return a + b;
 }
 
-function getArray2(value) {
-	const nums = Array.from({ length: value }, (_, idx) => idx + 1);
-
-	return nums;
-}
-
-console.log(getArray2(10));
+const total = summa(...nums);
+console.log('total = ', total);
