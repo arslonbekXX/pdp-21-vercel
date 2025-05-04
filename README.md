@@ -1,14 +1,4 @@
-# ---------- 03.05.25 ----------(47)
-
-## Spread operation
-
-        ✅ using with array
-        ✅ using with Math static methods
-
-## Array constructor 👍
-
-        ✅ new Array(length) 👍
-        ✅ Array.from()
+# ---------- 04.05.25 ----------(48)
 
 ## Array mutable methods
 

@@ -366,11 +366,11 @@
 // console.log('total = ', total);
 
 /* Spread operation with Math static methods */
-// const nums = [-1, 20, -10, -20, 500];
-// const maxNum = Math.max(...nums);
-// const minNum = Math.min(...nums);
-// console.log('maxNum = ', maxNum);
-// console.log('minNum = ', minNum);
+const nums = [-1, 20, -10, -20, 500];
+const maxNum = Math.max(...nums);
+const minNum = Math.min(...nums);
+console.log('maxNum = ', maxNum);
+console.log('minNum = ', minNum);
 
 /* Array every and some method */
 // const boxes = ['box-10', 'box-8-abc', 'box-3', 'box-7'];
