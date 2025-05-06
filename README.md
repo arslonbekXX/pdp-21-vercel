@@ -1,42 +1,9 @@
-# ---------- 04.05.25 ----------(48)
+# ---------- 06.05.25 ---------- (49)(Examine-4)
 
-## Expression vs Statement 👍
+## Questions
 
-        ✅ Expression
-        ✅ Statement
-
-## Function types 👍
-
-        ✅ function declaration 👍
-        ✅ function expression 👍
-        ✅ function arrow 👍
-
-## arguments
-
-## Array mutable methods
-
-        ✅ push 👍
-        ✅ pop 👍
-        ✅ unshift 👍
-        ✅ shift 👍
-        ✅ splice 👍
-        ✅ sort 👍
-        ✅ fill 👍
-
-## Array immutable methods
-
-        ✅ slice 👍
-        ✅ concat 👍
-        ✅ join 👍
-        ✅ reverse 👍
-        ✅ map 👍
-        ✅ filter 👍
-        ✅ reduce 🏠
-        ✅ forEach 👍
-        ✅ find 🏠
-        ✅ findIndex 🏠
-        ✅ some 👍
-        ✅ every 👍
-        ✅ includes 👍
-        ✅ indexOf 👍
-        ✅ flat
+    ✅ Find max
+    ✅ Find palindrome substrings
+    ✅ Max sub array sum
+    ✅ Top char
+    ✅ Sum
