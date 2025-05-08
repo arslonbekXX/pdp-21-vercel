@@ -2,7 +2,9 @@
 
 ## Array reduce method
 
-        ✅ arguments
+        ✅ arguments (only have function declaration) 👍
+        ✅ spread operator - [...] 👍
+        ✅ rest params - [...] 👍
 
 ## Array mutable methods
 
@@ -22,12 +24,12 @@
         ✅ reverse 👍
         ✅ map 👍
         ✅ filter 👍
-        ✅ reduce 🏠
+        ✅ reduce 👍
         ✅ forEach 👍
-        ✅ find 🏠
-        ✅ findIndex 🏠
+        ✅ find 👍
+        ✅ findIndex 👍
         ✅ some 👍
         ✅ every 👍
         ✅ includes 👍
         ✅ indexOf 👍
-        ✅ flat
+        ✅ flat 👍
