@@ -1,17 +1,8 @@
 # ---------- 08.05.25 ----------(50)
 
-## Expression vs Statement 👍
+## Array reduce method
 
-        ✅ Expression
-        ✅ Statement
-
-## Function types 👍
-
-        ✅ function declaration 👍
-        ✅ function expression 👍
-        ✅ function arrow 👍
-
-## arguments
+        ✅ arguments
 
 ## Array mutable methods
 
