@@ -1,19 +1,21 @@
-# ---------- 10.05.25 ----------(51)
-
-## Eval - math operation
+# ---------- 10.05.25 ----------(52)
 
 ## Object
 
-       ✅ What is object
+       ✅ What is object 👍
        ✅ How to create object
        ✅ How to access object properties
-       ✅ How to add new properties to object
-       ✅ How to delete properties from object
-       ✅ How to check if object has property
-       ✅ How to iterate over object properties
-       ✅ Dot notation
-       ✅ Bracket notation
+            🎁 Dot notation - obj.something 👍
+            🎁 Bracket notation - obj ['something'] 👍
+       ✅ How to add new properties to object  👍
+       ✅ How to delete properties from object 👍
+       ✅ How to check if object has property 👍
+       ✅ How to iterate over object properties 👍
+            🎁 For OF loop (Array)
+            🎁 For IN loop (Array)
+            🎁 For IN loop (Object)
        ✅ Object methods
+            🎁 this keyword
 
 ============= DOM =============
 
