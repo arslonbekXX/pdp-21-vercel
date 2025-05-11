@@ -5,7 +5,8 @@
  * @returns {number} The BMI value
  */
 function calculateBMI(weight, height) {
-	return weight / (height * height);
+	const bmi = (weight / (height * height)).toFixed(2);
+	return Number(bmi);
 }
 
 /**
@@ -33,28 +34,70 @@ const user1 = {
 	name: 'Kent',
 	weight: 70,
 	height: 1.75,
-	getBMI() {},
-	getBMIStatus() {},
-	displayBMI() {},
+	getBMI() {
+		const bmi = calculateBMI(this.weight, this.height);
+
+		return bmi;
+	},
+	getBMIStatus() {
+		const bmi = this.getBMI();
+		const status = getBMIStatus(bmi);
+
+		return status;
+	},
+	displayBMI() {
+		const bmi = this.getBMI();
+		const status = this.getBMIStatus();
+
+		console.log(`${this.name}:  BMI is ${bmi} and status is ${status}`);
+	},
 };
-const name1 = 'Kent';
-const weight1 = 70;
-const height1 = 1.75;
-const bmi1 = calculateBMI(weight1, height1);
 
-const name2 = 'John';
-const weight2 = 90;
-const height2 = 1.8;
-const bmi2 = calculateBMI(weight2, height2);
+const user2 = {
+	name: 'John',
+	weight: 90,
+	height: 1.8,
+	getBMI() {
+		const bmi = calculateBMI(this.weight, this.height);
 
-const name3 = 'Mark';
-const weight3 = 85;
-const height3 = 1.7;
-const bmi3 = calculateBMI(weight3, height3);
+		return bmi;
+	},
+	getBMIStatus() {
+		const bmi = this.getBMI();
+		const status = getBMIStatus(bmi);
 
-// console.log('Kent:  BMI is ' + bmi1.toFixed(2) + ' and status is ', getBMIStatus(bmi1));
-// console.log('John:  BMI is ' + bmi2.toFixed(2) + ' and status is ', getBMIStatus(bmi2));
-// console.log('Mark:  BMI is ' + bmi3.toFixed(2) + ' and status is ', getBMIStatus(bmi3));
+		return status;
+	},
+	displayBMI() {
+		const bmi = this.getBMI();
+		const status = this.getBMIStatus();
+
+		console.log(`${this.name}:  BMI is ${bmi} and status is ${status}`);
+	},
+};
+
+const user3 = {
+	name: 'Mark',
+	weight: 85,
+	height: 1.7,
+	getBMI() {
+		const bmi = calculateBMI(this.weight, this.height);
+
+		return bmi;
+	},
+	getBMIStatus() {
+		const bmi = this.getBMI();
+		const status = getBMIStatus(bmi);
+
+		return status;
+	},
+	displayBMI() {
+		const bmi = this.getBMI();
+		const status = this.getBMIStatus();
+
+		console.log(`${this.name}:  BMI is ${bmi} and status is ${status}`);
+	},
+};
 
 user1.displayBMI(); // Kent:  BMI is 22.86 and status is Normal
 user2.displayBMI(); // John:  BMI is 27.78 and status is Overweight

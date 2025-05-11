@@ -17,7 +17,7 @@
        ✅ Object methods
             🎁 what is method 👍
             🎁 method vs function 👍
-            🎁 this keyword
+            🎁 this keyword 👍
 
 ============= DOM =============
 

@@ -139,19 +139,22 @@
 // }
 
 /* Object methods */
-const person = {
-	name: 'John',
-	run() {
-		console.log(`${this.name} is running...`);
-	},
-	jump() {
-		console.log(`${this.name} is jumping...`);
-	},
-	move() {
-		console.log(`${this.name} is moving...`);
-	},
-};
+// const person = {
+// 	name: 'John',
+// 	run() {
+// 		console.log(`${this.name} is running...`);
+// 	},
+// 	jump() {
+// 		console.log(`${this.name} is jumping...`);
+// 	},
+// 	move() {
+// 		console.log(`${this.name} is moving...`);
+// 	},
+// };
 
-person.run();
-person.jump();
-person.move();
+// person.run();
+// person.jump();
+// person.move();
+
+
+
