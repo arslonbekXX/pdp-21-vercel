@@ -15,6 +15,8 @@
             🎁 For IN loop (Array)
             🎁 For IN loop (Object)
        ✅ Object methods
+            🎁 what is method 👍
+            🎁 method vs function 👍
             🎁 this keyword
 
 ============= DOM =============
