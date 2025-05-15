@@ -1,10 +1,15 @@
 # ---------- 15.05.25 ----------(54)
 
+## Vite App
+
+       ✅ bun install | npm install
+       ✅ bun dev | npm run dev
+
 ============= DOM =============
 
 ## DOM -> (Document Object Model)
 
-       ✅ What is this DOM ?
+       ✅ What is this DOM ? 👍
        ✅ Simple example
 
 ## DOM TREE and Nodes
