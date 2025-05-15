@@ -1,24 +1,24 @@
 # ---------- 15.05.25 ----------(54)
 
-## Vite App
+## Vite App 👍
 
        ✅ bun install | npm install
        ✅ bun dev | npm run dev
 
 ============= DOM =============
 
-## DOM -> (Document Object Model)
+## DOM -> (Document Object Model) 👍
 
        ✅ What is this DOM ? 👍
-       ✅ Simple example
+       ✅ Simple example 👍
 
-## DOM TREE and Nodes
+## DOM TREE and Nodes 👍
 
-       ✅ Most using nodes
-           🔷 Element node
-           🔷 Text node
-           🔷 Comment node
-       ✅ Node types
+       ✅ Most using nodes 👍
+           🔷 Element node 👍
+           🔷 Text node 👍
+           🔷 Comment node 👍
+       ✅ Node types 👍
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 
 ## Change HTML codes
