@@ -1,24 +1,5 @@
 # ---------- 15.05.25 ----------(54)
 
-## Object 👍
-
-       ✅ What is object 👍
-       ✅ How to create object
-       ✅ How to access object properties
-            🎁 Dot notation - obj.something 👍
-            🎁 Bracket notation - obj ['something'] 👍
-       ✅ How to add new properties to object  👍
-       ✅ How to delete properties from object 👍
-       ✅ How to check if object has property 👍
-       ✅ How to iterate over object properties 👍
-            🎁 For OF loop (Array)
-            🎁 For IN loop (Array)
-            🎁 For IN loop (Object)
-       ✅ Object methods
-            🎁 what is method 👍
-            🎁 method vs function 👍
-            🎁 this keyword 👍
-
 ============= DOM =============
 
 ## DOM -> (Document Object Model)
