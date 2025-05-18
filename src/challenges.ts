@@ -3,9 +3,20 @@ const boxes = document.querySelectorAll('.box') as NodeListOf<HTMLDivElement>;
 
 for (const box of boxes) {
 	box.onclick = () => {
-		const parent = box.parentElement as HTMLDivElement;
-		const deleteIdx = Number(box.innerText.split('-')[1]);
+		let deleteIdx = -1;
+		const row = box.parentElement as HTMLDivElement;
+		for (let i = 0; i < row.children.length; i++) {
+			if (row.children[i] === box) {
+				deleteIdx = i;
+				break;
+			}
+		}
 
-		parent.children[deleteIdx - 1].remove();
+		const rowWrapper = box.parentElement?.parentElement as HTMLDivElement;
+		const rows = rowWrapper?.children as HTMLCollectionOf<HTMLDivElement>;
+
+		for (const row of rows) {
+			row.children[deleteIdx].remove();
+		}
 	};
 }

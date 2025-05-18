@@ -1,6 +1,6 @@
-const boxWrapper = document.querySelector('.boxes') as HTMLDivElement;
-const boxes2 = document.querySelectorAll('.box') as NodeListOf<HTMLDivElement>;
-const boxes = boxWrapper.children as HTMLCollectionOf<HTMLDivElement>;
+// const boxWrapper = document.querySelector('.boxes') as HTMLDivElement;
+// const boxes2 = document.querySelectorAll('.box') as NodeListOf<HTMLDivElement>;
+// const boxes = boxWrapper.children as HTMLCollectionOf<HTMLDivElement>;
 
 // for (const box of boxes) {
 // 	const randomNumber = Math.floor(Math.random() * 100);

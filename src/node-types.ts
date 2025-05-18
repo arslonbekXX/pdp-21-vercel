@@ -17,7 +17,7 @@
 // console.log(document.body.nodeType === Node.ELEMENT_NODE);
 
 /* Parent Nodes */
-const boxesWrapper = document.querySelector('.boxes') as HTMLDivElement;
+// const boxesWrapper = document.querySelector('.boxes') as HTMLDivElement;
 
 /* parentNode */
 // console.log(boxesWrapper.parentNode);
@@ -32,7 +32,7 @@ const boxesWrapper = document.querySelector('.boxes') as HTMLDivElement;
 // console.log(boxesWrapper.parentElement?.parentElement?.parentElement?.parentElement);
 
 /* Sibling Nodes */
-const box2 = document.querySelector('.box-2') as HTMLDivElement;
+// const box2 = document.querySelector('.box-2') as HTMLDivElement;
 
 // /* previousSibling */
 // console.log(box2.previousSibling);
