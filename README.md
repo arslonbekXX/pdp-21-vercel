@@ -1,9 +1,4 @@
-# ---------- 15.05.25 ----------(54)
-
-## Vite App 👍
-
-       ✅ bun install | npm install
-       ✅ bun dev | npm run dev
+# ---------- 18.05.25 ----------(55)
 
 ============= DOM =============
 
@@ -29,16 +24,32 @@
            🔷 document.getElementsByTagName() 👍
            🔷 document.querySelector() 👍
            🔷 document.querySelectorAll() 👍
-       ✅ Write Examples
+       ✅ Write Examples 👍
+
+## Root nodes 👍
+
+       ✅ document  👍
+       ✅ document.documentElement 👍
+       ✅ document.head 👍
+       ✅ document.body 👍
+
+## Parent Nodes 👍
+
+       ✅ parentNode 👍
+       ✅ parentElement 👍
 
 ## Children Nodes 👍
 
        ✅ childNodes : NodeList<any> 👍
+       ✅ firstChild : First any node 👍
+       ✅ lastChild :  Last any node 👍
        ✅ children : HTMLCollection<Element> 👍
+       ✅ firstElementChild : First element node 👍
+       ✅ lastElementChild : Last element node 👍
 
 ## Sibling Nodes
 
-       ✅ Write Examples
+       ✅ previousSibling
 
 ## How To Make Changes to the DOM
 
@@ -89,3 +100,4 @@
     ✅ As - dek qabul qil
     ✅ any - Ixtiyoriy type
     ✅ <type> - Scope typing...
+    ✅ ? - Optional chaining
