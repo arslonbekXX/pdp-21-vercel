@@ -21,19 +21,20 @@
        ✅ Node types 👍
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 
-## Change HTML codes
+## Change HTML codes 👍
 
        ✅ Most using selectors
-           🔷 document.querySelector()
-           🔷 document.querySelectorAll()
-           🔷 document.getElementById()
-           🔷 document.getElementsByClassName()
-           🔷 document.getElementsByTagName()
+           🔷 document.getElementById() 👍
+           🔷 document.getElementsByClassName() 👍
+           🔷 document.getElementsByTagName() 👍
+           🔷 document.querySelector() 👍
+           🔷 document.querySelectorAll() 👍
        ✅ Write Examples
 
-## Children Nodes
+## Children Nodes 👍
 
-       ✅ Write Examples
+       ✅ childNodes : NodeList<any> 👍
+       ✅ children : HTMLCollection<Element> 👍
 
 ## Sibling Nodes
 
@@ -78,3 +79,13 @@
 ## Links
 
     ✅ https://www.digitalocean.com/community/tutorials/understanding-the-dom-tree-and-nodes
+
+## Typescript
+
+    ✅ ! - null va undefined ni etiboris qoldirish
+    ✅ @ts-ignore - ozidan keyingi qatorda typescript ni disabled qiladi
+    ✅ @ts-nocheck - ushbu butun file uchun ts ni disabled qiladi
+    ✅ Union types - yokili birlik type lar
+    ✅ As - dek qabul qil
+    ✅ any - Ixtiyoriy type
+    ✅ <type> - Scope typing...
