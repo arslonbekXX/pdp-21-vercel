@@ -1,51 +1,6 @@
-# ---------- 18.05.25 ----------(55)
+# ---------- 29.05.25 ----------(56)
 
 ============= DOM =============
-
-## DOM -> (Document Object Model) 👍
-
-       ✅ What is this DOM ? 👍
-       ✅ Simple example 👍
-
-## DOM TREE and Nodes 👍
-
-       ✅ Most using nodes 👍
-           🔷 Element node 👍
-           🔷 Text node 👍
-           🔷 Comment node 👍
-       ✅ Node types 👍
-           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-
-## Change HTML codes 👍
-
-       ✅ Most using selectors
-           🔷 document.getElementById() 👍
-           🔷 document.getElementsByClassName() 👍
-           🔷 document.getElementsByTagName() 👍
-           🔷 document.querySelector() 👍
-           🔷 document.querySelectorAll() 👍
-       ✅ Write Examples 👍
-
-## Root nodes 👍
-
-       ✅ document  👍
-       ✅ document.documentElement 👍
-       ✅ document.head 👍
-       ✅ document.body 👍
-
-## Parent Nodes 👍
-
-       ✅ parentNode 👍
-       ✅ parentElement 👍
-
-## Children Nodes 👍
-
-       ✅ childNodes : NodeList<any> 👍
-       ✅ firstChild : First any node 👍
-       ✅ lastChild :  Last any node 👍
-       ✅ children : HTMLCollection<Element> 👍
-       ✅ firstElementChild : First element node 👍
-       ✅ lastElementChild : Last element node 👍
 
 ## Sibling Nodes
 
@@ -68,9 +23,6 @@
        ✅ Removing Nodes from the DOM
            🔷 removeChild()
            🔷 remove()
-       ✅ Removing Nodes from the DOM
-           🔷 removeChild()
-           🔷 remove()
 
 ## How To Modify Attributes, Classes, and Styles in the DOM
 
@@ -86,6 +38,59 @@
            🔷 classList.toggle
            🔷 classList.replace
            🔷 classList.remove
+
+## Set data type
+
+       ✅ Set
+           🔷 new Set()
+           🔷 add()
+           🔷 delete()
+           🔷 has()
+           🔷 clear()
+
+## ClassList
+
+       ✅ Modifying Classes
+           🔷 className 👍
+           🔷 classList.add 👍
+           🔷 classList.remove 👍
+           🔷 classList.toggle 👍
+           🔷 classList.replace 👍
+
+## Understanding Events in JavaScript
+
+       ✅ Inline Event Handler Attributes
+       ✅ Event Handler Properties
+       ✅ Event Listeners
+
+## Common Events
+
+       ✅ Mouse Events
+           🔷 click
+           🔷 dblclick
+           🔷 mouseenter
+           🔷 mouseleave
+           🔷 mousemove
+
+       ✅ Form Events
+           🔷 document.forms
+           🔷 form.elements
+           🔷 submit
+           🔷 focus
+           🔷 blur
+
+       ✅ Keyboard Events
+           🔷 key-down
+           🔷 key-up
+           🔷 keypress
+
+## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+## Events Phase
+
+       ✅ Bubbling phase
+       ✅ Capturing Phase
+       ✅ Target Phase
 
 ## Links
 
