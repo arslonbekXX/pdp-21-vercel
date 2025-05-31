@@ -17,12 +17,12 @@
        ✅ Inserting Nodes into the DOM
            🔷 appendChild(node) 👍
            🔷 append(node1, node2, node3) 👍
-           🔷 insertBefore()
-           🔷 replaceChild(node, childNode)
+           🔷 insertBefore(newNode, childNode) 👍
+           🔷 replaceChild(node, childNode) 👍
            🔷 replaceChildren() 👍
 
        ✅ Removing Nodes from the DOM
-           🔷 removeChild()
+           🔷 removeChild() 👍
            🔷 remove() 👍
 
 ## How To Modify Attributes, Classes, and Styles in the DOM
@@ -32,6 +32,7 @@
            🔷 getAttribute
            🔷 setAttribute
            🔷 removeAttribute
+
        ✅ Modifying Classes
            🔷 className
            🔷 classList.add

@@ -5,8 +5,17 @@
 body {
 	margin: 0;
 	padding: 16px;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	align-items: flex-start;
+}
+
+.default {
+	background-color: yellow;
+	width: max-content;
+	padding: 16px;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.active {
+	background-color: black;
+	color: white;
 }

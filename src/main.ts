@@ -1,21 +1,33 @@
-// Create the new node to insert
-const newNode = document.createElement('span'); // <span></span>
+// // Both methods will return a single element
+const demo = document.querySelector('#demo') as HTMLDivElement;
 
-// Get a reference to the parent node
-const childElement = document.getElementById('childElement') as HTMLSpanElement;
-const parentDiv = childElement.parentNode as HTMLDivElement;
+/* hasAttribute() */
+// const isExistClass = demo.hasAttribute('class');
+// console.log('isExistClass = ', isExistClass);
 
-// Begin test case [ 1 ] : Existing childElement (all works correctly)
-let childElement2 = document.getElementById('childElement');
-parentDiv.insertBefore(newNode, childElement2);
-// End test case [ 1 ]
+// const isExistID = demo.hasAttribute('id');
+// console.log('isExistID = ', isExistID);
 
-// // Begin test case [ 2 ] : childElement is of Type undefined
-// sp2 = undefined; // Non-existent node of id "childElement"
-// parentDiv.insertBefore(newNode, sp2); // Implicit dynamic cast to type Node
-// // End test case [ 2 ]
+// const isExistStyle = demo.hasAttribute('style');
+// console.log('isExistStyle = ', isExistStyle);
 
-// // Begin test case [ 3 ] : childElement is of Type "undefined" (string)
-// sp2 = 'undefined'; // Non-existent node of id "childElement"
-// parentDiv.insertBefore(newNode, sp2); // Generates "Type Error: Invalid Argument"
-// // End test case [ 3 ]
+/* getAttribute() */
+// const _class = demo.getAttribute('class');
+// console.log('class = ', _class);
+
+// const id = demo.getAttribute('id');
+// console.log('id = ', id);
+
+// const style = demo.getAttribute('style');
+// console.log('style = ', style);
+
+// /* setAttribute() */
+// demo.setAttribute('id', 'demo-id');
+// console.log('demo = ', demo);
+
+demo.onmouseenter = () => {
+	demo.setAttribute('class', 'active');
+};
+demo.onmouseleave = () => {
+	demo.removeAttribute('class');
+};
