@@ -1,28 +1,29 @@
-# ---------- 29.05.25 ----------(57)
+# ---------- 31.05.25 ----------(58)
 
 ============= DOM =============
-
-## Sibling Nodes
-
-       ✅ previousSibling
 
 ## How To Make Changes to the DOM
 
        ✅ Creating New Nodes
-           🔷 createElement()
-           🔷 createTextNode()
-           🔷 textContent()
-           🔷 innerHTML()
+           🔷 createElement() 👍
+           🔷 createTextNode() 👍
+           🔷 textContent 👍
+           🔷 innerText 👍
+           🔷 innerText vs textContent 👍
+           🔷 innerHTML() 👍
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
-           🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA
+           🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA 👍
+
        ✅ Inserting Nodes into the DOM
-           🔷 appendChild()
+           🔷 appendChild(node) 👍
+           🔷 append(node1, node2, node3) 👍
            🔷 insertBefore()
-           🔷 replaceChild()
+           🔷 replaceChild(node, childNode)
+           🔷 replaceChildren() 👍
 
        ✅ Removing Nodes from the DOM
            🔷 removeChild()
-           🔷 remove()
+           🔷 remove() 👍
 
 ## How To Modify Attributes, Classes, and Styles in the DOM
 
@@ -106,3 +107,11 @@
     ✅ any - Ixtiyoriy type
     ✅ <type> - Scope typing...
     ✅ ? - Optional chaining
+
+## Projects
+
+    ✅ Todo App
+    ✅ Tic Tac Toe
+    ✅ Pig game
+    ✅ Sudoku Flashing
+    ✅ Quiz App (v1 + v2)
