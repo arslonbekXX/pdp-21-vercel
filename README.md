@@ -4,7 +4,7 @@
 
 ## Common Events
 
-       ✅ Mouse Events
+       ✅ Mouse Events 👍
            🔷 click 👍
            🔷 dblclick 👍
            🔷 mouseenter 👍
@@ -25,13 +25,13 @@
 
 ## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
-## Events Phase
+## Events Phase 👍
 
-       ✅ Bubbling phase
-       ✅ Capturing Phase
-       ✅ Target Phase
+       ✅ Bubbling phase 👍
+       ✅ Capturing Phase 👍
+       ✅ Target Phase 👍
 
-## Typescript
+## Typescript 👍
 
     ✅ ! - null va undefined ni etiboris qoldirish
     ✅ @ts-ignore - ozidan keyingi qatorda typescript ni disabled qiladi

@@ -1,22 +1,22 @@
-const boxes = document.querySelectorAll('.box') as NodeListOf<HTMLDivElement>;
+// const boxes = document.querySelectorAll('.box') as NodeListOf<HTMLDivElement>;
 
-boxes.forEach((box) => {
-	const hex = generateHexColor();
-	box.style.backgroundColor = hex;
-	box.innerText = hex;
+// boxes.forEach((box) => {
+// 	const hex = generateHexColor();
+// 	box.style.backgroundColor = hex;
+// 	box.innerText = hex;
 
-	box.onclick = (event: MouseEvent) => {
-		if (!event.altKey) {
-			document.body.style.backgroundColor = box.innerText;
-		} else {
-			const hex1 = generateHexColor();
-			box.style.backgroundColor = hex1;
-			box.innerText = hex1;
-		}
-	};
-});
+// 	box.onclick = (event: MouseEvent) => {
+// 		if (!event.altKey) {
+// 			document.body.style.backgroundColor = box.innerText;
+// 		} else {
+// 			const hex1 = generateHexColor();
+// 			box.style.backgroundColor = hex1;
+// 			box.innerText = hex1;
+// 		}
+// 	};
+// });
 
-function generateHexColor() {
+export function generateHexColor() {
 	let hex = '#';
 	const hexCharacters = '0123456789abcdef';
 	for (let i = 0; i < 6; i++) {
