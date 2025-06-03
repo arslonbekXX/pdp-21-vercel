@@ -1,69 +1,6 @@
-# ---------- 31.05.25 ----------(58)
+# ---------- 03.06.25 ----------(59)
 
 ============= DOM =============
-
-## How To Make Changes to the DOM
-
-       ✅ Creating New Nodes
-           🔷 createElement() 👍
-           🔷 createTextNode() 👍
-           🔷 textContent 👍
-           🔷 innerText 👍
-           🔷 innerText vs textContent 👍
-           🔷 innerHTML() 👍
-           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
-           🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA 👍
-
-       ✅ Inserting Nodes into the DOM
-           🔷 appendChild(node) 👍
-           🔷 append(node1, node2, node3) 👍
-           🔷 insertBefore(newNode, childNode) 👍
-           🔷 replaceChild(node, childNode) 👍
-           🔷 replaceChildren() 👍
-
-       ✅ Removing Nodes from the DOM
-           🔷 removeChild() 👍
-           🔷 remove() 👍
-
-## How To Modify Attributes, Classes, and Styles in the DOM
-
-       ✅ Attributes functions
-           🔷 hasAttribute
-           🔷 getAttribute
-           🔷 setAttribute
-           🔷 removeAttribute
-
-       ✅ Modifying Classes
-           🔷 className
-           🔷 classList.add
-           🔷 classList.remove
-           🔷 classList.toggle
-           🔷 classList.replace
-           🔷 classList.remove
-
-## Set data type
-
-       ✅ Set
-           🔷 new Set()
-           🔷 add()
-           🔷 delete()
-           🔷 has()
-           🔷 clear()
-
-## ClassList
-
-       ✅ Modifying Classes
-           🔷 className 👍
-           🔷 classList.add 👍
-           🔷 classList.remove 👍
-           🔷 classList.toggle 👍
-           🔷 classList.replace 👍
-
-## Understanding Events in JavaScript
-
-       ✅ Inline Event Handler Attributes
-       ✅ Event Handler Properties
-       ✅ Event Listeners
 
 ## Common Events
 
@@ -93,10 +30,6 @@
        ✅ Bubbling phase
        ✅ Capturing Phase
        ✅ Target Phase
-
-## Links
-
-    ✅ https://www.digitalocean.com/community/tutorials/understanding-the-dom-tree-and-nodes
 
 ## Typescript
 

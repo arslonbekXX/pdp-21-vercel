@@ -19,3 +19,32 @@ body {
 	background-color: black;
 	color: white;
 }
+
+.traffic-light {
+	display: flex;
+	gap: 8px;
+}
+
+.flash {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.flash-green.on {
+	background-color: green;
+}
+
+.flash-yellow.on {
+	background-color: yellow;
+}
+
+.flash-red.on {
+	background-color: red;
+}
+
+.next-btn {
+	margin-top: 16px;
+	padding: 16px;
+}
