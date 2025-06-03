@@ -6,8 +6,13 @@ boxes.forEach((box) => {
 	box.innerText = hex;
 
 	box.onclick = (event: MouseEvent) => {
-		console.log(event.altKey);
-		document.body.style.backgroundColor = hex;
+		if (!event.altKey) {
+			document.body.style.backgroundColor = box.innerText;
+		} else {
+			const hex1 = generateHexColor();
+			box.style.backgroundColor = hex1;
+			box.innerText = hex1;
+		}
 	};
 });
 

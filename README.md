@@ -5,11 +5,11 @@
 ## Common Events
 
        ✅ Mouse Events
-           🔷 click
-           🔷 dblclick
-           🔷 mouseenter
-           🔷 mouseleave
-           🔷 mousemove
+           🔷 click 👍
+           🔷 dblclick 👍
+           🔷 mouseenter 👍
+           🔷 mouseleave 👍
+           🔷 mousemove 👍
 
        ✅ Form Events
            🔷 document.forms
