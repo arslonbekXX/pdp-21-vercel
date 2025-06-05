@@ -21,12 +21,12 @@
            🔷 focus 👍
            🔷 blur 👍
 
-       ✅ Keyboard Events
-           🔷 key-down
-           🔷 key-up
-           🔷 keypress
+       ✅ Keyboard Events 👍
+           🔷 key-down 👍
+           🔷 key-up 👍
+           🔷 keypress 👍
 
-## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event) 👍
 
 ## Events Phase 👍
 
