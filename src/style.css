@@ -5,21 +5,26 @@
 body {
 	margin: 0;
 	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100vh;
+}
+.box {
+	width: 200px;
+	height: 200px;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.container {
-	background-color: #efedd3;
-	width: max-content;
-	padding: 20px;
-}
-
-.box-a {
+.box-left {
 	background-color: #2b7ec2;
-	width: max-content;
-	padding: 20px;
 }
-.box-b {
+
+.box-right {
 	background-color: #b21991;
-	width: max-content;
-	padding: 20px;
 }

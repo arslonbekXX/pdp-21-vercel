@@ -11,12 +11,15 @@
            🔷 mouseleave 👍
            🔷 mousemove 👍
 
+       ✅ Custom Events
+
        ✅ Form Events
-           🔷 document.forms
-           🔷 form.elements
-           🔷 submit
-           🔷 focus
-           🔷 blur
+           🔷 document.forms 👍
+           🔷 form.reset 👍
+           🔷 form.elements 👍
+           🔷 submit 👍
+           🔷 focus 👍
+           🔷 blur 👍
 
        ✅ Keyboard Events
            🔷 key-down
