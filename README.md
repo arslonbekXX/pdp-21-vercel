@@ -1,9 +1,11 @@
-# ---------- 03.06.25 ----------(59)
+# ---------- 12.06.25 ----------(62)
 
 ## Projects
 
     ✅ sudoku 👍
-    ✅ quiz-app v1 or v2
-    ✅ tic-tac-toe v1 or v2
+    ✅ quiz-app v1 👍
+    ✅ tic-tac-toe v1
     ✅ pig-game
     ✅ pomofocus
+    ✅ quiz-app v2
+    ✅ tic-tac-toe v2
