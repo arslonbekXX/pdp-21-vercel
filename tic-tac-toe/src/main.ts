@@ -1,5 +1,5 @@
-import { BOARD_KEY } from "./constants";
-import { boardElement, infoElm, resetBtn } from "./elements";
+import { BOARD_KEY, LEVEL_DEFAULT, LEVEL_KEY } from "./constants";
+import { boardElement, infoElm, levelBtn, resetBtn } from "./elements";
 import type { Player } from "./types";
 
 let board: Array<Player | null> = initialBoard();
@@ -16,9 +16,17 @@ function handleCell(event: MouseEvent) {
 }
 
 function handleReset() {
-	board = new Array(9).fill(null);
-	localStorage.removeItem(BOARD_KEY);
+	const { level } = getLevel();
+	board = new Array(level ** 2).fill(null);
+	localStorage.setItem(BOARD_KEY, JSON.stringify(board));
 	renderBoard();
+}
+
+function handleLevel() {
+	let level = Number(prompt("Please enter level number ~ [3,8]")) || LEVEL_DEFAULT;
+	localStorage.setItem(LEVEL_KEY, level.toString());
+
+	handleReset();
 }
 
 // UI FUNCTIONS
@@ -26,6 +34,9 @@ function renderBoard() {
 	const fragment = document.createDocumentFragment();
 	const isAllCellFilled = board.filter(Boolean).length === 9;
 	const winner = getWinner();
+	const { level } = getLevel();
+
+	boardElement.setAttribute("style", `--level: ${level}`);
 
 	// CELL RENDERING
 	for (let i = 0; i < board.length; i++) {
@@ -75,12 +86,29 @@ function getWinner() {
 }
 
 function initialBoard() {
-	let board: Array<Player | null> = new Array(9).fill(null);
-	const data = localStorage.getItem(BOARD_KEY);
+	const { level, isStoredLevel } = getLevel();
+	let board: Array<Player | null> = new Array(level ** 2).fill(null);
 
-	if (data) board = JSON.parse(data);
+	if (isStoredLevel) {
+		const storedBoard = localStorage.getItem(BOARD_KEY);
+		if (storedBoard) board = JSON.parse(storedBoard);
+	} else {
+		localStorage.setItem(BOARD_KEY, JSON.stringify(board));
+	}
 
 	return board;
+}
+
+function getLevel() {
+	let level = Number(localStorage.getItem(LEVEL_KEY));
+	const isStoredLevel = Boolean(level);
+
+	if (!isStoredLevel) {
+		level = Number(prompt("Please enter level number ~ [3,6]")) || LEVEL_DEFAULT;
+		localStorage.setItem(LEVEL_KEY, level.toString());
+	}
+
+	return { level, isStoredLevel };
 }
 
 function getNextPlayer() {
@@ -91,6 +119,7 @@ function getNextPlayer() {
 function init() {
 	renderBoard();
 	resetBtn.onclick = handleReset;
+	levelBtn.onclick = handleLevel;
 }
 
 window.addEventListener("load", init);

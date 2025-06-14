@@ -20,8 +20,8 @@ h1 {
 
 .board {
 	display: grid;
-	grid-template-columns: repeat(3, 100px);
-	grid-template-rows: repeat(3, 100px);
+	grid-template-columns: repeat(var(--level, 3), 100px);
+	grid-template-rows: repeat(var(--level, 3), 100px);
 	gap: 10px;
 }
 
