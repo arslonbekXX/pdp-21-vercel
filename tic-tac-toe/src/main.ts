@@ -1,91 +1,96 @@
-// import { cellElms, infoElm, resetBtn } from './elements';
-// import type { Player } from './types';
+import { BOARD_KEY } from "./constants";
+import { boardElement, infoElm, resetBtn } from "./elements";
+import type { Player } from "./types";
 
-// let nextPlayer: Player = 'X';
-// let winner: Player | null = null;
-// // HANDLE FUNCTIONS
-// function handleCell(event: MouseEvent) {
-// 	const currentCell = event.target as HTMLDivElement;
-// 	const isAlreadyFilled = currentCell.innerText;
+let board: Array<Player | null> = initialBoard();
 
-// 	if (isAlreadyFilled || winner) return;
+// HANDLE FUNCTIONS
+function handleCell(event: MouseEvent) {
+	const cellElement = event.target as HTMLDivElement;
+	const cellIdx = +cellElement.dataset.idx!;
 
-// 	currentCell.innerText = nextPlayer;
+	board[cellIdx] = getNextPlayer();
+	localStorage.setItem(BOARD_KEY, JSON.stringify(board));
 
-// 	const cells = Array.from(cellElms);
-// 	const isAllCellFilled = cells.every((cell) => cell.innerText !== '');
+	renderBoard();
+}
 
-// 	if (winner === null && isAllCellFilled) {
-// 		infoElm.innerText = `🤝 Draw 🤝`;
-// 		return;
-// 	}
+function handleReset() {
+	board = new Array(9).fill(null);
+	localStorage.removeItem(BOARD_KEY);
+	renderBoard();
+}
 
-// 	nextPlayer = nextPlayer === 'X' ? 'O' : 'X';
-// 	infoElm.innerText = `Next Player: ${nextPlayer}`;
-// 	checkWinner();
-// }
+// UI FUNCTIONS
+function renderBoard() {
+	const fragment = document.createDocumentFragment();
+	const isAllCellFilled = board.filter(Boolean).length === 9;
+	const winner = getWinner();
 
-// function handleReset() {
-// 	nextPlayer = 'X';
-// 	winner = null;
-// 	cellElms.forEach((cellElm) => (cellElm.innerText = ''));
-// 	infoElm.innerText = `Next Player: ${nextPlayer}`;
-// }
+	// CELL RENDERING
+	for (let i = 0; i < board.length; i++) {
+		const cellElement = document.createElement("div"); // <div></div>
+		const cell = board[i];
+		cellElement.className = "cell"; // <div class="cell"></div>
+		cellElement.innerText = cell || ""; // <div class="cell"></div>
+		cellElement.setAttribute("data-idx", i.toString()); // <div class="cell" data-idx="${i}"></div>
 
-// // UI FUNCTIONS
+		const isCanPlay = !(cell || winner || isAllCellFilled);
 
-// // LOGIC FUNCTIONS
-// function checkWinner() {
-// 	const combinations = [
-// 		[0, 1, 2],
-// 		[3, 4, 5],
-// 		[6, 7, 8],
-// 		[0, 3, 6],
-// 		[1, 4, 7],
-// 		[2, 5, 8],
-// 		[0, 4, 8],
-// 		[2, 4, 6],
-// 	];
+		if (isCanPlay) cellElement.onclick = handleCell;
 
-// 	for (const [a, b, c] of combinations) {
-// 		if (
-// 			cellElms[a].innerText !== '' &&
-// 			cellElms[a].innerText === cellElms[b].innerText &&
-// 			cellElms[b].innerText === cellElms[c].innerText
-// 		) {
-// 			winner = cellElms[a].innerText as Player;
-// 			infoElm.innerText = `Winner ${winner}`;
-// 		}
-// 	}
-// }
+		fragment.append(cellElement);
+	}
 
-// function init() {
-// 	for (const cellElm of cellElms) {
-// 		cellElm.onclick = handleCell;
-// 	}
-// 	resetBtn.addEventListener('click', handleReset);
-// }
+	boardElement.replaceChildren(fragment);
 
-// window.addEventListener('load', init);
-// const person = {
-// 	name: 'kent',
-// 	age: 23,
-// 	job: undefined,
-// 	run() {
-// 		console.log('Kent is running...');
-// 	},
-// };
-// console.log(person);
-// console.log(JSON.stringify(person));
+	// INFO RENDERING
+	if (winner) infoElm.innerText = `Winner: ${winner}`;
+	else if (isAllCellFilled) infoElm.innerText = "🤝 Draw 🤝";
+	else infoElm.innerText = `Next Player: ${getNextPlayer()}`;
+}
 
-const a = {
-	name: 'Boburbek',
-	run() {
-		console.log('I am running');
-	},
-};
-const a1 = JSON.stringify(a);
-const a2 = JSON.parse(a1);
-console.log(a);
-console.log(a1);
-console.log(a2);
+// LOGIC FUNCTIONS
+function getWinner() {
+	let winner: Player | null = null;
+	const combinations = [
+		[0, 1, 2],
+		[3, 4, 5],
+		[6, 7, 8],
+		[0, 3, 6],
+		[1, 4, 7],
+		[2, 5, 8],
+		[0, 4, 8],
+		[2, 4, 6],
+	];
+
+	for (const [a, b, c] of combinations) {
+		if (board[a] !== null && board[a] === board[b] && board[b] === board[c]) {
+			winner = board[a];
+			break;
+		}
+	}
+
+	return winner;
+}
+
+function initialBoard() {
+	let board: Array<Player | null> = new Array(9).fill(null);
+	const data = localStorage.getItem(BOARD_KEY);
+
+	if (data) board = JSON.parse(data);
+
+	return board;
+}
+
+function getNextPlayer() {
+	const filteredBoard = board.filter(Boolean);
+	return filteredBoard.length % 2 === 0 ? "X" : "O";
+}
+
+function init() {
+	renderBoard();
+	resetBtn.onclick = handleReset;
+}
+
+window.addEventListener("load", init);

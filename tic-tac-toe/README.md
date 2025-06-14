@@ -16,9 +16,15 @@
     ✅ JSON.parse 👍
     ✅ JSON.stringify 👍
 
-# LocalStorage
+# DataSet 👍
 
-    ✅ store.getItem()
-    ✅ store.setItem()
-    ✅ store.clear()
-    ✅ store.remove()
+    ✅ What is DataSet 👍
+    ✅ how to get value of dataset 👍
+    ✅ how to set value of dataset 👍
+
+# LocalStorage 👍
+
+    ✅ localStorage.getItem() 👍
+    ✅ localStorage.setItem() 👍
+    ✅ localStorage.clear() 👍
+    ✅ localStorage.remove() 👍
