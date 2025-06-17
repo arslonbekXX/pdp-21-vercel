@@ -10,3 +10,8 @@
     ✅ pomofocus
     ✅ quiz-app v2
     ✅ tic-tac-toe v2
+
+COLUMN: i*size + j
+ROW: j*size + i
+LTR DIO: i*(size+1)
+RTL DIO: (i+1)*(size-1)

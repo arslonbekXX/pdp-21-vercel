@@ -2,7 +2,7 @@ import { BOARD_KEY, LEVEL_DEFAULT, LEVEL_KEY } from "./constants";
 import { boardElement, infoElm, levelBtn, resetBtn } from "./elements";
 import type { Player } from "./types";
 
-let board: Array<Player | null> = initialBoard();
+let board: Array<Player> = initialBoard();
 
 // HANDLE FUNCTIONS
 function handleCell(event: MouseEvent) {
@@ -32,9 +32,10 @@ function handleLevel() {
 // UI FUNCTIONS
 function renderBoard() {
 	const fragment = document.createDocumentFragment();
-	const isAllCellFilled = board.filter(Boolean).length === 9;
-	const winner = getWinner();
 	const { level } = getLevel();
+	const isAllCellFilled = board.filter(Boolean).length === level ** 2;
+	const winner = getWinner();
+	console.log("winner = ", winner);
 
 	boardElement.setAttribute("style", `--level: ${level}`);
 
@@ -62,32 +63,76 @@ function renderBoard() {
 }
 
 // LOGIC FUNCTIONS
-function getWinner() {
-	let winner: Player | null = null;
-	const combinations = [
-		[0, 1, 2],
-		[3, 4, 5],
-		[6, 7, 8],
-		[0, 3, 6],
-		[1, 4, 7],
-		[2, 5, 8],
-		[0, 4, 8],
-		[2, 4, 6],
-	];
+function getWinnerFromIndexes(idxes: number[]) {
+	let winner: Player = board[idxes[0]];
 
-	for (const [a, b, c] of combinations) {
-		if (board[a] !== null && board[a] === board[b] && board[b] === board[c]) {
-			winner = board[a];
-			break;
-		}
+	for (const idx of idxes) {
+		if (board[idx] !== winner) return null;
 	}
+
+	return winner;
+}
+
+function getWinner() {
+	let winner: Player = null;
+
+	const { level } = getLevel();
+
+	// ROW CHECKING
+	for (let i = 0; i < level; i++) {
+		const idxes: number[] = [];
+
+		for (let j = 0; j < level; j++) {
+			const idx = i * level + j;
+
+			idxes.push(idx);
+		}
+
+		winner = getWinnerFromIndexes(idxes);
+		if (winner) return winner;
+	}
+
+	// COLUMN CHECKING
+	for (let i = 0; i < level; i++) {
+		const idxes: number[] = [];
+
+		for (let j = 0; j < level; j++) {
+			const idx = j * level + i;
+
+			idxes.push(idx);
+		}
+
+		winner = getWinnerFromIndexes(idxes);
+		if (winner) return winner;
+	}
+
+	// LTR DIO
+	const ltrDioIdxes = [];
+
+	for (let i = 0; i < level; i++) {
+		const idx = i * (level + 1);
+		ltrDioIdxes.push(idx);
+	}
+
+	winner = getWinnerFromIndexes(ltrDioIdxes);
+	if (winner) return winner;
+
+	// RTL DIO
+	const rtlDioIdxes = [];
+
+	for (let i = 0; i < level; i++) {
+		const idx = (i + 1) * (level - 1);
+		rtlDioIdxes.push(idx);
+	}
+
+	winner = getWinnerFromIndexes(rtlDioIdxes);
 
 	return winner;
 }
 
 function initialBoard() {
 	const { level, isStoredLevel } = getLevel();
-	let board: Array<Player | null> = new Array(level ** 2).fill(null);
+	let board: Array<Player> = new Array(level ** 2).fill(null);
 
 	if (isStoredLevel) {
 		const storedBoard = localStorage.getItem(BOARD_KEY);
