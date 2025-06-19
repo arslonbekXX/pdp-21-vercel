@@ -1,4 +1,4 @@
-# ---------- 14.06.25 ----------(63)
+# ---------- 19.06.25 ----------(65)
 
 ## Projects
 
@@ -6,12 +6,7 @@
     ✅ quiz-app v1 👍
     ✅ tic-tac-toe v1 👍
     ✅ tic-tac-toe v2 without getWinner() 👍
-    ✅ pig-game
+    ✅ pig-game 👍
     ✅ pomofocus
     ✅ quiz-app v2
-    ✅ tic-tac-toe v2
-
-COLUMN: i*size + j
-ROW: j*size + i
-LTR DIO: i*(size+1)
-RTL DIO: (i+1)*(size-1)
+    ✅ tic-tac-toe v2 👍

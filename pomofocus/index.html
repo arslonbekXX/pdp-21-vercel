@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/style.css" />
+		<title>Pomofocus App</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<h1 class="logo">Pomofocus</h1>
+			<div class="settings">
+				<button class="btn">Report</button>
+				<button class="btn">Setting</button>
+				<button class="btn">Sign In</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="modes">
+				<button class="mode-btn" data-mode="POMODORO">Pomodoro</button>
+				<button class="mode-btn" data-mode="SHORT_BREAK">Short Break</button>
+				<button class="mode-btn" data-mode="LONG_BREAK">Long Break</button>
+			</div>
+			<div id="timer">25:00</div>
+			<button id="btn-start">Start</button>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
