@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@latest/index.min.css"
+		/>
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div class="password-generator-container">
+			<div class="password-generator-title">Password Generator</div>
+			<div class="password-generator-output-group">
+				<input
+					class="password-generator-output"
+					type="text"
+					readonly
+					value="Click Generate"
+					aria-label="Generated password"
+				/>
+				<button
+					class="password-generator-copy-btn"
+					type="button"
+					title="Copy password"
+					tabindex="-1"
+					disabled
+				>
+					<span>Copy</span>
+				</button>
+			</div>
+			<form class="password-generator-options" autocomplete="off">
+				<div class="password-generator-option">
+					<label class="password-generator-option-label" for="password-generator-length"
+						>Password Length:</label
+					>
+					<input
+						class="password-generator-input-number"
+						id="password-generator-length"
+						type="number"
+						min="4"
+						max="32"
+						value="12"
+					/>
+				</div>
+				<div class="password-generator-option">
+					<input
+						class="password-generator-input-checkbox"
+						id="password-generator-uppercase"
+						type="checkbox"
+						checked
+					/>
+					<label for="password-generator-uppercase" class="password-generator-option-label"
+						>Uppercase Letters</label
+					>
+				</div>
+				<div class="password-generator-option">
+					<input
+						class="password-generator-input-checkbox"
+						id="password-generator-lowercase"
+						type="checkbox"
+						checked
+					/>
+					<label for="password-generator-lowercase" class="password-generator-option-label"
+						>Lowercase Letters</label
+					>
+				</div>
+				<div class="password-generator-option">
+					<input
+						class="password-generator-input-checkbox"
+						id="password-generator-numbers"
+						type="checkbox"
+						checked
+					/>
+					<label for="password-generator-numbers" class="password-generator-option-label"
+						>Numbers</label
+					>
+				</div>
+				<div class="password-generator-option">
+					<input
+						class="password-generator-input-checkbox"
+						id="password-generator-symbols"
+						type="checkbox"
+					/>
+					<label for="password-generator-symbols" class="password-generator-option-label"
+						>Symbols</label
+					>
+				</div>
+				<button class="password-generator-generate-btn" type="button">Generate Password</button>
+			</form>
+		</div>
+	</body>
+</html>
