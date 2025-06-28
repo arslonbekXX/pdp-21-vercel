@@ -1,4 +1,4 @@
-# ------ 24.06.25 ------ (67)
+# ------ 28.06.25 ------ (69)
 
 ### 0. Semantic Versioning 👍
 
@@ -64,5 +64,8 @@
 ### Deploying apps (1d)
 
         ☑️ Deploying apps to vercel from github 👍
-        ☑️ How to get new domain 
-        ☑️ How to add domain your website
+        ☑️ How to get new domain 👍
+        ☑️ How to add domain your website 👍
+        ☑️ ahost.uz -> uz domain sotib olish
+        ☑️ cctld.uz -> uz domain ni tekshirish
+        ☑️ namecheap.com -> .{any} domain sotib olish
