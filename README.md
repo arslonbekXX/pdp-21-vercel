@@ -27,55 +27,42 @@
 - `git add` – Stage changes 👍
 - `git commit` – Save changes 👍
 - `git log` – View commit history
-- `git reset` and `git checkout` – Undo changes
 - `GUI` vs `CLI` 👍
 
-🛠 **Practice:** Create a local repository and commit changes
+🛠 **Practice:** Create a local repository and commit changes 👍
 
 ---
 
-### 3. Branching and Merging
+### 3. Branching and Merging 👍
 
-- What is a Branch and why use it?
-- `git checkout` / `git switch` – Switch branches
-- `git merge` – ®Merge branches
-- Resolving merge conflicts
+- What is a Branch and why use it? 👍
+- `git checkout {branch}` and `git checkout -b {branch}` – Switch and Create branches 👍
+- `git merge` – ®Merge branches 👍
+- Resolving merge conflicts 👍
 
-🛠 **Practice:** Create a branch, make changes, and merge it
+🛠 **Practice:** Create a branch, make changes, and merge it 👍
 
 ---
 
-### 4. Working with GitHub
+### 4. Working with GitHub 👍
 
-- Creating a GitHub repository
-- Connecting a local repository to GitHub (`git remote add origin`)
-- `git push` – Push changes to GitHub
+- Creating a GitHub repository 👍
+- Connecting a local repository to GitHub (`git remote add origin {repo-link}`) 👍
+- `git push` – Push changes to GitHub 👍
 - `git pull` – Fetch and merge changes from GitHub (`git fetch` + `git merge`)
-- `git clone` – Copy a remote repository
+- `git clone` – Copy a remote repository 👍
 
-🛠 **Practice:** Create a GitHub repository and link it to a local repository
-
----
-
-### 5. Collaboration & Pull Requests
-
-- Understanding Clone
-- What is a Pull Request (PR)?
-- Code Review and Merging PRs
-
-🛠 **Practice:** Fork a repository, create a PR, and review changes
-
----
+🛠 **Practice:** Create a GitHub repository and link it to a local repository 👍
 
 ### 6. Advanced Git
 
 - `git stash` – Save temporary changes
-- `.gitignore` – Ignoring unnecessary files
+- `.gitignore` – Ignoring unnecessary files 👍
 
 🛠 **Practice:** Use `git stash`, and `.gitignore`
 
 ### Deploying apps (1d)
 
-        ☑️ Deploying apps to vercel from github
-        ☑️ How to get new domain
+        ☑️ Deploying apps to vercel from github 👍
+        ☑️ How to get new domain 
         ☑️ How to add domain your website
