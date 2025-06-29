@@ -1,11 +1,11 @@
-import type { Movie } from './types';
+import type { Genre, Movie } from './types';
 
 export const movies: Movie[] = [
 	{
 		_id: '685cd106b0792713708b40c8',
 		title: 'Airplane',
 		numberInStock: 5,
-		dailyRentalRate: 2,
+		dailyRentalRate: 200,
 		genre: {
 			_id: '685cd106b0792713708b40c6',
 			name: 'Comedy',
@@ -15,7 +15,7 @@ export const movies: Movie[] = [
 		_id: '685cd106b0792713708b40ca',
 		title: 'The Hangover',
 		numberInStock: 10,
-		dailyRentalRate: 2,
+		dailyRentalRate: 4110,
 		genre: {
 			_id: '685cd106b0792713708b40c6',
 			name: 'Comedy',
@@ -25,7 +25,7 @@ export const movies: Movie[] = [
 		_id: '685cd106b0792713708b40cc',
 		title: 'Wedding Crashers',
 		numberInStock: 15,
-		dailyRentalRate: 2,
+		dailyRentalRate: 45000,
 		genre: {
 			_id: '685cd106b0792713708b40c6',
 			name: 'Comedy',
@@ -35,7 +35,7 @@ export const movies: Movie[] = [
 		_id: '685cd106b0792713708b40d1',
 		title: 'Die Hard',
 		numberInStock: 5,
-		dailyRentalRate: 2,
+		dailyRentalRate: 10000,
 		genre: {
 			_id: '685cd106b0792713708b40cf',
 			name: 'Action',
@@ -140,5 +140,24 @@ export const movies: Movie[] = [
 		},
 		numberInStock: 100,
 		dailyRentalRate: 50,
+	},
+];
+
+export const genres: Genre[] = [
+	{
+		_id: '685cd106b0792713708b40cf',
+		name: 'Action',
+	},
+	{
+		_id: '685cd106b0792713708b40c6',
+		name: 'Comedy',
+	},
+	{
+		_id: '685cd106b0792713708b40d8',
+		name: 'Romance',
+	},
+	{
+		_id: '685cd106b0792713708b40e1',
+		name: 'Thriller',
 	},
 ];
