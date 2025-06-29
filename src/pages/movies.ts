@@ -5,6 +5,13 @@ export const moviesInit = () => {
 	const tableBody = document.querySelector('tbody') as HTMLTableSectionElement;
 	for (let movie of movies) {
 		console.log(movie);
+		const row = ` <tr>
+         <td><a href="">The Notebook</a></td>
+         <td>Action</td>
+         <td>10</td>
+         <td>$20</td>
+         <td>🩶</td>
+        </tr>`;
 	}
 };
 

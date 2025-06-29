@@ -37,27 +37,6 @@ export const PAGES: Record<Pathname, string> = {
         </tr>
        </thead>
        <tbody>
-        <tr>
-         <td><a href="">The Notebook</a></td>
-         <td>Action</td>
-         <td>10</td>
-         <td>$20</td>
-         <td>🩶</td>
-        </tr>
-        <tr>
-         <td><a href="">Sherlock Holmes</a></td>
-         <td>Action</td>
-         <td>10</td>
-         <td>$20</td>
-         <td>🩶</td>
-        </tr>
-        <tr>
-         <td><a href="">Spider man</a></td>
-         <td>Action</td>
-         <td>10</td>
-         <td>$20</td>
-         <td>🩶</td>
-        </tr>
        </tbody>
       </table>
 
