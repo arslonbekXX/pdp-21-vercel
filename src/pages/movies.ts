@@ -1,9 +1,9 @@
-import { movies } from '../db';
+import { genres, movies } from '../db';
 import type { Movie } from '../types';
 
 const state = {
 	genre: 'All',
-	currentPage: 0,
+	currentPage: 2,
 	pageSize: 3,
 };
 
@@ -37,12 +37,35 @@ function renderMovies(list: Movie[]) {
 }
 
 function renderGenres() {
-
+	const listGroup = document.querySelector('.list-group') as HTMLUListElement;
+	for (let genre of genres) {
+		const listItem = document.createElement('li'); // <li></li>
+		listItem.className = 'list-group-item'; // <li class="list-group-item"></li>
+		listItem.innerText = genre.name; // <li class="list-group-item">{genre.name}</li>
+		listGroup.append(listItem);
+	}
 }
-function renderPagination(total: number) {}
+function renderPagination(total: number) {
+	const maxPage = Math.ceil(total / state.pageSize);
+	const pagination = document.querySelector('.pagination') as HTMLUListElement;
+	for (let page = 1; page <= maxPage; page++) {
+		const pageItem = document.createElement('li'); // <li></li>
+		pageItem.className = `page-item ${page === state.currentPage ? 'active' : ''}`; // <li class="page-item"></li>
+
+		const pageLink = document.createElement('a'); // <a></a>
+		pageLink.className = 'page-link'; // <a class="page-link"></a>
+		pageLink.href = '#'; // <a class="page-link" href="#"></a>
+		pageLink.innerText = page.toString(); // <a class="page-link" href="#">{page}</a>
+
+		pageItem.append(pageLink); // <li class="page-item"><a class="page-link" href="#">{page}</a></li>
+		pagination.append(pageItem);
+	}
+}
 
 export const moviesInit = () => {
-	renderMovies(movies);
+	const paginatedMovies = paginate(movies, state.pageSize, state.currentPage);
+
+	renderMovies(paginatedMovies);
 	renderGenres();
 	renderPagination(movies.length);
 };

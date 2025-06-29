@@ -15,11 +15,6 @@ export const PAGES: Record<Pathname, string> = {
     <div class="row">
      <div class="col-2">
       <ul class="list-group">
-       <li class="list-group-item active" aria-current="true">All</li>
-       <li class="list-group-item">Action</li>
-       <li class="list-group-item">Comedy</li>
-       <li class="list-group-item">Romance</li>
-       <li class="list-group-item">Triller</li>
       </ul>
      </div>
      <div class="col-10">
@@ -41,11 +36,6 @@ export const PAGES: Record<Pathname, string> = {
       </table>
 
       <ul class="pagination">
-       <li class="page-item active"><a class="page-link" href="#">1</a></li>
-       <li class="page-item"><a class="page-link" href="#">2</a></li>
-       <li class="page-item"><a class="page-link" href="#">3</a></li>
-       <li class="page-item"><a class="page-link" href="#">4</a></li>
-       <li class="page-item"><a class="page-link" href="#">5</a></li>
       </ul>
      </div>
     </div>
