@@ -9,7 +9,7 @@ function getRoute() {
 	const pathname = REDIRECTS[path];
 
 	if (!pathname) {
-		window.location.pathname = '/404';
+		window.location.pathname = '/not-found';
 		return;
 	}
 

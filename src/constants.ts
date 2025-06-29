@@ -1,3 +1,4 @@
+import { loginInit, moviesInit, registerInit, notFoundInit } from './pages';
 import type { Path, Pathname } from './types';
 
 export const REDIRECTS: Record<Path, Pathname> = {
@@ -5,7 +6,7 @@ export const REDIRECTS: Record<Path, Pathname> = {
 	'/movies': 'movies',
 	'/login': 'login',
 	'/register': 'register',
-	'/404': '404',
+	'/not-found': 'not-found',
 };
 
 export const PAGES: Record<Pathname, string> = {
@@ -117,7 +118,7 @@ export const PAGES: Record<Pathname, string> = {
 			</form>
 		</div>
  `,
-	404: `
+	'not-found': `
 	<div class="container">
    <h1>404 Not Found</h1>
    <p>The page you are looking for does not exist.</p>
@@ -126,10 +127,8 @@ export const PAGES: Record<Pathname, string> = {
 };
 
 export const LOGICS: Record<Pathname, () => void> = {
-	movies: () => console.log('Movies logic initialized'),
-	login: () => console.log('Login logic initialized'),
-	register: () => {
-		const registerBtn = document.getElementById('register-btn') as HTMLButtonElement;
-	},
-	'404': () => console.log('404 logic initialized'),
+	movies: moviesInit,
+	login: loginInit,
+	register: registerInit,
+	'not-found': notFoundInit,
 };
