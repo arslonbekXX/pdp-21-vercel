@@ -1,50 +1,103 @@
 import { genres, movies } from '../db';
-import type { Movie } from '../types';
+import type { Genre, Movie } from '../types';
+import { paginate } from '../utils';
 
 const state = {
-	genre: 'All',
+	genreId: '',
 	currentPage: 2,
 	pageSize: 3,
 };
 
+// HANDLE FUNCTION
+function handleGenreSelect(genre: Genre) {
+	state.genreId = genre._id;
+
+	renderGenres();
+}
+
+// UI FUNCTION
+
 function renderMovies(list: Movie[]) {
 	const tableBody = document.querySelector('tbody') as HTMLTableSectionElement;
 
-	for (let item of list) {
-		const tableRow = document.createElement('tr');
+	for (const { _id, title, numberInStock, dailyRentalRate, genre } of list) {
+		const tableRow = document.createElement('tr'); // <tr></tr>
 
-		const titleTd = document.createElement('td');
-		const titleLink = document.createElement('a');
-		titleLink.href = `/movies/${item._id}`;
-		titleLink.innerText = item.title;
-		titleTd.append(titleLink);
+		const titleTd = document.createElement('td'); // <td></td>
+		const titleLink = document.createElement('a'); // <a></a>
+		titleLink.href = `/movies/${_id}`; // <a href="/movies/{_id}"></a>
+		titleLink.innerText = title; // <a href="/movies/{_id}">{title}</a>
+		titleTd.append(titleLink); // <td><a href="/movies/{_id}">{title}</a></td>
 
-		const genreTd = document.createElement('td');
-		genreTd.innerText = item.genre.name;
+		const genreTd = document.createElement('td'); // <td></td>
+		genreTd.innerText = genre.name; // <td>{genre.name}</td>
 
-		const stockTd = document.createElement('td');
-		stockTd.innerText = item.numberInStock.toString();
+		const stockTd = document.createElement('td'); // <td></td>
+		stockTd.innerText = numberInStock.toString(); // <td>{numberInStock}</td>
 
-		const rateTd = document.createElement('td');
-		rateTd.innerText = '$' + item.dailyRentalRate.toLocaleString('uz-UZ');
+		const rateTd = document.createElement('td'); // <td></td>
+		rateTd.innerText = '$' + dailyRentalRate.toLocaleString('uz-UZ'); // <td>${dailyRentalRate}</td>
 
-		const actionsTd = document.createElement('td');
-		actionsTd.innerHTML = '🩶';
+		const actionsTd = document.createElement('td'); // <td></td>
+		actionsTd.innerHTML = '🩶'; // <td>🩶</td>
 
 		tableRow.append(titleTd, genreTd, stockTd, rateTd, actionsTd);
+		/**
+		 * <tr>
+		 * 		<td><a href="/movies/{_id}">{title}</a></td>
+		 *   <td>{genre.name}</td>
+		 *   <td>{numberInStock}</td>
+		 *   <td>${dailyRentalRate}</td>
+		 *   <td>🩶</td>
+		 * </tr>
+		 */
 		tableBody.append(tableRow);
+		/**
+		* <tbody>
+		    <tr>
+	        		<td><a href="/movies/{_id}">{title}</a></td>
+           <td>{genre.name}</td>
+   								<td>{numberInStock}</td>
+											<td>${dailyRentalRate}</td>
+											<td>🩶</td>
+ 						</tr>
+		    <tr>
+	        		<td><a href="/movies/{_id}">{title}</a></td>
+           <td>{genre.name}</td>
+   								<td>{numberInStock}</td>
+											<td>${dailyRentalRate}</td>
+											<td>🩶</td>
+ 						</tr>
+							...
+		* </tbody>
+		*
+		*
+		*
+		*
+		*
+		*
+	 */
 	}
 }
 
 function renderGenres() {
 	const listGroup = document.querySelector('.list-group') as HTMLUListElement;
+	const fragment = document.createDocumentFragment();
+
 	for (let genre of genres) {
 		const listItem = document.createElement('li'); // <li></li>
-		listItem.className = 'list-group-item'; // <li class="list-group-item"></li>
+		listItem.className = `list-group-item`; // <li class="list-group-item"></li>
 		listItem.innerText = genre.name; // <li class="list-group-item">{genre.name}</li>
-		listGroup.append(listItem);
+
+		if (genre._id === state.genreId) listItem.classList.add('active');
+
+		listItem.onclick = () => handleGenreSelect(genre);
+		fragment.append(listItem);
 	}
+
+	listGroup.replaceChildren(fragment);
 }
+
 function renderPagination(total: number) {
 	const maxPage = Math.ceil(total / state.pageSize);
 	const pagination = document.querySelector('.pagination') as HTMLUListElement;
@@ -62,6 +115,8 @@ function renderPagination(total: number) {
 	}
 }
 
+// LOGIC FUNCTION
+
 export const moviesInit = () => {
 	const paginatedMovies = paginate(movies, state.pageSize, state.currentPage);
 
@@ -69,10 +124,3 @@ export const moviesInit = () => {
 	renderGenres();
 	renderPagination(movies.length);
 };
-
-function paginate(items: Movie[], pageSize: number, currentPage: number) {
-	let startIdx = (currentPage - 1) * pageSize;
-	let endIdx = startIdx + pageSize;
-
-	return items.slice(startIdx, endIdx);
-}

@@ -1,8 +1,9 @@
-// @ts-ignore
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { rootElement } from './elements';
 import type { Path } from './types';
 import { LOGICS, PAGES, REDIRECTS } from './constants';
+
+// @ts-ignore
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function getRoute() {
 	const path = window.location.pathname as Path;

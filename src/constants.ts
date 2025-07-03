@@ -14,8 +14,7 @@ export const PAGES: Record<Pathname, string> = {
  <div class="container">
     <div class="row">
      <div class="col-2">
-      <ul class="list-group">
-      </ul>
+      <ul class="list-group"></ul>
      </div>
      <div class="col-10">
       <button class="btn btn-primary mb-3" id="new-movie-btn">New Movie</button>
@@ -31,12 +30,9 @@ export const PAGES: Record<Pathname, string> = {
          <th></th>
         </tr>
        </thead>
-       <tbody>
-       </tbody>
+       <tbody></tbody>
       </table>
-
-      <ul class="pagination">
-      </ul>
+      <ul class="pagination"></ul>
      </div>
     </div>
    </div>
