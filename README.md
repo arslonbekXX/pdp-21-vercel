@@ -1,4 +1,4 @@
-# ------ 03.07.25 ------ (71)
+# ------ 08.07.25 ------ (73)
 
 ## Topics
 
@@ -12,3 +12,18 @@
     ✅ extract functions - (Javohir, Kamolxon, Ismoil, Temur)
     ✅ git - (Abdulloh, Kamolxon, Mirodil, Nozanin, Sherzodbek,Atamurat)
     ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
+
+## CSS
+
+    ✅ animation-play-state: paused | running;
+    ✅ object-fit: fill | contain | cover | none;
+    ✅ object-position: {x} {y};
+
+## Object Destructuring
+
+    ✅ how to use ?
+    ✅ change field name ?
+
+## Array Destructuring
+
+    ✅ how to use ?
