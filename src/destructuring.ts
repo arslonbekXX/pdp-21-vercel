@@ -19,7 +19,7 @@
 // console.log('age = ', dogAge);
 
 /* Array Destructuring */
-const words = ['Hello', 'World', 'JavaScript', 'is', 'awesome'];
+// const words = ['Hello', 'World', 'JavaScript', 'is', 'awesome'];
 
 // const a = words[0];
 // const b = words[1];
