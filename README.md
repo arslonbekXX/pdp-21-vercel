@@ -6,12 +6,12 @@
     ✅ for:in vs for:of vs in:condition - (Islombek, Orzigul) 👍
     ✅ localstorage(set, get, remove, clean)  - (Orzigul, Ismoil, Abdulloh) 👍
     ✅ Typescript types (Record, interface vs type) - (Bexruz,  Ismoil, Zafar, Temur, Orzigul, Mirzohid, Isroil, Atamurat)
+    ✅ modules(import, exports) - (Javohir)
+    ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
     ✅ DOM working with typescript - (Nozanin)
     ✅ DOM events - (Ismoil, Isroil, Sherzodbek,Atamurat)
-    ✅ modules(import, exports) - (Javohir)
     ✅ extract functions - (Javohir, Kamolxon, Ismoil, Temur)
     ✅ git - (Abdulloh, Kamolxon, Mirodil, Nozanin, Sherzodbek,Atamurat)
-    ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
 
 ## CSS
 
@@ -48,3 +48,11 @@
     ✅ FOR:IN - kalit boyicha aylanish
     ✅ IN
     ✅ FOR:OF - index boyicha aylanish, faqat iteration(ketma-ketlik) lar uchun
+
+## Delete Object's field
+
+    ✅ delete
+
+## Typescript types
+
+    ✅ Partial<Type> - Type ni field larini ixtiyoriy qiladi

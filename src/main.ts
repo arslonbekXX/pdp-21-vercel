@@ -1,36 +1,74 @@
-/* FOR:IN */
+/**
+ * Challenge-1:
+ *  Vazifa: Yuqoridagi obyektni ko‘zdan kechirib,
+ faqat string qiymatga ega bo‘lgan maydonlar nomlarini array ko‘rinishida qaytaring.
+ Bunda `for...in` yordamida obyekt ustida aylaning va `typeof` bilan tekshiring.
 
-/* FOR:IN with ARRAY */
-// const nums = [40, 30, 23, 50];
-// for (const idx in nums) {
-//  const value = nums[idx];
-// 	console.log(Number(idx));
-// 	console.log(`nums[${idx}] = `, value);
-// }
 
-/* FOR:IN with OBJECT */
+  Kutilgan natija: ["name", "city"]
 
-// const laptop = {
-// 	name: 'Macbook Pro',
-// 	display: 'Retina',
-// 	price: 2000,
+ */
+
+// const person = {
+// 	name: 'Arslon',
+// 	age: 25,
+// 	city: 'Tashkent',
+// 	isAdmin: false,
 // };
 
-// for (const key in laptop) {
-// 	const value = laptop[key as keyof typeof laptop];
-// 	console.log(`laptop.${key} = `, value);
+// let strings: string[] = [];
+
+// for (const key in person) {
+// 	const value = person[key as keyof typeof person];
+// 	if (typeof value === 'string') {
+// 		strings.push(key);
+// 	}
 // }
 
-/* IN */
+// console.log(strings);
 
-// const person: any = { name: 'Kent', age: 20 };
+/**
+ * Challenge-2:
+ *  Vazifa: Quyidagi `saveSettings` funksiyasi sozlamalarni localStorage'ga saqlasin.
+ `loadSettings` esa uni olib qaytarsin.
+ JSON.stringify va JSON.parse dan foydalanish shart.
 
-// let isExistName = 'name' in person;
-// let isExistAge = 'myAge' in person;
 
-// console.log('isExistName = ', isExistName);
-// console.log('isExistAge = ', isExistAge);
+  Eslatma:
+  - Sozlamalarni "app-settings" degan kalit bilan saqlang.
+  - loadSettings null qaytarishi mumkin.
+  - Natijani console.log orqali tekshirib ko‘ring.
 
-/* FOR:OF with ARRAY */
-const nums = [40, 30, 23, 50];
-nums.forEach((num) => console.log(num));
+ *
+ */
+interface Settings {
+	theme: 'light' | 'dark';
+	fontSize: number;
+	language: string;
+}
+
+const SETTINGS_KEY = 'app-settings';
+
+function saveSettings(settings: Settings) {
+	localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+}
+
+function loadSettings() {
+	const value = localStorage.getItem(SETTINGS_KEY);
+
+	if (value === null) return value;
+
+	const settings: Settings = JSON.parse(value);
+
+	return settings;
+}
+
+function updateSettings(settings: Partial<Settings>) {}
+
+saveSettings({ theme: 'dark', fontSize: 30, language: 'en' });
+const settings1 = loadSettings();
+console.log(settings1); // { theme: 'dark', fontSize: 30, language: 'en' }
+
+updateSettings({ fontSize: 50, theme: 'light' });
+const settings2 = loadSettings();
+console.log(settings2); // { theme: 'light', fontSize: 50, language: 'en' }
