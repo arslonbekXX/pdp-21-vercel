@@ -1,74 +1,51 @@
-/**
- * Challenge-1:
- *  Vazifa: Yuqoridagi obyektni ko‘zdan kechirib,
- faqat string qiymatga ega bo‘lgan maydonlar nomlarini array ko‘rinishida qaytaring.
- Bunda `for...in` yordamida obyekt ustida aylaning va `typeof` bilan tekshiring.
+/* Extends */
 
+/* Extends with Interface */
 
-  Kutilgan natija: ["name", "city"]
-
- */
-
-// const person = {
-// 	name: 'Arslon',
-// 	age: 25,
-// 	city: 'Tashkent',
-// 	isAdmin: false,
-// };
-
-// let strings: string[] = [];
-
-// for (const key in person) {
-// 	const value = person[key as keyof typeof person];
-// 	if (typeof value === 'string') {
-// 		strings.push(key);
-// 	}
+// interface Animal {
+// 	name: string;
 // }
 
-// console.log(strings);
+// interface Dog extends Animal {
+// 	breed: string;
+// }
 
-/**
- * Challenge-2:
- *  Vazifa: Quyidagi `saveSettings` funksiyasi sozlamalarni localStorage'ga saqlasin.
- `loadSettings` esa uni olib qaytarsin.
- JSON.stringify va JSON.parse dan foydalanish shart.
+// const dog: Dog = {
+// 	name: 'Reks',
+// 	breed: 'Nemis apcharka',
+// };
 
+/* Extends with Types */
 
-  Eslatma:
-  - Sozlamalarni "app-settings" degan kalit bilan saqlang.
-  - loadSettings null qaytarishi mumkin.
-  - Natijani console.log orqali tekshirib ko‘ring.
+// type Animal = {
+// 	name: string;
+// };
 
- *
- */
-interface Settings {
-	theme: 'light' | 'dark';
-	fontSize: number;
-	language: string;
-}
+// type Dog = Animal & {
+// 	breed: string;
+// };
 
-const SETTINGS_KEY = 'app-settings';
+// const dog: Dog = {
+// 	name: 'Reks',
+// 	breed: 'Nemis apcharka',
+// };
 
-function saveSettings(settings: Settings) {
-	localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
-}
+/* Declaration Merging */
+/* into react package */
+// interface ReactJSX {
+// 	name: string;
+// }
 
-function loadSettings() {
-	const value = localStorage.getItem(SETTINGS_KEY);
+// /* local file */
+// interface ReactJSX {
+// 	age: number;
+// }
 
-	if (value === null) return value;
+// const a: ReactJSX = {
+// 	name: 'kent',
+// 	age: 20,
+// };
 
-	const settings: Settings = JSON.parse(value);
-
-	return settings;
-}
-
-function updateSettings(settings: Partial<Settings>) {}
-
-saveSettings({ theme: 'dark', fontSize: 30, language: 'en' });
-const settings1 = loadSettings();
-console.log(settings1); // { theme: 'dark', fontSize: 30, language: 'en' }
-
-updateSettings({ fontSize: 50, theme: 'light' });
-const settings2 = loadSettings();
-console.log(settings2); // { theme: 'light', fontSize: 50, language: 'en' }
+type Literal = 200 | 3400;
+const a: Literal = 200;
+console.log(a);
