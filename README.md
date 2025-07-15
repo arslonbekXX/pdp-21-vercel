@@ -8,8 +8,8 @@
     ✅ Typescript types (Record, interface 👍 vs type 👍) - (Bexruz,  Ismoil, Zafar, Temur, Orzigul, Mirzohid, Isroil, Atamurat)
     ✅ modules(import, exports) - (Javohir)
     ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
-    ✅ DOM working with typescript - (Nozanin, Ismoil, Isroil, Sherzodbek,Atamurat)
     ✅ git - (Abdulloh, Kamolxon, Mirodil, Nozanin, Sherzodbek,Atamurat)
+    ✅ DOM working with typescript - (Nozanin, Ismoil, Isroil, Sherzodbek,Atamurat)
 
 ## CSS
 
