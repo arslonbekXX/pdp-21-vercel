@@ -61,3 +61,14 @@
 ## Courses
 
     ✅ https://www.totaltypescript.com
+
+## JS Modules
+
+    ✅ Common JS (require, module.exports)
+    ✅ ES Modules (import, export)
+
+            🎁 Named Export
+            🎁 Default Export
+            🎁 (const, let va var) oldin "default" export mumkin emas
+            🎁 alias
+            🎁 * - all imports
