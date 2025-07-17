@@ -1,4 +1,11 @@
-# ------ 15.07.25 ------ (76)
+# ------ 17.07.25 ------ (77)
+
+## Homework
+
+    ✅ Ikki kishi bitta jamoa bolib ishlaydi
+    ✅ Bitta repo da ishlaydi
+    ✅ Tailwind + Vite loyiha yaratadi
+    ✅ Vercel ga deploy qilinadi
 
 ## Topics
 
@@ -72,3 +79,28 @@
             🎁 (const, let va var) oldin "default" export mumkin emas
             🎁 alias
             🎁 * - all imports
+
+## GIT
+
+    ✅ git init - Init git repo
+    ✅ git add - "add" changed files to git stage
+    ✅ git rm --cached {file-names} - undo "git add"
+    ✅ git commit -m "{message}" - "commit" to git from staged files
+    ✅ git commit -a -m "{message}" - "add" and "commit" to git from staged files
+    ✅ .gitignore - add ignored files for git
+    ✅ git log [--oneline] [--graph] - see all commits' histories
+    ✅ git clone {remote-git-url} [{folder-path}] - cloning new git repo
+    ✅ git remote -v - View git remotes
+    ✅ git remote add {remote-name} {remote-repo-link} - Add remote into git
+    ✅ git remote remove {remote-name} - Remove remote from git
+    ✅ git reset [--soft | --hard] head~{count-of-commit} - Commitlarni bekor qilish
+    ✅ git checkout [-b] {branch-name} - Switching or Creating branch
+    ✅ git fetch [{remote-name} | --all] - Fetching all changes from remotes
+    ✅ git merge - merging two branches
+    ✅ git pull
+
+## Branch naming
+
+    ✅ origin/{branch} - only remote
+    ✅ {branch}|origin - both local and remote
+    ✅ {branch} - only local
