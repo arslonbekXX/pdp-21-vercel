@@ -6,7 +6,7 @@
     ✅ for:in vs for:of vs in:condition - (Islombek, Orzigul) 👍
     ✅ localstorage(set, get, remove, clean)  - (Orzigul, Ismoil, Abdulloh) 👍
     ✅ Typescript types (Record, interface 👍 vs type 👍) - (Bexruz,  Ismoil, Zafar, Temur, Orzigul, Mirzohid, Isroil, Atamurat)
-    ✅ modules(import, exports) - (Javohir)
+    ✅ modules(import, exports) - (Javohir) 👍
     ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
     ✅ git - (Abdulloh, Kamolxon, Mirodil, Nozanin, Sherzodbek,Atamurat)
     ✅ DOM working with typescript - (Nozanin, Ismoil, Isroil, Sherzodbek,Atamurat)
