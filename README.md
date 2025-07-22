@@ -18,9 +18,18 @@
     ✅ What is HOF(Higher-Order Function) 👍
     ✅ Anonymous function (function expression) 👍
     ✅ Function Expression vs Function Declaration vs Arrow Function 👍
-    ✅ Functions and this
-    ✅ Functions and arguments
+
+### Object and methods
+
+    ✅ What is Method 👍
+    ✅ This keyword 👍
+    ✅ arguments keyword 👍
     ✅ Functions and call, bind, apply
+
+### arguments keyword 👍
+
+    ✅ Exist Only function declaration
+    ✅ Iteration
 
 ### Error handling
 
