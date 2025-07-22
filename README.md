@@ -1,106 +1,95 @@
-# ------ 17.07.25 ------ (77)
+# ------ 22.07.25 ------ (79)
 
-## Homework
+### Object 👍
 
-    ✅ Ikki kishi bitta jamoa bolib ishlaydi
-    ✅ Bitta repo da ishlaydi
-    ✅ Tailwind + Vite loyiha yaratadi
-    ✅ Vercel ga deploy qilinadi
+    ✅ Object  👍
+    ✅ key in 👍
+    ✅ Object.keys() 👍
+    ✅ Object.values() 👍
+    ✅ Object.entries() 👍
+    ✅ structuredClone(DEEP-CLONE) 👍 vs Object.assign(SHALLOW-COPY) vs Spread Operator(SHALLOW-COPY) 👍
+    ✅ Object.freeze()
 
-## Topics
+### Functions
 
-    ✅ Destructuring vs Rest vs Spread - (Bexruz,Islombek, Orzigul) 👍
-    ✅ for:in vs for:of vs in:condition - (Islombek, Orzigul) 👍
-    ✅ localstorage(set, get, remove, clean)  - (Orzigul, Ismoil, Abdulloh) 👍
-    ✅ Typescript types (Record, interface 👍 vs type 👍) - (Bexruz,  Ismoil, Zafar, Temur, Orzigul, Mirzohid, Isroil, Atamurat)
-    ✅ modules(import, exports) - (Javohir) 👍
-    ✅ deploying and vercel - (Kamolxon, Bexruz, Mirodil, Orzigul, Sherzodbek)
-    ✅ git - (Abdulloh, Kamolxon, Mirodil, Nozanin, Sherzodbek,Atamurat)
-    ✅ DOM working with typescript - (Nozanin, Ismoil, Isroil, Sherzodbek,Atamurat)
+    ✅ What is Function 👍
+    ✅ Types of Function(void, no-void) 👍
+    ✅ What is Callback Function 👍
+    ✅ What is HOF(Higher-Order Function) 👍
+    ✅ Anonymous function (function expression) 👍
+    ✅ Function Expression vs Function Declaration vs Arrow Function 👍
+    ✅ Functions and this
+    ✅ Functions and arguments
+    ✅ Functions and call, bind, apply
 
-## CSS
+### Error handling
 
-    ✅ animation-play-state: paused | running;
-    ✅ object-fit: fill | contain | cover | none;
-    ✅ object-position: {x} {y};
+    ✅ Throw
+    ✅ Try and catch blocks
+    ✅ Error handling
 
-## Object Destructuring
+### Topics
 
-    ✅ how to use ?
-    ✅ change field name ?
+    ✅ Arrow functions
+    ✅ Spread operator
+    ✅ Destructuring
+    ✅ Rest parameters
+    ✅ Default parameters
 
-## Array Destructuring
+### JS OOP
 
-    ✅ how to use ?
+    ✅ Object
+    ✅ Object.assign
+    ✅ [...] spread operator
+    ✅ Try Catch
+    ✅ Factory function
+    ✅ Object.create
+    ✅ this keyword
+    ✅ call && bind && apply function methods
+    ✅ Constructor function
+    ✅ new keyword
+    ✅ Abstraction
+    ✅ Private Properties and Methods
+    ✅ Getters and Setters
+    ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
 
-## IMPERATIVE PROGRAMMING vs DECLARATIVE PROGRAMMING
+    ✅ Class
+    ✅ Constructor
+    ✅ Inheritance
 
-    ✅ IMPERATIVE - how
-    ✅ DECLARATIVE - what
+# JS Advanced
 
-## Cloning
+    ✅ Expression vs Statement
+    ✅ OOP && Object.create && Object.assign
+    ✅ Prototype && Prototype Chain
+    ✅ Functional Programming && Closure
+    ✅ JS Execution && Event Loop
+    ✅ JS Modules
+    ✅ Getters && Setters
+    ✅ Promises && Async/Await
+    ✅ NPM Package
+    ✅ Backend && AJAX && Fetch
+    ✅ Clean Code
 
-    ✅ SHALLOW COPY - [...]
-    ✅ DEEP COPY - window.structureClone
-    ✅ SM - Stack Memory
-    ✅ HM - Heap MEMORY
+# Typescript
 
-## Garbage Collector
+    ✅ @ts-ignore vs @ts-expect-error
+    ✅ type
+    ✅ as
+    ✅ unknown || any || never
+    ✅ interface
+    ✅ extends and implements
+    ✅ private and public
+    ✅ class
+    ✅ Generic types
 
-## FOR:IN and FOR:OF
+# PayMe Project
 
-    ✅ keyof type object - object ni kalitlarini aniqlashs
-    ✅ FOR:IN - kalit boyicha aylanish
-    ✅ IN
-    ✅ FOR:OF - index boyicha aylanish, faqat iteration(ketma-ketlik) lar uchun
+    ✅ Login Page(email, password)
+    ✅ Register Page(email, password, name, username, confirmPassword, phone(imask))
+    ✅ Forget Password(email)
+    ✅ Reset Password(password, confirmPassword)
 
-## Delete Object's field
+# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 
-    ✅ delete
-
-## Typescript types
-
-    ✅ Partial<Type> - Type ni field larini ixtiyoriy qiladi
-    ✅ Union Type - Donali typelar
-    ✅ Literal types - Faqat bitta turdan tashkil topgan Union type
-    ✅ Record
-
-## Courses
-
-    ✅ https://www.totaltypescript.com
-
-## JS Modules
-
-    ✅ Common JS (require, module.exports)
-    ✅ ES Modules (import, export)
-
-            🎁 Named Export
-            🎁 Default Export
-            🎁 (const, let va var) oldin "default" export mumkin emas
-            🎁 alias
-            🎁 * - all imports
-
-## GIT
-
-    ✅ git init - Init git repo
-    ✅ git add - "add" changed files to git stage
-    ✅ git rm --cached {file-names} - undo "git add"
-    ✅ git commit -m "{message}" - "commit" to git from staged files
-    ✅ git commit -a -m "{message}" - "add" and "commit" to git from staged files
-    ✅ .gitignore - add ignored files for git
-    ✅ git log [--oneline] [--graph] - see all commits' histories
-    ✅ git clone {remote-git-url} [{folder-path}] - cloning new git repo
-    ✅ git remote -v - View git remotes
-    ✅ git remote add {remote-name} {remote-repo-link} - Add remote into git
-    ✅ git remote remove {remote-name} - Remove remote from git
-    ✅ git reset [--soft | --hard] head~{count-of-commit} - Commitlarni bekor qilish
-    ✅ git checkout [-b] {branch-name} - Switching or Creating branch
-    ✅ git fetch [{remote-name} | --all] - Fetching all changes from remotes
-    ✅ git merge - merging two branches
-    ✅ git pull
-
-## Branch naming
-
-    ✅ origin/{branch} - only remote
-    ✅ {branch}|origin - both local and remote
-    ✅ {branch} - only local
+# [CSBIN.IO](http://csbin.io)
