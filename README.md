@@ -28,11 +28,16 @@
 
 ### arguments keyword 👍
 
-    ✅ Exist Only function declaration
-    ✅ Iteration
+    ✅ Exist Only function declaration 👍
+    ✅ Iteration 👍
+
+### First Class Function 👍
+
+    ✅ Currying function 👍
 
 ### Error handling
 
+    ✅ Error Object
     ✅ Throw
     ✅ Try and catch blocks
     ✅ Error handling

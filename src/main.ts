@@ -1,42 +1,32 @@
-/**
- * Challenge 1:
- *
- *
- *
- */
+// const p1 = {
+// 	name: "kent",
+// 	run() {
+// 		console.log(`${this.name} is running`);
+// 	},
+// };
 
-const p1 = {
-	name: "kent",
-	run() {
-		console.log(`${this.name} is running`);
-	},
-};
+// const p2 = { name: "mark" };
 
-const p2 = {
-	name: "mark",
-	jump() {
-		console.log(`${this.name} is jumping`);
-	},
-};
+// p1.run();
+// p1.run.call(p2);
 
-/* your code here
+// const run2 = p1.run.bind(p2);
+// const run3 = run2.bind(p1);
+// run2.call(p1);
+// run3();
 
- --------- Call Method ---------
-  Kent is running;
-  Mark is running;
-  Kent is jumping;
-  Mark is jumping;
+function bind(fn: any, object: any) {
+	return function (...args: any[]) {
+		return fn.apply(object, args);
+	};
+}
 
- --------- Apply Method ---------
-  Kent is running;
-  Mark is running;
-  Kent is jumping;
-  Mark is jumping;
+const p1 = { name: "kent" };
+function run() {
+	// @ts-expect-error
+	console.log(this);
+	return "hi";
+}
 
- --------- Bind Method ---------
-  Kent is running;
-  Mark is running;
-  Kent is jumping;
-  Mark is jumping;
-
-*/
+console.log(run.bind(p1)());
+console.log(bind(run, p1)());
