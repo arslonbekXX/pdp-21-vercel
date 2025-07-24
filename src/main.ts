@@ -1,14 +1,28 @@
-function summa() {
-	let total = 0;
+/**
+ * Challenge 1:
+ *
+ *
+ *
+ */
 
-	for (const argument of arguments) {
-		total += argument;
-	}
+const p1 = {
+	name: "kent",
+	run() {
+		console.log(`${this.name} is running`);
+	},
+};
 
-	return total;
-}
+const p2 = {
+	name: "mark",
+	jump() {
+		console.log(`${this.name} is jumping`);
+	},
+};
 
-const nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-// @ts-ignore
-const result = summa(...nums);
-console.log("result = ", result);
+/* your code here
+ Kent is running;
+ Mark is running;
+---------
+ Kent is jumping;
+ Mark is jumping;
+*/
