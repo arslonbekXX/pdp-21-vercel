@@ -20,9 +20,23 @@ const p2 = {
 };
 
 /* your code here
- Kent is running;
- Mark is running;
----------
- Kent is jumping;
- Mark is jumping;
+
+ --------- Call Method ---------
+  Kent is running;
+  Mark is running;
+  Kent is jumping;
+  Mark is jumping;
+
+ --------- Apply Method ---------
+  Kent is running;
+  Mark is running;
+  Kent is jumping;
+  Mark is jumping;
+
+ --------- Bind Method ---------
+  Kent is running;
+  Mark is running;
+  Kent is jumping;
+  Mark is jumping;
+
 */
