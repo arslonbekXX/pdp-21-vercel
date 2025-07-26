@@ -8,7 +8,7 @@
  *
  */
 
-const allAddresse = [
+const allAddresses = [
 	"tashkent",
 	"xiva",
 	"xorazm",
@@ -23,9 +23,26 @@ const allAddresse = [
 	"sirdaryo",
 	"surxondaryo",
 ];
-function getAddress() {}
+function getAddress() {
+	const idx = Math.floor(Math.random() * allAddresses.length);
+	const address = allAddresses[idx];
+
+	return address;
+}
 const allowedAddresses = [{ name: "tashkent" }, { name: "xiva" }, { name: "xorazm" }];
 
-function init() {}
+function go() {
+	try {
+		const address = getAddress();
+		const isAllowed = allowedAddresses.some((a) => a.name === address);
 
-window.addEventListener("load", init);
+		if (isAllowed) return `Siz ${address} manziliga borishingiz mumkin`;
+
+		throw new Error(`Borish mumkin emas bu ${address} manzilga`);
+	} catch (error: any) {
+		if (error instanceof Error) return error.message;
+	}
+}
+
+console.log(go());
+console.log("Hi");
