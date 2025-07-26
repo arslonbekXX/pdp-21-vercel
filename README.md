@@ -1,65 +1,21 @@
-# ------ 24.07.25 ------ (80)
+# ------ 26.07.25 ------ (81)
 
-### Object 👍
+### Error handling 👍
 
-    ✅ Object  👍
-    ✅ key in 👍
-    ✅ Object.keys() 👍
-    ✅ Object.values() 👍
-    ✅ Object.entries() 👍
-    ✅ structuredClone(DEEP-CLONE) 👍 vs Object.assign(SHALLOW-COPY) vs Spread Operator(SHALLOW-COPY) 👍
-    ✅ Object.freeze()
-
-### Functions
-
-    ✅ What is Function 👍
-    ✅ Types of Function(void, no-void) 👍
-    ✅ What is Callback Function 👍
-    ✅ What is HOF(Higher-Order Function) 👍
-    ✅ Anonymous function (function expression) 👍
-    ✅ Function Expression vs Function Declaration vs Arrow Function 👍
-
-### Object and methods
-
-    ✅ What is Method 👍
-    ✅ This keyword 👍
-    ✅ arguments keyword 👍
-    ✅ Functions and call, bind, apply
-
-### arguments keyword 👍
-
-    ✅ Exist Only function declaration 👍
-    ✅ Iteration 👍
-
-### First Class Function 👍
-
-    ✅ Currying function 👍
-
-### Error handling
-
-    ✅ Error Object
-    ✅ Throw
-    ✅ Try and catch blocks
-    ✅ Error handling
-
-### Topics
-
-    ✅ Arrow functions
-    ✅ Spread operator
-    ✅ Destructuring
-    ✅ Rest parameters
-    ✅ Default parameters
+    ✅ Error Object 👍
+    ✅ Throw 👍
+    ✅ Try and catch blocks 👍
 
 ### JS OOP
 
     ✅ Object
-    ✅ Object.assign
-    ✅ [...] spread operator
+    ✅ Object.assign 👍
+    ✅ [...] spread operator 👍
     ✅ Try Catch
     ✅ Factory function
     ✅ Object.create
-    ✅ this keyword
-    ✅ call && bind && apply function methods
+    ✅ this keyword 👍
+    ✅ call && bind && apply function methods 👍
     ✅ Constructor function
     ✅ new keyword
     ✅ Abstraction
@@ -73,7 +29,7 @@
 
 # JS Advanced
 
-    ✅ Expression vs Statement
+    ✅ Expression vs Statement 👍
     ✅ OOP && Object.create && Object.assign
     ✅ Prototype && Prototype Chain
     ✅ Functional Programming && Closure
