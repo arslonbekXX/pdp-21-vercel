@@ -1,48 +1,31 @@
-/**
- * 1. Sizda getAddress funksiyasi bor va u taxminiy address qaytaradi. allAddresse =  ["tashkent", "xiva", "xorazm", "namangan", "andijon","qashqadaryo", "bukhara", "fergana", "jizzax", "samarkand", "navoiy", "sirdaryo", "surxondaryo"].
- * 2. Sizda borish mumkin bolgan address lar royhati xam bor allowedAddresses = [{name: "tashkent"},{name: "xiva"}, {name: "xorazm"}]
- * 3. Siz getAddress funksiyasini ishlatib undan taxminiy address olasiz
- * 4. Siz olgan yangi address borish mumkin bolgan address lar royhatida bolmasa `Borish mumkin emas bu ${address} manzilga` degan error qaytaring, aks holda `Siz ${address} manziliga borishingiz mumkin` degan message qaytaring
- *
- *
- *
- */
+// @ts-nocheck
+const methods = {
+	age: 20,
+	jump() {
+		console.log(`${this.name} is jumping...`);
+	},
+};
 
-const allAddresses = [
-	"tashkent",
-	"xiva",
-	"xorazm",
-	"namangan",
-	"andijon",
-	"qashqadaryo",
-	"bukhara",
-	"fergana",
-	"jizzax",
-	"samarkand",
-	"navoiy",
-	"sirdaryo",
-	"surxondaryo",
-];
-function getAddress() {
-	const idx = Math.floor(Math.random() * allAddresses.length);
-	const address = allAddresses[idx];
+/* Factory Function */
+function createBox(name, color, size) {
+	const box = Object.create(methods); // {}
 
-	return address;
-}
-const allowedAddresses = [{ name: "tashkent" }, { name: "xiva" }, { name: "xorazm" }];
+	box.name = name;
+	box.color = color;
+	box.size = size;
 
-function go() {
-	try {
-		const address = getAddress();
-		const isAllowed = allowedAddresses.some((a) => a.name === address);
-
-		if (isAllowed) return `Siz ${address} manziliga borishingiz mumkin`;
-
-		throw new Error(`Borish mumkin emas bu ${address} manzilga`);
-	} catch (error: any) {
-		if (error instanceof Error) return error.message;
-	}
+	return box;
 }
 
-console.log(go());
-console.log("Hi");
+const box1 = createBox("Box-1", "red", 200);
+const box2 = createBox("Box-2", "blue", 300);
+
+console.log(box1);
+console.log(box2);
+box1.jump();
+box2.jump();
+
+// console.log(box1.name === box2.name)
+
+console.log("arslonbek".repeat(2));
+console.log("kent".repeat(2));
