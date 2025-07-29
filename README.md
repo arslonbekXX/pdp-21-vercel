@@ -1,23 +1,17 @@
-# ------ 26.07.25 ------ (81)
-
-### Error handling 👍
-
-    ✅ Error Object 👍
-    ✅ Throw 👍
-    ✅ Try and catch blocks 👍
+# ------ 29.07.25 ------ (82)
 
 ### JS OOP
 
     ✅ Object
     ✅ Object.assign 👍
     ✅ [...] spread operator 👍
-    ✅ Try Catch
-    ✅ Factory function
-    ✅ Object.create
+    ✅ Try Catch 👍
+    ✅ Factory function 👍
+    ✅ Object.create 👍
     ✅ this keyword 👍
     ✅ call && bind && apply function methods 👍
-    ✅ Constructor function
-    ✅ new keyword
+    ✅ Constructor function 👍
+    ✅ new keyword 👍
     ✅ Abstraction
     ✅ Private Properties and Methods
     ✅ Getters and Setters
