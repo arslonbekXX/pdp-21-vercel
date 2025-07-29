@@ -1,31 +1,51 @@
 // @ts-nocheck
-const methods = {
+const person1 = {
+	name: "Kent",
+	age: 30,
+	height: 180,
+	weight: 70,
+	gender: "male",
+	nationality: "American",
+	run() {
+		console.log(`${this.name} is running...`);
+	},
+};
+const person2 = {
+	name: "Mark",
+	age: 40,
+	height: 170,
+	weight: 80,
+	gender: "male",
+	nationality: "Polish",
+	run() {
+		console.log(`${this.name} is running...`);
+	},
+};
+const person3 = {
+	name: "John",
+	age: 25,
+	height: 175,
+	weight: 75,
+	gender: "male",
+	nationality: "British",
+	run() {
+		console.log(`${this.name} is running...`);
+	},
+};
+// ...
+const person100 = {
+	name: "Jane",
 	age: 20,
-	jump() {
-		console.log(`${this.name} is jumping...`);
+	height: 160,
+	weight: 60,
+	gender: "female",
+	nationality: "Canadian",
+	run() {
+		console.log(`${this.name} is running...`);
 	},
 };
 
-/* Factory Function */
-function createBox(name, color, size) {
-	const box = Object.create(methods); // {}
-
-	box.name = name;
-	box.color = color;
-	box.size = size;
-
-	return box;
-}
-
-const box1 = createBox("Box-1", "red", 200);
-const box2 = createBox("Box-2", "blue", 300);
-
-console.log(box1);
-console.log(box2);
-box1.jump();
-box2.jump();
-
-// console.log(box1.name === box2.name)
-
-console.log("arslonbek".repeat(2));
-console.log("kent".repeat(2));
+person1.run();
+person2.run();
+person3.run();
+person100.run();
