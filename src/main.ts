@@ -1,30 +1,11 @@
 // @ts-nocheck
-/* Factory Function  */
-const prototype = {
-	run() {
-		console.log(`${this.name} is running...`);
-	},
-	jump() {
-		console.log(`${this.name} is jumping...`);
-	},
-};
-
-function createBox(name, color) {
-	const box = Object.create(prototype);
-	box.name = name;
-	box.color = color;
-
-	return box;
-}
-
-const _box1 = createBox("box1", "red");
-
-console.log("_box1 = ", _box1);
 
 /* Constructor Function */
 function Box(name, color) {
 	this.name = name;
 	this.color = color;
+
+	return this;
 }
 
 Box.prototype.run = function () {
@@ -38,5 +19,9 @@ Box.prototype.jump = function () {
 const box1 = new Box("box1", "red");
 console.log("box1 = ", box1);
 
-_box1.run();
+const box2 = Box.call(Object.create(Box.prototype), "box2", "blue");
+
 box1.run();
+box2.run();
+console.log("box1 = ", box1);
+console.log("box2 = ", box2);

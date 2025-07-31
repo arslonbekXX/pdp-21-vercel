@@ -1,6 +1,6 @@
-# ------ 29.07.25 ------ (82)
+# ------ 31.07.25 ------ (83)
 
-### JS OOP
+## JS OOP
 
     ✅ Object
     ✅ Object.assign 👍
@@ -21,7 +21,14 @@
     ✅ Constructor
     ✅ Inheritance
 
-# JS Advanced
+## Contractor Function
+
+    ✅ Pascal case for function name
+    ✅ Prototype object has only Function
+    ✅ Only use Function Declaration for prototype's methods
+    ✅
+
+## JS Advanced
 
     ✅ Expression vs Statement 👍
     ✅ OOP && Object.create && Object.assign
@@ -35,7 +42,7 @@
     ✅ Backend && AJAX && Fetch
     ✅ Clean Code
 
-# Typescript
+## Typescript
 
     ✅ @ts-ignore vs @ts-expect-error
     ✅ type
@@ -47,13 +54,13 @@
     ✅ class
     ✅ Generic types
 
-# PayMe Project
+## PayMe Project
 
     ✅ Login Page(email, password)
     ✅ Register Page(email, password, name, username, confirmPassword, phone(imask))
     ✅ Forget Password(email)
     ✅ Reset Password(password, confirmPassword)
 
-# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
+## [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 
-# [CSBIN.IO](http://csbin.io)
+## [CSBIN.IO](http://csbin.io)
