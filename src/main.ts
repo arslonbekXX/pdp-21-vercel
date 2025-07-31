@@ -1,105 +1,56 @@
 // @ts-nocheck
+/* Prototype */
+// const text1 = new String("I am a String1"); // new String("I am a String1")
+// const text2 = new String("I am a String2");
 
-// /* Constructor Function */
-// function Box(name, color) {
+// console.log(text1);
+// console.log(text2);
+
+// console.log(text1.repeat(2));
+// console.log(text2.repeat(2));
+
+// const num1 = 20.232323;
+// console.log(num1.toFixed(2));
+
+// const heading = document.createElement("h1");
+// console.log(heading);
+
+/* Explaining __proto__ */
+
+// function Box(name) {
 // 	this.name = name;
-// 	this.color = color;
-
-// 	return this;
 // }
 
-// Box.prototype.run = function () {
-// 	console.log(`${this.name} is running...`);
-// };
+// const box = new Box("Box-1");
+// console.log(Box.prototype === box.__proto__);
 
-// Box.prototype.jump = function () {
-// 	console.log(`${this.name} is jumping...`);
-// };
+// const text = "hello world"; // new String("hello world")
 
-// Box.prototype.length = 10;
+// console.log(text.__proto__ === String.prototype);
 
-// const box1 = new Box("box1", "red");
-// const box2 = new Box("box2", "blue");
+// function app() {}
+// console.log(app.__proto__ === Function.prototype)
 
-// function Car(name, color, price) {
-// 	this.name = name;
-// 	this.color = color;
-// 	this.price = price;
-// }
+/* Challenges */
 
-// Car.prototype.start = function () {
-// 	console.log(`${this.name} is starting...`);
-// };
+function A() {}
+function B() {}
+function C() {}
 
-// Car.prototype.stop = function () {
-// 	console.log(`${this.name} is stopping...`);
-// };
+B.prototype = Object.create(A.prototype);
+C.prototype = Object.create(B.prototype);
+const a = new A();
+const b = new B();
+const c = new C();
 
-// console.log("car prototype = ", Car.prototype);
+// console.log(a.__proto__ === A.prototype);
+// console.log(a.__proto__.__proto__ === Object.prototype);
+// console.log(A.__proto__ === Function.prototype);
+console.log(A.prototype.__proto__ === Object.prototype);
 
-// function Tesla(name, color, price, model, capacity) {
-// 	Car.call(this, name, color, price);
+// console.log(b.__proto__ === B.prototype);
+// console.log(b.__proto__.__proto__ === A.prototype);
+console.log(B.prototype.__proto__ === A.prototype);
 
-// 	this.model = model;
-// 	this.capacity = capacity;
-
-// 	return this;
-// }
-
-// Tesla.prototype = Object.create(Car.prototype); // {}
-// Tesla.prototype.charge = function () {
-// 	console.log(`${this.name} ${this.model} is charging...`);
-// };
-// Tesla.prototype.display = function () {
-// 	console.log(`${this.name} ${this.model} is displaying...`);
-// };
-// console.log("tesla prototype = ", Tesla.prototype);
-
-// const tesla1 = new Tesla("Tesla", "Black", 80000, "Model-S", 50000);
-// const tesl2 = Tesla.call(Object.create(Tesla.prototype), "Tesla", "Black", 80000, "Model-S", 50000);
-// console.log(tesla1);
-// console.log(tesl2);
-
-function Phone(name) {
-	this.name = name;
-}
-
-Phone.prototype.photo = function () {
-	console.log(`${this.brand}'s ${this.name} is taking photo...`);
-};
-
-function Iphone(name, brand) {
-	Phone.call(this, name);
-	this.brand = brand;
-}
-Iphone.prototype = Object.create(Phone.prototype); // {}
-Iphone.prototype.constructor = Iphone;
-Iphone.prototype.record = function () {
-	console.log(`${this.brand}'s ${this.name} is recording...`);
-};
-
-const iphone = new Iphone("Iphone 16 Pro Max", "Apple");
-
-iphone.photo();
-iphone.record();
-
-/* Challenge-1:
-1. Create a constructor function for a Computer (name: string, cpu: string, isOn: boolean, switch: () => void)
-2. Create a constructor function for a Laptop (memory: string, brand: string, open: () => void, close: () => void)
-3. Create a constructor function for a PC (brand: string, freeze: () => void)
-3. Create a object from Laptop for a "M1 Macbook Pro"
-4. Create a object from PC for a "Dell"
-
-*/
-
-function Computer(name, cpu) {
-	this.name = name;
-	this.cpu = cpu;
-	this.isOn = false;
-}
-
-function Laptop(name, cpu, memory, brand) {}
-function PC(name, cpu, brand) {}
-
-const laptop = new Laptop("Macbook Pro", "M1", "1TB", "Apple");
-const pc = new PC("Dell Gaming 1", "Intel Core-i9", "Dell");
+// console.log(c.__proto__ === C.prototype);
+// console.log(c.__proto__.__proto__ === B.prototype);

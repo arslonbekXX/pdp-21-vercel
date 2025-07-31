@@ -21,12 +21,17 @@
     ✅ Constructor
     ✅ Inheritance
 
-## Contractor Function
+## Constructor Function
 
     ✅ Pascal case for function name
     ✅ Prototype object has only Function
     ✅ Only use Function Declaration for prototype's methods
-    ✅
+
+## Prototype vs _proto_
+
+    ✅ Prototype object has only Function
+    ✅ __proto__ have all types
+    ✅ __proto__ is reference on Constructor's prototype
 
 ## JS Advanced
 
