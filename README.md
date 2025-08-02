@@ -21,13 +21,13 @@
     ✅ Constructor
     ✅ Inheritance
 
-## Constructor Function
+## Constructor Function 👍
 
     ✅ Pascal case for function name
     ✅ Prototype object has only Function
     ✅ Only use Function Declaration for prototype's methods
 
-## Prototype vs _proto_
+## Prototype vs _proto_ 👍
 
     ✅ Prototype object has only Function
     ✅ __proto__ have all types
@@ -36,8 +36,9 @@
 ## JS Advanced
 
     ✅ Expression vs Statement 👍
-    ✅ OOP && Object.create && Object.assign
-    ✅ Prototype && Prototype Chain
+    ✅ Object.create && Object.assign 👍
+    ✅ OOP with class
+    ✅ Prototype && Prototype Chain 👍
     ✅ Functional Programming && Closure
     ✅ JS Execution && Event Loop
     ✅ JS Modules

@@ -1,56 +1,78 @@
-// @ts-nocheck
-/* Prototype */
-// const text1 = new String("I am a String1"); // new String("I am a String1")
-// const text2 = new String("I am a String2");
+class User {
+	name: string;
+	phone: string;
+	balance: number;
 
-// console.log(text1);
-// console.log(text2);
+	constructor(name: string, phone: string, balance: number) {
+		this.name = name;
+		this.phone = phone;
+		this.balance = balance;
+	}
 
-// console.log(text1.repeat(2));
-// console.log(text2.repeat(2));
+	getInfo() {
+		return `Name: ${this.name}, Phone: ${this.phone}, Balance: ${this.balance}`;
+	}
 
-// const num1 = 20.232323;
-// console.log(num1.toFixed(2));
+	addMoney(amount: number) {
+		this.balance += amount;
+		return this.balance;
+	}
+}
 
-// const heading = document.createElement("h1");
-// console.log(heading);
+type Status = "PENDING" | "COMPLETED" | "FAILED";
 
-/* Explaining __proto__ */
+class Payment {
+	from: User;
+	to: User;
+	amount: number;
+	status: Status;
 
-// function Box(name) {
-// 	this.name = name;
-// }
+	constructor(from: User, to: User, amount: number) {
+		this.from = from;
+		this.to = to;
+		this.amount = amount;
+		this.status = "PENDING";
+	}
 
-// const box = new Box("Box-1");
-// console.log(Box.prototype === box.__proto__);
+	send() {
+		if (this.from.balance >= this.amount) {
+			this.from.addMoney(-this.amount);
+			this.to.addMoney(this.amount);
+			this.status = "COMPLETED";
+			return true;
+		} else {
+			this.status = "FAILED";
+			return false;
+		}
+	}
 
-// const text = "hello world"; // new String("hello world")
+	getDetails() {
+		return `From: ${this.from.name}, To: ${this.to.name}, Amount: ${this.amount}, Status: ${this.status}, From Balance: ${this.from.balance}, To Balance: ${this.to.balance}`;
+	}
+}
 
-// console.log(text.__proto__ === String.prototype);
+class Bank {}
 
-// function app() {}
-// console.log(app.__proto__ === Function.prototype)
+const user1 = new User("Kent", "+998998961348", 10000);
+const user2 = new User("Mark", "+998991234567", 20000);
 
-/* Challenges */
+console.log(user1.getInfo());
+console.log(user2.getInfo());
 
-function A() {}
-function B() {}
-function C() {}
+const payment1 = new Payment(user1, user2, 5000);
+const payment2 = new Payment(user2, user1, 6000);
 
-B.prototype = Object.create(A.prototype);
-C.prototype = Object.create(B.prototype);
-const a = new A();
-const b = new B();
-const c = new C();
+console.log(payment1.getDetails());
+console.log(payment2.getDetails());
 
-// console.log(a.__proto__ === A.prototype);
-// console.log(a.__proto__.__proto__ === Object.prototype);
-// console.log(A.__proto__ === Function.prototype);
-console.log(A.prototype.__proto__ === Object.prototype);
+const bank = new Bank("IMAN INVEST");
+bank.addUser(user1, user2);
 
-// console.log(b.__proto__ === B.prototype);
-// console.log(b.__proto__.__proto__ === A.prototype);
-console.log(B.prototype.__proto__ === A.prototype);
+bank.processPayment(payment1);
+bank.processPayment(payment2);
 
-// console.log(c.__proto__ === C.prototype);
-// console.log(c.__proto__.__proto__ === B.prototype);
+console.log(payment1.getDetails());
+console.log(payment2.getDetails());
+
+console.log(user1.getInfo());
+console.log(user2.getInfo());
