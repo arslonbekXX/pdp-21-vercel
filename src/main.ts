@@ -1,2 +1,2 @@
-// import "./challenges/game";
-import "./topics/inheritance";
+import "./challenges/game";
+// import "./topics/inheritance";
