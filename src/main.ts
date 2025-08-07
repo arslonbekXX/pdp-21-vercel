@@ -1,2 +1,2 @@
-import "./challenges/game";
-// import "./topics/inheritance";
+import "./challenges/p2p";
+// import "./topics/abstraction";

@@ -1,25 +1,22 @@
-# ------ 31.07.25 ------ (83)
+# ------ 07.08.25 ------ (86)
 
 ## JS OOP
 
-    ✅ Object
-    ✅ Object.assign 👍
-    ✅ [...] spread operator 👍
-    ✅ Try Catch 👍
-    ✅ Factory function 👍
-    ✅ Object.create 👍
-    ✅ this keyword 👍
-    ✅ call && bind && apply function methods 👍
-    ✅ Constructor function 👍
-    ✅ new keyword 👍
-    ✅ Abstraction
-    ✅ Private Properties and Methods
-    ✅ Getters and Setters
-    ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
-
-    ✅ Class
-    ✅ Constructor
-    ✅ Inheritance
+        ✅ What is OOP & Why do we use it? 👍
+        ✅ Class & Object Basics 👍
+        ✅ Constructor & this keyword 👍
+        ✅ Fields (Properties) & Methods 👍
+        ✅ Getters & Setters 👍
+        ✅ Polymorphism (Method Overriding) 👍
+        ✅ Encapsulation(Access Modifiers: public, private, protected) 👍
+        ✅ Inheritance (extends) & super() usage 👍
+        ✅ Interfaces & implements keyword 👍
+        ✅ Abstract Classes & Abstract Methods
+        ✅ Interface vs Abstract Class
+        ✅ Static Properties & Static Methods
+        ✅ Composition vs Inheritance
+        ✅ OOP Best Practices (SRP, DRY, Encapsulation)
+        ✅ Mini Project: Build a small system using OOP (e.g., User, Product, Cart...)
 
 ## Constructor Function 👍
 
@@ -50,15 +47,14 @@
 
 ## Typescript
 
-    ✅ @ts-ignore vs @ts-expect-error
-    ✅ type
-    ✅ as
-    ✅ unknown || any || never
-    ✅ interface
-    ✅ extends and implements
-    ✅ private and public
+    ✅ @ts-ignore vs @ts-expect-error 👍
+    ✅ type 👍
+    ✅ as 👍
+    ✅ unknown || any || never 👍
+    ✅ interface 👍
+    ✅ ENUM
     ✅ class
-    ✅ Generic types
+    ✅ class
 
 ## PayMe Project
 
