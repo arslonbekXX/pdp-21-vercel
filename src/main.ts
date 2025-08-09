@@ -1,2 +1,1 @@
-import "./challenges/p2p";
-// import "./topics/abstraction";
+import "./topics/static-methods-and-fields";

@@ -11,12 +11,10 @@
         ✅ Encapsulation(Access Modifiers: public, private, protected) 👍
         ✅ Inheritance (extends) & super() usage 👍
         ✅ Interfaces & implements keyword 👍
-        ✅ Abstract Classes & Abstract Methods
-        ✅ Interface vs Abstract Class
+        ✅ Abstract Classes & Abstract Methods 👍
+        ✅ Interface vs Abstract Class 👍
         ✅ Static Properties & Static Methods
-        ✅ Composition vs Inheritance
-        ✅ OOP Best Practices (SRP, DRY, Encapsulation)
-        ✅ Mini Project: Build a small system using OOP (e.g., User, Product, Cart...)
+        ✅ Mini Project: Build a small system using OOP (e.g., User, Product, Cart...) 👍
 
 ## Constructor Function 👍
 
@@ -34,7 +32,7 @@
 
     ✅ Expression vs Statement 👍
     ✅ Object.create && Object.assign 👍
-    ✅ OOP with class
+    ✅ OOP with class 👍
     ✅ Prototype && Prototype Chain 👍
     ✅ Functional Programming && Closure
     ✅ JS Execution && Event Loop
