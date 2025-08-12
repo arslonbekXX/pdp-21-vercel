@@ -44,7 +44,7 @@ acc.withdraw(100); // false
 
 ---
 
-## 4. History Recorder
+## 4. History Recorder 👍
 
 📝 Vazifa:
 createHistory(n) — oxirgi n qiymatni saqlovchi funksiya bo‘lsin.
@@ -59,7 +59,7 @@ h.getHistory(); // ['b', 'c', 'd']
 
 ---
 
-## 5. Power Function
+## 5. Power Function 🔥
 
 📝 Vazifa:
 makePower(exponent) — berilgan daraja bo‘yicha funksiya yarating.
@@ -73,7 +73,7 @@ square(5); // 25
 
 ---
 
-## 6. Once Function
+## 6. Once Function 👍
 
 📝 Vazifa:
 once(fn) — bir marta ishlaydigan funksiya. Keyingi chaqiriqlarda oldingi natijani qaytaradi.
@@ -89,7 +89,7 @@ f(); // 1
 
 ---
 
-## 7. Memoization
+## 7. Memoization 👍
 
 📝 Vazifa:
 memoize(fn) — hisob natijalarini cache qilish.
@@ -99,8 +99,8 @@ memoize(fn) — hisob natijalarini cache qilish.
 
 const slow = n => n \* 2;
 const m = memoize(slow);
-m(2); // hisoblaydi
-m(2); // cache’dan oladi
+m(2); // hisoblaydi(4)
+m(2); // cache’dan oladi(4)
 🔍 Izoh: Map yoki obyekt orqali cache saqlash mumkin.
 
 ---
@@ -123,7 +123,7 @@ e.emit('msg', 'hi'); // hech narsa
 
 ---
 
-## 9. Loop Closure Gotcha
+## 9. Loop Closure Gotcha 🔥
 
 📝 Vazifa:
 createTimers(n) — massiv qaytarsin, har funksiya o‘z indeksini chiqaradi. (`var` bilan ham ishlasin)
