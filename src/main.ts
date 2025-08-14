@@ -1,1 +1,1 @@
-console.log("Examine-7");
+import "./tests";
