@@ -1,32 +1,37 @@
-# ------ 12.08.25 ------ (88)
+# ------ 16.08.25 ------ (90)
 
-## JS OOP
+## Functional Programming && Closure
 
-        ✅ What is OOP & Why do we use it? 👍
-        ✅ Class & Object Basics 👍
-        ✅ Constructor & this keyword 👍
-        ✅ Fields (Properties) & Methods 👍
-        ✅ Getters & Setters 👍
-        ✅ Polymorphism (Method Overriding) 👍
-        ✅ Encapsulation(Access Modifiers: public, private, protected) 👍
-        ✅ Inheritance (extends) & super() usage 👍
-        ✅ Interfaces & implements keyword 👍
-        ✅ Abstract Classes & Abstract Methods 👍
-        ✅ Interface vs Abstract Class 👍
-        ✅ Static Properties & Static Methods
-        ✅ Mini Project: Build a small system using OOP (e.g., User, Product, Cart...) 👍
+    ✅ First Class Function 👍
+    ✅ Higher Order Function 👍
+    ✅ Pure Function 👍
+    ✅ Closure
+    ✅ Currying 👍
+    ✅ Composition
+    ✅ Partial Application
+    ✅ Memoization
 
-## Constructor Function 👍
+## Pure Function 👍
 
-    ✅ Pascal case for function name
-    ✅ Prototype object has only Function
-    ✅ Only use Function Declaration for prototype's methods
+    ✅ Deterministic 👍
+    ✅ Non-Deterministic 👍
+    ✅ Side Effect 👍
+    ✅ Pure Function - No Side Effect and Deterministic 👍
+    ✅ Impure Function 👍
 
-## Prototype vs _proto_ 👍
+## JS Modules
 
-    ✅ Prototype object has only Function
-    ✅ __proto__ have all types
-    ✅ __proto__ is reference on Constructor's prototype
+    ✅ CommonJS
+    ✅ ES6 Modules
+
+## NPM Package
+
+    ✅ npm init
+    ✅ npm install
+    ✅ npm install -D
+    ✅ npm install -P
+    ✅ Release npm package
+    ✅ Install own npm package
 
 ## JS Advanced
 
@@ -34,32 +39,14 @@
     ✅ Object.create && Object.assign 👍
     ✅ OOP with class 👍
     ✅ Prototype && Prototype Chain 👍
+    ✅ Getters && Setters 👍
     ✅ Functional Programming && Closure
-    ✅ JS Execution && Event Loop
     ✅ JS Modules
-    ✅ Getters && Setters
-    ✅ Promises && Async/Await
     ✅ NPM Package
+    ✅ Promises && Async/Await
     ✅ Backend && AJAX && Fetch
+    ✅ JS Execution && Event Loop
     ✅ Clean Code
-
-## Typescript
-
-    ✅ @ts-ignore vs @ts-expect-error 👍
-    ✅ type 👍
-    ✅ as 👍
-    ✅ unknown || any || never 👍
-    ✅ interface 👍
-    ✅ ENUM
-    ✅ class
-    ✅ class
-
-## PayMe Project
-
-    ✅ Login Page(email, password)
-    ✅ Register Page(email, password, name, username, confirmPassword, phone(imask))
-    ✅ Forget Password(email)
-    ✅ Reset Password(password, confirmPassword)
 
 ## [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 
