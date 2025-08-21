@@ -1,4 +1,4 @@
-# ------ 16.08.25 ------ (90)
+# ------ 21.08.25 ------ (92)
 
 ## Functional Programming && Closure
 
@@ -19,10 +19,29 @@
     ✅ Pure Function - No Side Effect and Deterministic 👍
     ✅ Impure Function 👍
 
+## Closure 👍
+
+    ✅ CSBIN.IO challenges
+    ✅ Redux was rewritten by using Closure 👍
+
 ## JS Modules
 
     ✅ CommonJS
     ✅ ES6 Modules
+
+## CommonJS
+
+    ✅ module.exports
+    ✅ require
+
+## ES6 Modules
+
+    ✅ export
+    ✅ import
+    ✅ default export
+    ✅ named export
+    ✅ All import syntax (*)
+    ✅ Aliases
 
 ## NPM Package
 
