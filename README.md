@@ -26,22 +26,24 @@
 
 ## JS Modules
 
-    ✅ CommonJS
+    ✅ CommonJS 👍
     ✅ ES6 Modules
 
-## CommonJS
+## CommonJS 👍
 
-    ✅ module.exports
-    ✅ require
+    ✅ module.exports 👍
+    ✅ require 👍
+    ✅ Named Export 👍 (module.exports = { summa, num1, num2 })
+    ✅ Default Export 👍 (module.exports = summa)
 
 ## ES6 Modules
 
-    ✅ export
-    ✅ import
-    ✅ default export
-    ✅ named export
-    ✅ All import syntax (*)
-    ✅ Aliases
+    ✅ export 👍
+    ✅ import  👍
+    ✅ default export 👍
+    ✅ named export 👍
+    ✅ All import syntax (*) 👍
+    ✅ Aliases 👍
 
 ## NPM Package
 
