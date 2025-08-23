@@ -1,58 +1,38 @@
-# ------ 21.08.25 ------ (92)
+# ------ 23.08.25 ------ (93)
 
-## Functional Programming && Closure
+## Asynchronous vs Synchronous
 
-    ✅ First Class Function 👍
-    ✅ Higher Order Function 👍
-    ✅ Pure Function 👍
-    ✅ Closure
-    ✅ Currying 👍
-    ✅ Composition
-    ✅ Partial Application
-    ✅ Memoization
+     ✅ setTimeout
+     ✅ Patterns
+          ✅ Callbacks
+          ✅ Promises
+          ✅ Async / await
 
-## Pure Function 👍
+## Callbacks
 
-    ✅ Deterministic 👍
-    ✅ Non-Deterministic 👍
-    ✅ Side Effect 👍
-    ✅ Pure Function - No Side Effect and Deterministic 👍
-    ✅ Impure Function 👍
+     ✅ Callbacks
+     ✅ Callback Hell
 
-## Closure 👍
+## Promises
 
-    ✅ CSBIN.IO challenges
-    ✅ Redux was rewritten by using Closure 👍
+          🎁 Pending(pending)
+          🎁 Resolve(fulfilled)
+          🎁 Rejected(rejected)
+          🎁 then
+          🎁 catch
+          🎁 finally
+          🎁 Promise.all
+          🎁 Promise.rice
+          🎁 Promise.allSettled
 
-## JS Modules
+## Replacing Callbacks with Promises
 
-    ✅ CommonJS 👍
-    ✅ ES6 Modules
+     ✅ Parallel Promises
+     ✅ Simple example with DOM
 
-## CommonJS 👍
+## Async and Await
 
-    ✅ module.exports 👍
-    ✅ require 👍
-    ✅ Named Export 👍 (module.exports = { summa, num1, num2 })
-    ✅ Default Export 👍 (module.exports = summa)
-
-## ES6 Modules
-
-    ✅ export 👍
-    ✅ import  👍
-    ✅ default export 👍
-    ✅ named export 👍
-    ✅ All import syntax (*) 👍
-    ✅ Aliases 👍
-
-## NPM Package 👍
-
-    ✅ npm init 👍
-    ✅ npm install 👍
-    ✅ npm install -D 👍
-    ✅ npm install -P 👍
-    ✅ Release npm package 👍
-    ✅ Install own npm package 👍
+     ✅ Asynchronous function
 
 ## JS Advanced
 
@@ -64,10 +44,9 @@
     ✅ Functional Programming && Closure 👍
     ✅ JS Modules 👍
     ✅ NPM Package 👍
-    ✅ Callbacks && Promises && Async/Await
-    ✅ Backend && AJAX && Fetch
-    ✅ JS Execution && Event Loop
-    ✅ Clean Code
+    ✅ Callbacks && Promises && Async/Await - 2.5 lessons
+    ✅ Backend && AJAX && Fetch - 1.5 lessons
+    ✅ JS Execution && Event Loop - 1 lessons
 
 ## [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 
