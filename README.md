@@ -45,14 +45,14 @@
     ✅ All import syntax (*) 👍
     ✅ Aliases 👍
 
-## NPM Package
+## NPM Package 👍
 
-    ✅ npm init
-    ✅ npm install
-    ✅ npm install -D
-    ✅ npm install -P
-    ✅ Release npm package
-    ✅ Install own npm package
+    ✅ npm init 👍
+    ✅ npm install 👍
+    ✅ npm install -D 👍
+    ✅ npm install -P 👍
+    ✅ Release npm package 👍
+    ✅ Install own npm package 👍
 
 ## JS Advanced
 
@@ -61,10 +61,10 @@
     ✅ OOP with class 👍
     ✅ Prototype && Prototype Chain 👍
     ✅ Getters && Setters 👍
-    ✅ Functional Programming && Closure
-    ✅ JS Modules
-    ✅ NPM Package
-    ✅ Promises && Async/Await
+    ✅ Functional Programming && Closure 👍
+    ✅ JS Modules 👍
+    ✅ NPM Package 👍
+    ✅ Callbacks && Promises && Async/Await
     ✅ Backend && AJAX && Fetch
     ✅ JS Execution && Event Loop
     ✅ Clean Code

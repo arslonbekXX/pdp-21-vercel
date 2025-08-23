@@ -12,5 +12,8 @@
 		"@faker-js/faker": "^9.9.0",
 		"typescript": "~5.8.3",
 		"vite": "^7.0.0"
+	},
+	"dependencies": {
+		"pdp-21": "^1.1.0"
 	}
 }
