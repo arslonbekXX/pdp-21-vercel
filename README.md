@@ -1,29 +1,30 @@
-# ------ 23.08.25 ------ (93)
+# ------ 28.08.25 ------ (94)
 
-## Asynchronous vs Synchronous
+## Asynchronous vs Synchronous 👍
 
-     ✅ setTimeout
+     ✅ setTimeout 👍
      ✅ Patterns
-          ✅ Callbacks
+          ✅ Callbacks 👍
           ✅ Promises
           ✅ Async / await
 
-## Callbacks
+## Callbacks 👍
 
-     ✅ Callbacks
-     ✅ Callback Hell
+     ✅ Callbacks 👍
+     ✅ Callback Hell 👍
 
 ## Promises
 
-          🎁 Pending(pending)
-          🎁 Resolve(fulfilled)
-          🎁 Rejected(rejected)
-          🎁 then
-          🎁 catch
-          🎁 finally
-          🎁 Promise.all
-          🎁 Promise.rice
-          🎁 Promise.allSettled
+     ✅ What is Promise ? 👍
+     ✅ How to create Promise ? 👍
+     ✅ Promise States (pending, fulfilled, rejected) 👍
+     ✅ Promise resolve and reject 👍
+     ✅ then
+     ✅ catch
+     ✅ finally
+     ✅ Promise.all
+     ✅ Promise.rice
+     ✅ Promise.allSettled
 
 ## Replacing Callbacks with Promises
 
