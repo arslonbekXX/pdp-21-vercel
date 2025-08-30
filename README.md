@@ -1,4 +1,4 @@
-# ------ 28.08.25 ------ (94)
+# ------ 30.08.25 ------ (95)
 
 ## Asynchronous vs Synchronous 👍
 
@@ -45,9 +45,9 @@
     ✅ Functional Programming && Closure 👍
     ✅ JS Modules 👍
     ✅ NPM Package 👍
+    ✅ JS Execution && Event Loop - 1 lessons 👍
     ✅ Callbacks && Promises && Async/Await - 2.5 lessons
     ✅ Backend && AJAX && Fetch - 1.5 lessons
-    ✅ JS Execution && Event Loop - 1 lessons
 
 ## [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 

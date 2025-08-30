@@ -50,26 +50,13 @@
 
 /* Promise try-catch */
 // try {
-// 	new Promise((res, rej) => rej(new Error("First")));
-// 	new Promise((res, rej) => rej(new Error("Second")));
+// 	new Promise((res, rej) => rej(new Error("First"))).catch((error) => {
+// 		console.log(error);
+// 	});
+// 	new Promise((res, rej) => rej(new Error("Second"))).catch((error) => {
+// 		console.log(error);
+// 	});
 // 	new Promise((res, rej) => rej(new Error("Third")));
 // } catch (error: any) {
 // 	console.log("i am working...");
 // }
-
-/* setTimeout try-catch */
-try {
-	setTimeout(() => {
-		throw new Error("First");
-	}, 0);
-
-	setTimeout(() => {
-		throw new Error("Second");
-	}, 0);
-
-	setTimeout(() => {
-		throw new Error("Third");
-	}, 0);
-} catch (error: any) {
-	console.log("i am working...");
-}

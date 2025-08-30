@@ -1,11 +1,24 @@
-function multiply(num1: number, num2: number) {
-	return num1 * num2;
+interface User {
+	id: string;
+	username: string;
 }
 
-function multiplyByTwo(num: number) {
-	return multiply(num, 2);
+function getUsers() {
+	return new Promise<User[]>((resolve) => {
+		console.log("Loading users...");
+
+		setTimeout(() => {
+			const users: User[] = [
+				{ id: "user-id-1", username: "arslonbekXX" },
+				{ id: "user-id-2", username: "john_doe" },
+			];
+
+			resolve(users);
+		}, 2000);
+	});
 }
 
-console.log(multiplyByTwo(3));
-setTimeout(() => console.log(multiplyByTwo(5)), 0);
-console.log(multiplyByTwo(7));
+getUsers().then((users) => {
+	console.log("[USERS]", users);
+	const user = users[0];
+});
