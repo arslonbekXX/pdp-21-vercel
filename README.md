@@ -22,9 +22,10 @@
      ✅ then 👍
      ✅ catch 👍
      ✅ finally 👍
-     ✅ Promise.all
-     ✅ Promise.race
-     ✅ Promise.allSettled
+     ✅ Promise.all 👍
+     ✅ Promise.race 👍
+     ✅ Promise.allSettled 👍
+     ✅ Promise.any 👍
 
 ## Replacing Callbacks with Promises
 
