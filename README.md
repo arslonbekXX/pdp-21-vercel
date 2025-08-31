@@ -1,4 +1,4 @@
-# ------ 30.08.25 ------ (95)
+# ------ 31.08.25 ------ (add-1)
 
 ## Asynchronous vs Synchronous 👍
 
@@ -19,11 +19,11 @@
      ✅ How to create Promise ? 👍
      ✅ Promise States (pending, fulfilled, rejected) 👍
      ✅ Promise resolve and reject 👍
-     ✅ then
-     ✅ catch
-     ✅ finally
+     ✅ then 👍
+     ✅ catch 👍
+     ✅ finally 👍
      ✅ Promise.all
-     ✅ Promise.rice
+     ✅ Promise.race
      ✅ Promise.allSettled
 
 ## Replacing Callbacks with Promises
