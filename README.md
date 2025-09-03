@@ -34,20 +34,20 @@
      ✅ Parallel Promises
      ✅ Simple example with DOM
 
-## Async and Await
+## Async and Await 👍
 
      ✅ what is await ? 👍
      ✅ what is async function?
 
-## Await
+## Await 👍
 
      ✅ what is await ? 👍
-     ✅ top level await
-     ✅ function level await
+     ✅ top level await 👍
+     ✅ function level await 👍
 
-## Async Function
+## Async Function 👍
 
-     ✅ what is async function?
+     ✅ what is async function? 👍
 
 ## JS Advanced
 
@@ -60,9 +60,5 @@
     ✅ JS Modules 👍
     ✅ NPM Package 👍
     ✅ JS Execution && Event Loop - 1 lessons 👍
-    ✅ Callbacks && Promises && Async/Await - 2.5 lessons
+    ✅ Callbacks && Promises && Async/Await - 2.5 lessons 👍
     ✅ Backend && AJAX && Fetch - 1.5 lessons
-
-## [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
-
-## [CSBIN.IO](http://csbin.io)
