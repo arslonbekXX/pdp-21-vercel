@@ -1,4 +1,4 @@
-# ------ 31.08.25 ------ (add-1)
+# ------ 02.09.25 ------ (96)
 
 ## Asynchronous vs Synchronous 👍
 
@@ -26,6 +26,8 @@
      ✅ Promise.race 👍
      ✅ Promise.allSettled 👍
      ✅ Promise.any 👍
+
+§## Recreate Custom Promise
 
 ## Replacing Callbacks with Promises
 
