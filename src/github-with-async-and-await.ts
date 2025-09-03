@@ -18,19 +18,17 @@ interface Commit {
 	message: string;
 }
 
-function getUsers() {
-	return new Promise<User[]>((resolve) => {
-		console.log("Loading users...");
+async function getUsers() {
+	console.log("Loading users...");
 
-		setTimeout(() => {
-			const users: User[] = [
-				{ id: "user-id-1", username: "arslonbekXX" },
-				{ id: "user-id-2", username: "john_doe" },
-			];
+	setTimeout(() => {
+		const users: User[] = [
+			{ id: "user-id-1", username: "arslonbekXX" },
+			{ id: "user-id-2", username: "john_doe" },
+		];
 
-			resolve(users);
-		}, 2000);
-	});
+		return users;
+	}, 2000);
 }
 
 function getRepositories(username: string) {
@@ -59,8 +57,6 @@ function getBranches(repoId: string) {
 				{ id: "branch-id-1", name: "main" },
 				{ id: "branch-id-2", name: "dev" },
 			];
-
-			reject(new Error("Error loading branches"));
 
 			resolve(branches);
 		}, 2000);

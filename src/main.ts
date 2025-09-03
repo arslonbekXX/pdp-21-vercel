@@ -14,5 +14,5 @@ async function getCar() {
 // 	});
 // }
 
-const car = await getCar();
-console.log("car = ", car);
+// const car = await getCar();
+// console.log("car = ", car);
