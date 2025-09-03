@@ -36,7 +36,18 @@
 
 ## Async and Await
 
-     ✅ Asynchronous function
+     ✅ what is await ? 👍
+     ✅ what is async function?
+
+## Await
+
+     ✅ what is await ? 👍
+     ✅ top level await
+     ✅ function level await
+
+## Async Function
+
+     ✅ what is async function?
 
 ## JS Advanced
 
