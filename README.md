@@ -1,4 +1,4 @@
-# ------ 02.09.25 ------ (96)
+# ------ 03.09.25 ------ (97)
 
 ## Asynchronous vs Synchronous 👍
 
@@ -13,7 +13,7 @@
      ✅ Callbacks 👍
      ✅ Callback Hell 👍
 
-## Promises
+## Promises 👍
 
      ✅ What is Promise ? 👍
      ✅ How to create Promise ? 👍
@@ -27,9 +27,9 @@
      ✅ Promise.allSettled 👍
      ✅ Promise.any 👍
 
-§## Recreate Custom Promise
+## Recreate Custom Promise 👍
 
-## Replacing Callbacks with Promises
+## Replacing Callbacks with Promises 👍
 
      ✅ Parallel Promises
      ✅ Simple example with DOM
