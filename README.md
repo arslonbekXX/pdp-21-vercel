@@ -1,64 +1,61 @@
-# ------ 03.09.25 ------ (97)
+# ------ 06.09.25 ------ (98)
 
-## Asynchronous vs Synchronous 👍
+# (1)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor?
 
-     ✅ setTimeout 👍
-     ✅ Patterns
-          ✅ Callbacks 👍
-          ✅ Promises
-          ✅ Async / await
+# (2)(🎁) JavaScript qanday ma’lumot turlari (data type) mavjud?
 
-## Callbacks 👍
+# (3)(🎁) null va undefined ham ma'lumot turlariga kiradimi?
 
-     ✅ Callbacks 👍
-     ✅ Callback Hell 👍
+# (4)(🎁) var, let va const orqali o'zgaruvchi e'lon qilishni farqi nimada?
 
-## Promises 👍
+# (5)(🎁) hoisting haqida ma'lumot bering
 
-     ✅ What is Promise ? 👍
-     ✅ How to create Promise ? 👍
-     ✅ Promise States (pending, fulfilled, rejected) 👍
-     ✅ Promise resolve and reject 👍
-     ✅ then 👍
-     ✅ catch 👍
-     ✅ finally 👍
-     ✅ Promise.all 👍
-     ✅ Promise.race 👍
-     ✅ Promise.allSettled 👍
-     ✅ Promise.any 👍
+# (6)(🎁) hoistingda temporary dead zone tushunchasi nima?
 
-## Recreate Custom Promise 👍
+# (7)(🎁) o'qli funksiya (arrow function) va oddiy functionni farqi nimada?
 
-## Replacing Callbacks with Promises 👍
+# (8)(🎁) this kalit so'zi va uni ishlatilishi haqida ma’lumot bering
 
-     ✅ Parallel Promises
-     ✅ Simple example with DOM
+# (9)(🎁) proto va prototype haqida ma'lumot bering va farqini ayting
 
-## Async and Await 👍
+# (10)(🎁) call, bind, apply metodlarini farqi nimada?
 
-     ✅ what is await ? 👍
-     ✅ what is async function?
+# (11)(🎁) JavaScriptda DOM dagi elementlarni olish uchun qanday metodlar mavjud?
 
-## Await 👍
+# (12)(🎁) getElementById va getElementsByClassName ni farqi nimada?
 
-     ✅ what is await ? 👍
-     ✅ top level await 👍
-     ✅ function level await 👍
+# (13)(✅) getElementById va getElementsByClassName ni farqi nimada?
 
-## Async Function 👍
+# (14)(✅) JavaScriptda inheritance qanday ishlaydi?
 
-     ✅ what is async function? 👍
+# (15)(✅) Objectning "prototype" ni qanday aniqlash mumkun?
 
-## JS Advanced
+# (16)(✅) JavaScriptda hodisalar qanday ishlaydi (event propogationga urg'u berilgan)
 
-    ✅ Expression vs Statement 👍
-    ✅ Object.create && Object.assign 👍
-    ✅ OOP with class 👍
-    ✅ Prototype && Prototype Chain 👍
-    ✅ Getters && Setters 👍
-    ✅ Functional Programming && Closure 👍
-    ✅ JS Modules 👍
-    ✅ NPM Package 👍
-    ✅ JS Execution && Event Loop - 1 lessons 👍
-    ✅ Callbacks && Promises && Async/Await - 2.5 lessons 👍
-    ✅ Backend && AJAX && Fetch - 1.5 lessons
+# (19)(✅) Qanday qilib hodisalarning standart holatini, bubblingdan capturingga o'tkazib qo'yish mumkun? (Event phase)
+
+# (20)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor?
+
+# (21)(✅) simple clone va deep clone larning qanday farqi bor?
+
+# (22)(✅) Object.create va Object.assign methodlaring maqsadi
+
+# (23)(✅) Getters va Setters nima uchun kerak
+
+# (24)(🎁) break va continue nima uchun kerak (loop larga urg'u berilgan)
+
+# (25)(✅) Typescript dagi interface nima uchun kerak
+
+# (26)(✅) Class boshqa class dan extends olsa nima boladi
+
+# (27)(🎁) Function Types (arrow vs declare vs expression)
+
+# (28)(🎁) Interface vs Type
+
+# (29)(🎁) CSS Specificity
+
+# (30)(🎁) Class vs Factory Function vs Constructor Function
+
+# (31)(🎁) Closure
+
+# (32)(🎁) Pure function
