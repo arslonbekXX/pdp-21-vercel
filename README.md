@@ -24,7 +24,7 @@
 
 # (12)(🎁) getElementById va getElementsByClassName ni farqi nimada?
 
-# (13)(✅) getElementById va getElementsByClassName ni farqi nimada?
+# (13)(✅) querySelectorAll va getElementsByClassName ni farqi nimada?
 
 # (14)(✅) JavaScriptda inheritance qanday ishlaydi?
 
@@ -34,7 +34,7 @@
 
 # (19)(✅) Qanday qilib hodisalarning standart holatini, bubblingdan capturingga o'tkazib qo'yish mumkun? (Event phase)
 
-# (20)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor?
+# (20)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor ?
 
 # (21)(✅) simple clone va deep clone larning qanday farqi bor?
 
@@ -59,3 +59,9 @@
 # (31)(🎁) Closure
 
 # (32)(🎁) Pure function
+
+# (33)(🎁) Event Loop
+
+# (34)(🎁) Micro task vs Macro task
+
+# (35)(🎁) Grid vs Flex
