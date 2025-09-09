@@ -2,10 +2,10 @@
 
 # Folder Structure of Fullstack Project 👍
 
-        ✅ server - backend folder
-        ✅ web - frontend folder
+        ✅ server - backend folder 👍
+        ✅ web - frontend folder 👍
 
-# AJAX - Asynchronous JavaScript And XML
+# AJAX - Asynchronous JavaScript And XML 👍
 
         ✅ Simple example AJAX Request
         ✅ JSON - JavaScript object notation
