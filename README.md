@@ -1,53 +1,41 @@
-# ------ 03.09.25 ------ (97)
+# ------ 09.09.25 ------ (99)
 
-## Asynchronous vs Synchronous 👍
+# AJAX - Asynchronous JavaScript And XML
 
-     ✅ setTimeout 👍
-     ✅ Patterns
-          ✅ Callbacks 👍
-          ✅ Promises
-          ✅ Async / await
+        ✅ Simple example AJAX Request
+        ✅ JSON - JavaScript object notation
+        ✅ explain fetch
+        ✅ Simple example with fetch
 
-## Callbacks 👍
+# XHR - XML HTTP REQUEST
 
-     ✅ Callbacks 👍
-     ✅ Callback Hell 👍
+        ✅ What is XHR?
+        ✅ How to use XHR?
+        ✅ Simple example with XHR
 
-## Promises 👍
+# FETCH
 
-     ✅ What is Promise ? 👍
-     ✅ How to create Promise ? 👍
-     ✅ Promise States (pending, fulfilled, rejected) 👍
-     ✅ Promise resolve and reject 👍
-     ✅ then 👍
-     ✅ catch 👍
-     ✅ finally 👍
-     ✅ Promise.all 👍
-     ✅ Promise.race 👍
-     ✅ Promise.allSettled 👍
-     ✅ Promise.any 👍
+        ✅ What is FETCH?
+        ✅ How to use FETCH?
+        ✅ Simple example with FETCH
+        ✅ Difference between XHR and FETCH
+        ✅ How to handle errors with FETCH
+        ✅ FETCH with POST, GET, PUT, DELETE
 
-## Recreate Custom Promise 👍
+# Create Todo App Backend and Frontend
 
-## Replacing Callbacks with Promises 👍
+✅ ------CREATE------
+✅ [POST]["/todos"] -> create todo
 
-     ✅ Parallel Promises
-     ✅ Simple example with DOM
+✅ ------READ------
+✅ [GET]["/todos"] -> get all todos
+✅ [GET]["/todos/:todoId"] -> get single todo
 
-## Async and Await 👍
+✅ ------UPDATE------
+✅ [PUT | PATCH]["/todos/:todoId"] -> update todo
 
-     ✅ what is await ? 👍
-     ✅ what is async function?
-
-## Await 👍
-
-     ✅ what is await ? 👍
-     ✅ top level await 👍
-     ✅ function level await 👍
-
-## Async Function 👍
-
-     ✅ what is async function? 👍
+✅ ------DELETE------
+✅ [DELETE]["/todos/:todoId"] -> delete todo
 
 ## JS Advanced
 
