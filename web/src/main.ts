@@ -1,32 +1,43 @@
-const btnLoadSingle = document.querySelector<HTMLButtonElement>("#btn-load-single")!;
+const container = document.querySelector<HTMLDivElement>(".container")!;
 const btnLoadList = document.querySelector<HTMLButtonElement>("#btn-load-list")!;
-const todoId = 1;
 
-const handleLoadSingle = (e: MouseEvent) => {};
-const handleLoadList = (e: MouseEvent) => {
- 
-};
-
-btnLoadSingle.addEventListener("click", handleLoadSingle);
-btnLoadList.addEventListener("click", handleLoadList);
-
-enum READY_STATE {
-	UNSENT = 0,
-	OPENED = 1,
-	HEADERS_RECEIVED = 2,
-	LOADING = 3,
-	DONE = 4,
+interface Todo {
+	userId: number;
+	id: number;
+	title: string;
+	completed: boolean;
 }
 
-const xhr = new XMLHttpRequest();
-console.log("readyState = ", xhr.readyState);
+function http(method: string, url: string) {
+	return new Promise<Todo[]>((resolve) => {
+		const xhr = new XMLHttpRequest();
 
-xhr.onreadystatechange = () => {
-	console.log("readyState = ", xhr.readyState);
-	if (xhr.readyState === READY_STATE.DONE) {
-		console.log(xhr.responseText);
+		xhr.open(method, url);
+		xhr.send();
+
+		xhr.onload = () => resolve(JSON.parse(xhr.responseText));
+	});
+}
+
+async function handleLoadSingle(e: MouseEvent) {}
+
+async function handleLoadList(e: MouseEvent) {
+	const btn = e.currentTarget as HTMLButtonElement;
+	btn.innerText = "List...";
+
+	const todos: Todo[] = await http("GET", "https://jsonplaceholder.typicode.com/todos");
+	console.log(todos);
+
+	btn.remove();
+
+	for (const todo of todos) {
+		const btn = document.createElement("button");
+		btn.innerText = `Todo-${todo.id}`;
+		btn.className =
+			"text-white cursor-pointer bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800";
+		btn.addEventListener("click", handleLoadSingle);
+		container.appendChild(btn);
 	}
-};
+}
 
-xhr.open("GET", `https://jsonplaceholder.typicode.com/todos`);
-xhr.send();
+btnLoadList.addEventListener("click", handleLoadList);
