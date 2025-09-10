@@ -1,57 +1,69 @@
-# ------ 09.09.25 ------ (99)
+# React + TypeScript + Vite
 
-# Folder Structure of Fullstack Project 👍
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-        ✅ server - backend folder 👍
-        ✅ web - frontend folder 👍
+Currently, two official plugins are available:
 
-# AJAX - Asynchronous JavaScript And XML 👍
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-        ✅ Simple example AJAX Request
-        ✅ JSON - JavaScript object notation
-        ✅ explain fetch
-        ✅ Simple example with fetch
+## Expanding the ESLint configuration
 
-# XHR - XML HTTP REQUEST
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-        ✅ What is XHR?
-        ✅ How to use XHR?
-        ✅ Simple example with XHR
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-# FETCH
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-        ✅ What is FETCH?
-        ✅ How to use FETCH?
-        ✅ Simple example with FETCH
-        ✅ Difference between XHR and FETCH
-        ✅ How to handle errors with FETCH
-        ✅ FETCH with POST, GET, PUT, DELETE
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-# Create Todo App Backend and Frontend
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-✅ ------CREATE------
-✅ [POST]["/todos"] -> create todo
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-✅ ------READ------
-✅ [GET]["/todos"] -> get all todos
-✅ [GET]["/todos/:todoId"] -> get single todo
-
-✅ ------UPDATE------
-✅ [PUT | PATCH]["/todos/:todoId"] -> update todo
-
-✅ ------DELETE------
-✅ [DELETE]["/todos/:todoId"] -> delete todo
-
-## JS Advanced
-
-    ✅ Expression vs Statement 👍
-    ✅ Object.create && Object.assign 👍
-    ✅ OOP with class 👍
-    ✅ Prototype && Prototype Chain 👍
-    ✅ Getters && Setters 👍
-    ✅ Functional Programming && Closure 👍
-    ✅ JS Modules 👍
-    ✅ NPM Package 👍
-    ✅ JS Execution && Event Loop - 1 lessons 👍
-    ✅ Callbacks && Promises && Async/Await - 2.5 lessons 👍
-    ✅ Backend && AJAX && Fetch - 1.5 lessons
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
