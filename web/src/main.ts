@@ -1,3 +1,5 @@
+import { sleep } from "./utils";
+
 const container = document.querySelector<HTMLDivElement>(".container")!;
 const btnLoadList = document.querySelector<HTMLButtonElement>("#btn-load-list")!;
 
@@ -29,8 +31,8 @@ async function handleLoadList(e: MouseEvent) {
 	const btn = e.currentTarget as HTMLButtonElement;
 	btn.innerText = "List...";
 
-	const todos: Todo[] = await http("GET", "https://jsonplaceholder.typicode.com/todos");
-	console.log(todos);
+	await sleep(2);
+	const todos: Todo[] = await http("GET", "http://localhost:4000/todos");
 
 	btn.remove();
 

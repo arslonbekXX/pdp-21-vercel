@@ -1,24 +1,24 @@
 # ------ 11.09.25 ------ (100)
 
-# Folder Structure of Fullstack Project 👍
+## Folder Structure of Fullstack Project 👍
 
         ✅ server - backend folder 👍
         ✅ web - frontend folder 👍
 
-# AJAX - Asynchronous JavaScript And XML 👍
+## AJAX - Asynchronous JavaScript And XML 👍
 
         ✅ Simple example AJAX Request
         ✅ JSON - JavaScript object notation
         ✅ explain fetch
         ✅ Simple example with fetch
 
-# XHR - XML HTTP REQUEST
+## XHR - XML HTTP REQUEST
 
         ✅ What is XHR?
         ✅ How to use XHR?
         ✅ Simple example with XHR
 
-# FETCH
+## FETCH
 
         ✅ What is FETCH?
         ✅ How to use FETCH?
@@ -27,7 +27,12 @@
         ✅ How to handle errors with FETCH
         ✅ FETCH with POST, GET, PUT, DELETE
 
-# Create Todo App Backend and Frontend
+## HTTP
+
+        ✅ Status Codes (https://httpstatusdogs.com/)
+        ✅
+
+## Create Todo App Backend and Frontend
 
 ✅ ------CREATE------
 ✅ [POST]["/todos"] -> create todo
