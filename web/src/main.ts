@@ -19,7 +19,11 @@ function http(method: string, url: string) {
 	});
 }
 
-async function handleLoadSingle(e: MouseEvent) {}
+async function handleLoadSingle(e: MouseEvent) {
+	const btn = e.currentTarget as HTMLButtonElement;
+	btn.innerText += "...";
+	console.log("todoId = ", btn.dataset.todoId);
+}
 
 async function handleLoadList(e: MouseEvent) {
 	const btn = e.currentTarget as HTMLButtonElement;
@@ -32,6 +36,7 @@ async function handleLoadList(e: MouseEvent) {
 
 	for (const todo of todos) {
 		const btn = document.createElement("button");
+		btn.dataset.todoId = todo.id.toString();
 		btn.innerText = `Todo-${todo.id}`;
 		btn.className =
 			"text-white cursor-pointer bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800";
