@@ -10,21 +10,31 @@ interface Todo {
 	completed: boolean;
 }
 
-function http(method: string, url: string) {
-	return new Promise<Todo[]>((resolve) => {
+function http(method: string, url: string, body?: any) {
+	return new Promise((resolve) => {
 		const xhr = new XMLHttpRequest();
 
 		xhr.open(method, url);
-		xhr.send();
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.send(body ? JSON.stringify(body) : undefined);
 
 		xhr.onload = () => resolve(JSON.parse(xhr.responseText));
 	});
 }
 
+const res = await http("POST", "http://localhost:4000/todos", { name: "Kent" });
+console.log("res = ", res);
+
 async function handleLoadSingle(e: MouseEvent) {
 	const btn = e.currentTarget as HTMLButtonElement;
 	btn.innerText += "...";
+	const todoId = btn.dataset.todoId;
 	console.log("todoId = ", btn.dataset.todoId);
+
+	await sleep(2);
+	const todo = (await http("GET", `http://localhost:4000/todos/${todoId}`)) as Todo;
+	console.log(`todo[${todoId}] = `, todo);
+	btn.innerText = btn.innerText.toString().replace("...", "");
 }
 
 async function handleLoadList(e: MouseEvent) {
@@ -32,7 +42,7 @@ async function handleLoadList(e: MouseEvent) {
 	btn.innerText = "List...";
 
 	await sleep(2);
-	const todos: Todo[] = await http("GET", "http://localhost:4000/todos");
+	const todos = (await http("GET", "http://localhost:4000/todos")) as Todo[];
 
 	btn.remove();
 
