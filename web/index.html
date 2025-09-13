@@ -8,16 +8,13 @@
 		<title>Vite + TS</title>
 	</head>
 	<body>
-		<div class="container flex flex-wrap gap-2 mx-auto py-4">
-			<button
-				type="button"
-				id="btn-load-list"
-				class="text-white cursor-pointer bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-			>
-				List
-			</button>
+		<div class="container mx-auto mt-4">
+			<button class="btn btn-get-list">Get List</button>
+			<button class="btn btn-get-single">Get Single</button>
+			<button class="btn btn-post-single">POST Single</button>
+			<button class="btn btn-put-single">PUT Single</button>
+			<button class="btn btn-delete-single">Delete Single</button>
 		</div>
-
-		<script type="module" src="/src/main.ts"></script>
+		<script type="module" src="./src/main.ts"></script>
 	</body>
 </html>
