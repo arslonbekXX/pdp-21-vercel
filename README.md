@@ -1,51 +1,9 @@
-# ------ 11.09.25 ------ (100)
+# ------ 18.09.25 ------ (102)
 
-## Folder Structure of Fullstack Project 👍
+## Tic Tac Toe Game
 
-        ✅ server - backend folder 👍
-        ✅ web - frontend folder 👍
-
-## AJAX - Asynchronous JavaScript And XML 👍
-
-        ✅ Simple example AJAX Request
-        ✅ JSON - JavaScript object notation
-        ✅ explain fetch
-        ✅ Simple example with fetch
-
-## XHR - XML HTTP REQUEST
-
-        ✅ What is XHR?
-        ✅ How to use XHR?
-        ✅ Simple example with XHR
-
-## FETCH
-
-        ✅ What is FETCH?
-        ✅ How to use FETCH?
-        ✅ Simple example with FETCH
-        ✅ Difference between XHR and FETCH
-        ✅ How to handle errors with FETCH
-        ✅ FETCH with POST, GET, PUT, DELETE
-
-## HTTP
-
-        ✅ Status Codes (https://httpstatusdogs.com/)
-        ✅
-
-## Create Todo App Backend and Frontend
-
-✅ ------CREATE------
-✅ [POST]["/todos"] -> create todo
-
-✅ ------READ------
-✅ [GET]["/todos"] -> get all todos
-✅ [GET]["/todos/:todoId"] -> get single todo
-
-✅ ------UPDATE------
-✅ [PUT | PATCH]["/todos/:todoId"] -> update todo
-
-✅ ------DELETE------
-✅ [DELETE]["/todos/:todoId"] -> delete todo
+    ✅ Auth (register and login)
+    ✅ Games (get-my-games and create-game)
 
 ## JS Advanced
 
