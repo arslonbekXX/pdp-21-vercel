@@ -1,18 +1,38 @@
 # ---------- 21.09.25 ---------- (104)
 
-## Front-end roadmap
+## Front-end roadmap 👍
 
-## Semantic Version [10.15.1](Major.Minor.Patch)
+    ✅ Javascript Roadmap
+    ✅ Front-end Roadmap
+    ✅ React Roadmap
+
+## Semantic Version [10.15.1](Major.Minor.Patch) 👍
 
     ✅ Major
     ✅ Minor
     ✅ Patch
 
-## Library vs Framework
+## Library vs Framework 👍
 
-## Explain React Folder Structure
+    ✅ Library 👍
+    ✅ Framework 👍
 
-## TSX vs TS files
+## Explain React Folder Structure 👍
+
+    ✅ src
+    ✅ public
+    ✅ index.html
+    ✅ main.tsx
+    ✅ index.css
+    ✅ vite.config.ts
+    ✅ tsconfig.json
+    ✅ tsconfig.app.json
+    ✅ tsconfig.node.json
+    ✅ .gitignore
+    ✅ .eslintrc.js
+    ✅ .prettierrc
+
+## TSX vs TS files 👍
 
 ## JSX
 
