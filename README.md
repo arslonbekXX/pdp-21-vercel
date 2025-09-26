@@ -1,78 +1,47 @@
-# ---------- 21.09.25 ---------- (104)
+# ---------- 25.09.25 ---------- (105)
 
-## Front-end roadmap 👍
+## Generic Types 👍
 
-    ✅ Javascript Roadmap
-    ✅ Front-end Roadmap
-    ✅ React Roadmap
+    ✅ What is Generic Type 👍
+    ✅ Generic Type Example 👍
+    ✅ Generic Type Practice 👍
+    ✅ as const 👍
 
-## Semantic Version [10.15.1](Major.Minor.Patch) 👍
+## JSX 👍
 
-    ✅ Major
-    ✅ Minor
-    ✅ Patch
+    ✅ React.createElement 👍
+    ✅ https://reactjs.org/docs/jsx-in-depth.html 👍
 
-## Library vs Framework 👍
+## JSX in depth 👍
 
-    ✅ Library 👍
-    ✅ Framework 👍
-
-## Explain React Folder Structure 👍
-
-    ✅ src
-    ✅ public
-    ✅ index.html
-    ✅ main.tsx
-    ✅ index.css
-    ✅ vite.config.ts
-    ✅ tsconfig.json
-    ✅ tsconfig.app.json
-    ✅ tsconfig.node.json
-    ✅ .gitignore
-    ✅ .eslintrc.js
-    ✅ .prettierrc
-
-## TSX vs TS files 👍
-
-## JSX
-
-         ✅ React.createElement
-         ✅ https://reactjs.org/docs/jsx-in-depth.html
-
-## JSX in depth
-
-         ✅ Self closing
-         ✅ Dot Notation for components
-         ✅ User-Defined Components Must Be Capitalized
-         ✅ Booleans, Null, and Undefined Are Ignored
+    ✅ Self closing 👍
+    ✅ Dot Notation for components 👍
+    ✅ User-Defined Components Must Be Capitalized 👍
+    ✅ Booleans, Null, and Undefined Are Ignored 👍
 
 ## Class Component
 
-         ✅ Children
-         ✅ Fragment
-         ✅ JS Expression
+    ✅ Children
+    ✅ Fragment
+    ✅ JS Expression
 
 ## Using Bootstrap With React
 
-         ✅ install & using
-         ✅ create Counter component
+    ✅ install & using
+    ✅ create Counter component
 
 ## Setting Attributes
 
-         ✅ using expression
-         ✅ using style object
+    ✅ using expression
+    ✅ using style object
 
 ## Props
 
-         ✅ What is props
-         ✅ using props
-         ✅ example
-         ✅ practice - 118
-
-## JSX In Depth
-
-         ✅ Ignored values
-         ✅ Default true props
-         ✅ using String Literals
+    ✅ What is props
+    ✅ using props
+    ✅ example
+    ✅ practice - 118
 
 ## Deploy react app
+
+## React dev tools

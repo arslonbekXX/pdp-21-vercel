@@ -1,11 +1,11 @@
-import React from "react";
+const Button = ({ title }: { title: string }) => <button className="btn">{false}</button>;
 
-export const Need = () => (
-  <div>
-    <h1>Hello</h1>
+export const App = () => (
+  <div className="container mx-auto pt-4">
+    <div className="flex gap-2">
+      <Button title={"Click Me " + "1"} />
+      <Button title="Click Me 2" />
+    </div>
     <div className="box" />
   </div>
 );
-
-const a: React.JSX.Element = React.createElement("h1", { children: "Hello World" }); // <h1>Hello World</h1>;
-console.log(a);
