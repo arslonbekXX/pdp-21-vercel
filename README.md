@@ -19,6 +19,14 @@
     ✅ User-Defined Components Must Be Capitalized 👍
     ✅ Booleans, Null, and Undefined Are Ignored 👍
 
+## Naming Convention 👍
+
+    ✅ PascalCase for components 👍
+    ✅ camelCase for props or function names 👍
+    ✅ kebab-case for file and folder names 👍
+    ✅ snake_case for variables 👍
+    ✅ CONSTANT_CASE for constants or enums 👍
+
 ## Class Component
 
     ✅ Children
