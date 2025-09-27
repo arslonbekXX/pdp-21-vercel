@@ -1,5 +1,11 @@
 import { createRoot } from "react-dom/client";
-import { App } from "./app";
+import { Counter } from "./counter";
 import "./index.css";
+const root = createRoot(document.getElementById("root")!);
+root.render(
+  <div className="container mx-auto pt-4 px-4">
+    <Counter children2={<h1>Hello World</h1>} />
+  </div>
+);
 
-createRoot(document.getElementById("root")!).render(<App />);
+const counter = new Counter({ children2: <h1>Hello World</h1> });

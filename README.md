@@ -27,11 +27,11 @@
     ✅ snake_case for variables 👍
     ✅ CONSTANT_CASE for constants or enums 👍
 
-## Class Component
+## Class Component 👍
 
     ✅ Children
     ✅ Fragment
-    ✅ JS Expression
+    ✅ JS Expression 👍
 
 ## Using Bootstrap With React
 
