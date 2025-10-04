@@ -1,18 +1,19 @@
-import { Component, type ReactNode } from "react";
+import { Component } from "react";
 import { Button } from "./components/ui/button";
 import { Badge } from "./components/ui/badge";
 
 interface CounterProps {
-  children2: ReactNode;
+  children?: React.ReactNode;
 }
 
 export class Counter extends Component<CounterProps> {
   render() {
     return (
       <div className="flex gap-2">
-        {this.props.children2}
-        <Badge>10</Badge>
-        <Button variant="outline">Decrement</Button>
+        <Badge>{this.props.children === 0 ? "Zero" : this.props.children}</Badge>
+        <Button variant="outline" onClick={() => console.log("Decrement")}>
+          <span>Decrement</span>
+        </Button>
         <Button variant="outline">Increment</Button>
       </div>
     );

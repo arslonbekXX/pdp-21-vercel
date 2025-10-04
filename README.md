@@ -1,4 +1,4 @@
-# ---------- 25.09.25 ---------- (105)
+# ---------- 04.10.25 ---------- (107)
 
 ## Generic Types 👍
 
@@ -29,19 +29,20 @@
 
 ## Class Component 👍
 
-    ✅ Children
-    ✅ Fragment
+    ✅ Children 👍
+    ✅ Fragment 👍
     ✅ JS Expression 👍
 
-## Using Bootstrap With React
+## Using shadcn/ui With React
 
-    ✅ install & using
-    ✅ create Counter component
+    ✅ install & using 👍
+    ✅ create Counter component 👍
+    ✅ create Popover component 👍
 
-## Setting Attributes
+## Setting Attributes 👍
 
-    ✅ using expression
-    ✅ using style object
+    ✅ using expression 👍
+    ✅ using style object 👍
 
 ## Props
 
