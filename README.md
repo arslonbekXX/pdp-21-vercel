@@ -44,12 +44,17 @@
     ✅ using expression 👍
     ✅ using style object 👍
 
-## Props
+## Props 👍
 
-    ✅ What is props
-    ✅ using props
-    ✅ example
-    ✅ practice - 118
+    ✅ What is props 👍
+    ✅ using props 👍
+    ✅ example 👍
+
+## State
+
+    ✅ What is state 👍
+    ✅ using state with counter component 👍
+    ✅ single source of truth
 
 ## Deploy react app
 
