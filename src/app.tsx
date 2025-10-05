@@ -9,8 +9,8 @@ class App extends React.Component<{}, AppState> {
   state = {
     counters: [
       { id: 1, count: 0, step: 1 },
-      { id: 2, count: 10, step: 1 },
-      { id: 3, count: 30, step: 1 }
+      { id: 2, count: 0, step: 1 },
+      { id: 3, count: 0, step: 1 }
     ]
   };
 
