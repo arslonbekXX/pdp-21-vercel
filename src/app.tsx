@@ -2,24 +2,24 @@ import React from "react";
 import { Button } from "./components/ui/button";
 import { Counter } from "./counter";
 interface AppState {
-  counters: Array<{ id: number; count: number }>;
+  counters: Array<{ id: number; count: number; step: number }>;
 }
 
 class App extends React.Component<{}, AppState> {
   state = {
     counters: [
-      { id: 1, count: 0 },
-      { id: 2, count: 10 },
-      { id: 3, count: 30 }
+      { id: 1, count: 0, step: 1 },
+      { id: 2, count: 10, step: 1 },
+      { id: 3, count: 30, step: 1 }
     ]
   };
 
   reset = () => {
     this.setState({
       counters: [
-        { id: 1, count: 0 },
-        { id: 2, count: 0 },
-        { id: 3, count: 0 }
+        { id: 1, count: 0, step: 1 },
+        { id: 2, count: 0, step: 1 },
+        { id: 3, count: 0, step: 1 }
       ]
     });
   };
@@ -32,6 +32,7 @@ class App extends React.Component<{}, AppState> {
     counters[idx].count++;
     this.setState({ counters });
   };
+
   decrement = (counterId: number) => {
     const { counters } = this.state;
     const idx = counters.findIndex(c => c.id === counterId);
@@ -49,6 +50,8 @@ class App extends React.Component<{}, AppState> {
     this.setState({ counters });
   };
 
+  changeStep = (counterId: number) => {};
+
   render() {
     const { counters } = this.state;
     console.log(counters);
@@ -58,19 +61,25 @@ class App extends React.Component<{}, AppState> {
           Reset
         </Button>
         <Counter
+          step={counters[0].step}
           count={counters[0].count}
           increment={() => this.increment(counters[0].id)}
           decrement={() => this.decrement(counters[0].id)}
+          changeStep={() => this.changeStep(counters[0].id)}
         />
         <Counter
+          step={counters[1].step}
           count={counters[1].count}
           increment={() => this.increment(counters[1].id)}
           decrement={() => this.decrement(counters[1].id)}
+          changeStep={() => this.changeStep(counters[1].id)}
         />
         <Counter
+          step={counters[2].step}
           count={counters[2].count}
           increment={() => this.increment(counters[2].id)}
           decrement={() => this.decrement(counters[2].id)}
+          changeStep={() => this.changeStep(counters[2].id)}
         />
       </div>
     );
