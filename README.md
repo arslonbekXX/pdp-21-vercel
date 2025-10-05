@@ -2,8 +2,8 @@
 
 ## Deploy react app
 
+         ✅ netlify (manually 👍, github)
          ✅ vercel (github)
-         ✅ netlify (manually, github)
 
 ## React dev tools
 

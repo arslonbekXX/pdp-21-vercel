@@ -29,7 +29,7 @@ class App extends React.Component<{}, AppState> {
     const idx = counters.findIndex(c => c.id === counterId);
     if (idx === -1) return;
 
-    counters[idx].count++;
+    counters[idx].count += counters[idx].step;
     this.setState({ counters });
   };
 
@@ -38,7 +38,7 @@ class App extends React.Component<{}, AppState> {
     const idx = counters.findIndex(c => c.id === counterId);
     if (idx === -1) return;
 
-    counters[idx].count--;
+    counters[idx].count -= counters[idx].step;
     this.setState({ counters });
   };
   delete = (counterId: number) => {
@@ -50,7 +50,14 @@ class App extends React.Component<{}, AppState> {
     this.setState({ counters });
   };
 
-  changeStep = (counterId: number) => {};
+  changeStep = (counterId: number) => {
+    const { counters } = this.state;
+    const idx = counters.findIndex(c => c.id === counterId);
+    if (idx === -1) return;
+
+    counters[idx].step = Math.ceil(Math.random() * 20);
+    this.setState({ counters });
+  };
 
   render() {
     const { counters } = this.state;
